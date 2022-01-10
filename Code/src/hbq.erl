@@ -7,40 +7,40 @@ initHBQ(DLQLimit, HBQName) ->
 	%//TODO erzeuge Datei 
 	Datei = "HBQ.log",
 	DLQ = initDLQ(DLQLimit, Datei),
-    HBQ = spawn(hbq, loop, [[], DLQLimit, DLQ, Datei, 1]),	%1, da dies der derzeitige Index ist 
+    HBQ = spawn(hbq, loop, [[], DLQ, Datei, 1]),	%1, da dies der derzeitige Index ist 
 	register(HBQName, HBQ),
     HBQ.	%ProzessID wird zurückgegeben 
 
-loop(HBQ, DLQLimit, DLQ, Datei, Pos) ->
+loop(HBQ, DLQ, Datei, Pos) ->
 	receive
 		{From, {request, pushHBQ, [Nnr, Msg, TSclientout]}} ->
-			NewQueue = insertToQueue([Nnr, Msg, TSclientout], HBQ);
-			From ! {self(), ok},
-			loop(NewQueue, DLQLimit, DLQ, Datei);	
+			NewQueue = insertToQueue([Nnr, Msg, TSclientout], HBQ),
+			From ! {reply, ok},
+			loop(NewQueue, DLQ, Datei);	
 		% @return SendeNr (tatsächlich gesendet)
 		% über Funktionsaufruf der DLQ die MSG aus dieser Queue löschen und in die DLQ anfügen
 		{From, {request, deliverMsg, Nnr, ToClient}} ->
 			case isMember(Nnr, HBQ) of	%member/2 darf nicht genutzt werden
 				true ->
 					From ! {self(), {ok, Nnr}},
-					dlq:push2DLQ(//TODO);
-					loop(deleteFrom(Nnr, HBQ), DLQLimit, DLQ, Datei);	%darf nicht genutzt werden 
+					dlq:push2DLQ(//TODO),
+					loop(deleteFrom(Nnr, HBQ), DLQ, Datei);	%darf nicht genutzt werden 
 					% -> gibt Liste ohne Element zurück
 				false ->
 					From ! {self(), msg_not_found},
-					loop(HBQ, DLQLimit, DLQ, Datei)
-			end;
+					loop(HBQ, DLQ, Datei)
+			end.
 		%//TODO Funktion aufteilen in zwei Unterfunktionen
 		{From, {listADT}}	->	
 			From ! {self(), ok},
-			loop(HBQ, DLQLimit, DLQ, Datei);
+			loop(HBQ, DLQ, Datei);
 		{From, {dellHBQ}} -> 
 		case exit(HBQName) of	% funktioniert nur mit try catch! Ansonsten exit/2
 				true ->  
 					From ! {self(), ok};
 				false ->
 					From ! {self(), exiting_failed},
-					loop(HBQ, DLQLimit, DLQ, Datei)
+					loop(HBQ, DLQ, Datei)
 			end;
 		terminate ->
 			ok

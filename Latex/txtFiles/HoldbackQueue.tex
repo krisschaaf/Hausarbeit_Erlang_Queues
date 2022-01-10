@@ -27,7 +27,7 @@ Beim Initialisieren der Holdback Queue liegt das größte Problem darin, die Que
 Die lokale Registrierung des Prozesses findet über den Aufruf register() statt. Als Parameter werden hier einmal die ProzessID des zu registrierenden Prozesses übergeben und das Atom unter welchem dieser Prozess lokal gespeichert werden soll. 
 Außerdem wird die Initialisierung der Delivery Queue auch über die Holdback Queue aufgerufen. Diesem Aufruf wird der Parameter DLQ-Limit mit übergeben. 
 
-Umsetzung der Nebenläufigkeit in Erlang. Durch Rekursion kann der Status des Prozesses, also in diesem Falle der Inhalt der Holdback Queue, die maximale Größe der Delivery Queue und die Delivery Queue, vollständig in den Parametern der Funktion gehalten werden \cite{learnErlang}. Der Prozess der Holdback Queue wird hierfür über die Funktion loop gestartet. Dieser Funktion wird als Parameter die Holdback Queue übergeben und somit kann diese über jeden loop Aufruf beschrieben und gelesen werden. 
+Umsetzung der Nebenläufigkeit in Erlang. Durch Rekursion kann der Status des Prozesses, also in diesem Falle der Inhalt der Holdback Queue, die Delivery Queue, die in die zu loggende Datei und der aktuell nächste leere Index, vollständig in den Parametern der Funktion gehalten werden \cite{learnErlang}. Der Prozess der Holdback Queue wird hierfür über die Funktion loop gestartet. Dieser Funktion wird als Parameter die Holdback Queue übergeben und somit kann diese über jeden loop Aufruf beschrieben und gelesen werden. 
 
 \subsubsection{pushHBQ}
 
@@ -58,7 +58,8 @@ Ein weiteres Problem entsteht, wenn Elemente eingefügt werden, welche eine klei
 
 In dieser Funktion wird die Delivery Queue über die Holdback Queue beauftragt die zu der übergebenen Nachrichtennummer zugehörige Nachricht zu senden. Der Client welcher die Nachricht empfangen soll wird als ProzessID mit im Parameter der Funktion übergeben. 
 Über den Funktionsaufruf dlq:deliverMSG(MSGNr, ClientPID, Queue, Datei) wird also die entsprechend zu sendende Nachrichtennummer, die ProzessID, die Delivery Queue und die in die zu loggende Datei übergeben. 
-Wenn die Nachricht, welche von dieser Funktion zurückgegeben wird größer oder gleich der übergebenen Nachrichtennummer ist, dann wird ein ok von deliverMSG der Holdback Queue zurückgegeben. 
+Wenn die übergebene Nachricht nicht verfügbar ist, dann wird die Nachricht mit der nächst größeren Nummer gesendet. 
+Als Antwort von dem Prozess der Holdback Queue wird dann die gesendete Nachrichtennummer gesendet. 
 
 \subsubsection{listADT}
 

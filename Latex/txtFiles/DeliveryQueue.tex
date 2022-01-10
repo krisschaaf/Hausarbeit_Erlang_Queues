@@ -5,11 +5,15 @@ Die Delivery Queue enthält alle Nachrichten, die an den Leser ausgeliefert werd
 Ein Problem bei der Delivery Queue stellt die vorgegebene maximale Größe dar. Da diese nicht im Speicherplatz reserviert werden kann (keine In-Place Lösungen in Erlang), wie zum Beispiel über ein malloc in C oder über ein Attribut wie in Java, muss die Größe hier in der Queue oder im Prozess der Queue gespeichert werden. 
 Desweiteren wird die Datenstruktur FIFO verwendet, da die Nachrichten die als erstes eingefügt werden auch als erstes wieder die Queue verlassen. Dafür werden nun also die neuen Elemente immer an die Liste angehängt, so dass die Nachricht mit der kleinsten Nummer immer am Kopf, bzw. dadurch, dass die maximale Listengröße an erster Stelle ist, eine Position nach dem Kopf steht. 
 
-//NEU!
-Die Delivery Queue wird lokal implementiert. Gespeichert werden die Elemente in einer Variablen "DLQ", welche in der Holdback Queue rekursiv gespeichert wird. Dies funktioniert, da die Funktion hbq:loop() nach jedem Funktionsaufruf der Holdback Queue neu aufgerufen wird und hier quasi in einem receive Zustand wartet. Als Parameter enthält sie dann die Delivery Queue und zum Beispiel auch ihre Größe. Da nur von der Holdback Queue auf die Delivery Queue zugegriffen wird, sollte es kein Problem sein, die Delivery Queue in der Holdback Queue zu speichern. 
+Die Delivery Queue wird als lokale ADT implementiert. Da die maximale Größe der Queue in dieser gespeichert werden muss, es allerdings unschön ist die Größe in der Queue als Element zu speichern, bietet es sich an die Delivery Queue intern zum Teil als entfernte ADT zu implementieren. 
+Es wird in der Initialisierung also ein Prozess gestartet, welcher über die ProzessID DlqPID erreicht werden kann. 
+Dieser Prozess ruft die Funktion loop mit dem Parameter SizeMax für die maximale Größe auf. 
+Wenn jetzt also eine Funktion z.B. push2DLQ aufgerufen wird, dann wird in dieser Funktion eine Nachricht mit der Funktion und den Parametern an die ProzessID gesendet. 
+Das Ergebnis wird in der eigentlichen push2DLQ Funktion empfangen und von dieser zurückgegeben. 
 
-//TODO: Wie wird die maximale Größe der Delivery Queue in dieser gespeichert. Zum Beispiel beim Funktionsaufruf push2DLQ wird diese nicht im Parameter übergeben.
--> gibt es eine möglichkeit mehrere return werte zurückzugegeben, somit also die loop Funktion innerhalb der DLQ aufrufen und zusätzlich die modifizierte DLQ an die HBQ zurückzugeben. 
+Da nur durch das Atom MaxSize eine entfernte ADT implementiert wurde, wird auch nur mit den Funktionen, die dieses Atom abfragen innerhalb dieser ADT gearbeitet. 
+Die Funktion expectedNr/1 benötigt dieses zum Beispiel nicht. Es wäre also aus Performance Sicht unnötiger Aufwand die Funktion an einen anderen Prozess auszulagern, auf das Empfangen des Ergebnisses zu warten und dieses dann erst zurückzugeben. 
+//TODO beides ausprobieren!
 
 \subsection{Operationen}
 
@@ -18,7 +22,8 @@ Die Delivery Queue wird lokal implementiert. Gespeichert werden die Elemente in 
 In der Initalisierungoperation der Delivery Queue wird die Queue erzeugt. Die Operation wird durch den Operationsaufruf initHBQ ausgeführt und bekommt die maximale Größe direkt mit übergeben. 
 Da die Queue auch wieder beendet werden soll, muss auch für diese ein Prozess erzeugt werden. Dieser wird nach dem gleichen Schema wie der der Holdback Queue erzeugt. Also zuerst über ein $spawn()$ und dann über ein $register()$. Der lokale Name des Prozesses wird über den Parameter DLQName übergeben. Zum Erzeugen des Prozesses wird eine Funktion genutzt, welche sich selber wieder aufruft. Diese Funktion hat als Parameter die Delivery Queue und die maximale Größe der Queue. So können diese Daten trotz fehlender In-Place Speicherung gesichert werden. 
 
-//TODO Funktionsaufruf und lokalen Namen des Prozesses integrieren 
+//TODO: 
+Warum wird die logging Datei hier übergeben? Eigentlich wird an alles relevanten Funktionen die Datei im Parameter mit übergeben. 
 
 \subsubsection{delDLQ}
 
@@ -30,6 +35,7 @@ Der loop Funktion wird als Parameter eine leere Delivery Queue übergeben.
 \subsubsection{expectedNr}
 
 Diese Funktion liefert die Nachrichten Nummer die als nächstes in der Delivery Queue gespeichert werden kann. Da die kleinste Nummer von dem Leser Client benötigt wird und außerdem keine Duplikate vorkommen sollten, wird in der Delivery Queue die größte Nummer gesucht und diese um eins erhöht. Die größte Nummer ist stets das letzte Element der Delivery Queue. 
+Da die Queue als entfernte ADT implementiert ist, wird jetzt also die entsprechende 
 
 \subsubsection{push2DLQ}
 
@@ -38,6 +44,8 @@ Diese Funktion wird von der Holdback Queue aufgerufen, wenn diese eine bestimmte
 Die Funktion push2DLQ speichert die übergebene Nachricht in der Delivery Queue. Da die Queue bereits sortiert ist und das letzte Element in der Queue das Größte ist, kann das anzufügende Element einfach an die Liste "gepipet" werden. Zusätzlich wird ein Zeitstempel angefügt, welcher über eine von Erlang bereitgestellte Funktion erfasst wird. 
 Bei jedem Funktionsaufruf wird außerdem die maximale Größe mit der aktuellen Größe verglichen. Wenn die Delivery Queue die maximale Größe erreicht hat, dann wird beim Einfügen eines neuen Elements das älteste gelöscht. 
 
+Wie bereits erwähnt wird diese Funktion an einen anderen Prozess ausgelagert. In diesem Prozess wird rekursiv die maximale Größe der Delivery Queue gespeichert. Durch das Senden einer Nachricht mit den jeweiligen Atomen an die DlqPID kann in diesem Prozess dann die neue Liste erstellt werden und zurück an den Ausgangsprozess gesendet werden. 
+
 \subsubsection{deliverMSG}
 
 Diese Funktion sendet die im Parameter übergebene Nachrichtennummer an die übergebene ProzessID des Clients. Dafür wird durch die Elemente der Delivery Queue iteriert, bis das Element entweder gefunden wurde oder das übergebene Element größer ist. 
@@ -45,8 +53,6 @@ Gelöscht werden die Elemente aus der Delivery Queue allerdings erst, sobald die
 Das eigentliche Senden der Nachricht an den Clienten findet innerhalb der Delivery Queue statt. 
 Der Aufruf hat den Aufbau:
 ClientPID ! {reply,SendMessage,Terminated}
-
-//TODO welche Struktur hat SendMessage: ist das die zu sendende Nachricht oder eine weitere Funktion?
 
 Um den gesamten Prozess terminieren zu können, wird der Delivery Queue von der Holdback Queue mitgeteilt ob diese noch Elemente enthält. Wenn das nicht mehr der Fall ist wird die Nachricht [-1,nkob,0,0,0] mit einem weiteren Parameter true übergeben, welcher signalisiert, dass der Prozess beendet werden soll. 
 
