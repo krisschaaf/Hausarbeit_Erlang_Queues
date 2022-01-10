@@ -1,0 +1,70 @@
+6-clientB@Qigong-KLC-<0.99.0>-KLC Start: 06.12 12:05:52,730|.
+6-clientB@Qigong-KLC-<0.99.0>-KLC: 8te_Nachricht. C Out: 06.12 12:05:57,746| gesendet
+6-clientB@Qigong-KLC-<0.99.0>-KLC: 26te_Nachricht. C Out: 06.12 12:06:02,762| gesendet
+6-clientB@Qigong-KLC-<0.99.0>-KLC: 48te_Nachricht. C Out: 06.12 12:06:07,824| gesendet
+6-clientB@Qigong-KLC-<0.99.0>-KLC: 60te_Nachricht. C Out: 06.12 12:06:12,871| gesendet
+6-clientB@Qigong-KLC-<0.99.0>-KLC: 125te_Nachricht. C Out: 06.12 12:06:17,887| gesendet
+162te_Nachricht um 06.12 12:06:17,933| vergessen zu senden ******
+164te_Nachricht um 06.12 12:06:17,933| vergessen zu senden ******
+166te_Nachricht um 06.12 12:06:17,933| vergessen zu senden ******
+168te_Nachricht um 06.12 12:06:17,965| vergessen zu senden ******
+170te_Nachricht um 06.12 12:06:17,965| vergessen zu senden ******
+5-clientB@Qigong-KLC-<0.100.0>-KLC: 106te_Nachricht. C Out: 06.12 12:06:16,793| HBQ In: 06.12 12:06:16,792|  DLQ Out: 06.12 12:06:17,964|  ; C In: 06.12 12:06:17,965|#1#3 >**Nachricht aus der Zukunft fuer Server:00.00 00:00:00,0007070|< #4
+1-clientB@Qigong-KLC-<0.104.0>-KLC: 107te_Nachricht. C Out: 06.12 12:06:16,824| HBQ In: 06.12 12:06:16,823|  DLQ Out: 06.12 12:06:17,964|  ; C In: 06.12 12:06:17,965|#1#3 >**Nachricht aus der Zukunft fuer Server:00.00 00:00:00,0007070|< #4
+3-clientB@Qigong-KLC-<0.102.0>-KLC: 108te_Nachricht. C Out: 06.12 12:06:12,871| HBQ In: 06.12 12:06:12,870|  DLQ Out: 06.12 12:06:17,964|  ; C In: 06.12 12:06:17,965|#1#3 >**Nachricht aus der Zukunft fuer Server:00.00 00:00:00,0006809|< #4
+5-clientA@Qigong-KLC-<0.100.0>-KLC: 109te_Nachricht. C Out: 06.12 12:06:13,472| HBQ In: 06.12 12:06:13,479|  DLQ Out: 06.12 12:06:17,964|  ; C In: 06.12 12:06:17,965|#1#3#2#4
+7-clientB@Qigong-KLC-<0.98.0>-KLC: 110te_Nachricht. C Out: 06.12 12:06:12,262| HBQ In: 06.12 12:06:12,261|  DLQ Out: 06.12 12:06:17,964|  ; C In: 06.12 12:06:17,965|#1#3 >**Nachricht aus der Zukunft fuer Server:00.00 00:00:00,0006759|< #4
+6-clientA@Qigong-KLC-<0.99.0>-KLC: 111te_Nachricht. C Out: 06.12 12:06:12,754| HBQ In: 06.12 12:06:12,761|  DLQ Out: 06.12 12:06:17,964|  ; C In: 06.12 12:06:17,965|#1#3#2#4
+1-clientA@Qigong-KLC-<0.104.0>-KLC: 112te_Nachricht. C Out: 06.12 12:06:12,785| HBQ In: 06.12 12:06:12,792|  DLQ Out: 06.12 12:06:17,964|  ; C In: 06.12 12:06:17,965|#1#3#2#4
+***Fehlernachricht fuer Nachrichten 113 bis 116 um 06.12 12:06:17,917|. DLQ Out: 06.12 12:06:17,964|  ; C In: 06.12 12:06:17,980|#1#3#2#4
+8-clientA@Qigong-KLC-<0.97.0>-KLC: 117te_Nachricht. C Out: 06.12 12:06:17,410| HBQ In: 06.12 12:06:17,417|  DLQ Out: 06.12 12:06:17,979|  ; C In: 06.12 12:06:17,980|#1#3#2#4
+4-clientA@Qigong-KLC-<0.101.0>-KLC: 118te_Nachricht. C Out: 06.12 12:06:17,441| HBQ In: 06.12 12:06:17,448|  DLQ Out: 06.12 12:06:17,979|  ; C In: 06.12 12:06:17,980|#1#3#2#4
+3-clientA@Qigong-KLC-<0.102.0>-KLC: 119te_Nachricht. C Out: 06.12 12:06:17,441| HBQ In: 06.12 12:06:17,479|  DLQ Out: 06.12 12:06:17,979|  ; C In: 06.12 12:06:17,980|#1#3#2#4
+7-clientB@Qigong-KLC-<0.98.0>-KLC: 120te_Nachricht. C Out: 06.12 12:06:14,293| HBQ In: 06.12 12:06:14,292|  DLQ Out: 06.12 12:06:17,979|  ; C In: 06.12 12:06:17,980|#1#3 >**Nachricht aus der Zukunft fuer Server:00.00 00:00:00,0006900|< #4
+7-clientA@Qigong-KLC-<0.98.0>-KLC: 121te_Nachricht. C Out: 06.12 12:06:16,769| HBQ In: 06.12 12:06:16,776|  DLQ Out: 06.12 12:06:17,995|  ; C In: 06.12 12:06:17,996|#1#3#2#4
+6-clientA@Qigong-KLC-<0.99.0>-KLC: 122te_Nachricht. C Out: 06.12 12:06:14,769| HBQ In: 06.12 12:06:14,776|  DLQ Out: 06.12 12:06:17,995|  ; C In: 06.12 12:06:17,996|#1#3#2#4
+1-clientA@Qigong-KLC-<0.104.0>-KLC: 123te_Nachricht. C Out: 06.12 12:06:14,800| HBQ In: 06.12 12:06:14,823|  DLQ Out: 06.12 12:06:17,995|  ; C In: 06.12 12:06:17,996|#1#3#2#4
+4-clientB@Qigong-KLC-<0.101.0>-KLC: 124te_Nachricht. C Out: 06.12 12:06:17,887| HBQ In: 06.12 12:06:17,886|  DLQ Out: 06.12 12:06:17,995|  ; C In: 06.12 12:06:17,996|#1#3 >**Nachricht aus der Zukunft fuer Server:00.00 00:00:00,0007150|< #4
+6-clientB@Qigong-KLC-<0.99.0>-KLC: 125te_Nachricht. C Out: 06.12 12:06:17,887| HBQ In: 06.12 12:06:17,917|  DLQ Out: 06.12 12:06:17,995| *******; C In: 06.12 12:06:17,996|#1#3#2#4..getmessages..Done...
+171te_Nachricht um 06.12 12:06:18,996| vergessen zu senden ******
+173te_Nachricht um 06.12 12:06:18,996| vergessen zu senden ******
+175te_Nachricht um 06.12 12:06:18,996| vergessen zu senden ******
+177te_Nachricht um 06.12 12:06:18,996| vergessen zu senden ******
+Neues Sendeintervall: 7 Sekunden (5).
+179te_Nachricht um 06.12 12:06:18,012| vergessen zu senden ******
+6-clientB@Qigong-KLC-<0.99.0>-KLC: 181te_Nachricht. C Out: 06.12 12:06:25,027| gesendet
+6-clientB@Qigong-KLC-<0.99.0>-KLC: 277te_Nachricht. C Out: 06.12 12:06:32,043| gesendet
+6-clientB@Qigong-KLC-<0.99.0>-KLC: 326te_Nachricht. C Out: 06.12 12:06:39,058| gesendet
+6-clientB@Qigong-KLC-<0.99.0>-KLC: 445te_Nachricht. C Out: 06.12 12:06:46,074| gesendet
+6-clientB@Qigong-KLC-<0.99.0>-KLC: 556te_Nachricht. C Out: 06.12 12:06:53,105| gesendet
+610te_Nachricht um 06.12 12:06:53,137| vergessen zu senden ******
+611te_Nachricht um 06.12 12:06:53,152| vergessen zu senden ******
+612te_Nachricht um 06.12 12:06:53,152| vergessen zu senden ******
+613te_Nachricht um 06.12 12:06:53,152| vergessen zu senden ******
+614te_Nachricht um 06.12 12:06:53,152| vergessen zu senden ******
+4-clientB@Qigong-KLC-<0.101.0>-KLC: 554te_Nachricht. C Out: 06.12 12:06:47,715| HBQ In: 06.12 12:06:47,729|  DLQ Out: 06.12 12:06:53,182|  ; C In: 06.12 12:06:53,183|#1#3#2#4
+7-clientA@Qigong-KLC-<0.98.0>-KLC: 555te_Nachricht. C Out: 06.12 12:06:48,957| HBQ In: 06.12 12:06:48,964|  DLQ Out: 06.12 12:06:53,182|  ; C In: 06.12 12:06:53,183|#1#3#2#4
+***Fehlernachricht fuer Nachrichten 556 bis 556 um 06.12 12:06:51,417|. DLQ Out: 06.12 12:06:53,214| *******; C In: 06.12 12:06:53,215|#1#3#2#4
+2-clientB@Qigong-KLC-<0.103.0>-KLC: 557te_Nachricht. C Out: 06.12 12:06:50,152| HBQ In: 06.12 12:06:50,167|  DLQ Out: 06.12 12:06:53,245|  ; C In: 06.12 12:06:53,246|#1#3#2#4
+8-clientB@Qigong-KLC-<0.97.0>-KLC: 558te_Nachricht. C Out: 06.12 12:06:50,152| HBQ In: 06.12 12:06:50,167|  DLQ Out: 06.12 12:06:53,245|  ; C In: 06.12 12:06:53,246|#1#3#2#4
+9-clientB@Qigong-KLC-<0.96.0>-KLC: 559te_Nachricht. C Out: 06.12 12:06:50,152| HBQ In: 06.12 12:06:50,214|  DLQ Out: 06.12 12:06:53,276|  ; C In: 06.12 12:06:53,277|#1#3#2#4
+3-clientB@Qigong-KLC-<0.102.0>-KLC: 560te_Nachricht. C Out: 06.12 12:06:49,496| HBQ In: 06.12 12:06:49,495|  DLQ Out: 06.12 12:06:53,292|  ; C In: 06.12 12:06:53,293|#1#3 >**Nachricht aus der Zukunft fuer Server:00.00 00:00:00,0010630|< #4
+***Fehlernachricht fuer Nachrichten 561 bis 561 um 06.12 12:06:52,620|. DLQ Out: 06.12 12:06:53,292|  ; C In: 06.12 12:06:53,293|#1#3#2#4
+1-clientA@Qigong-KLC-<0.104.0>-KLC: 562te_Nachricht. C Out: 06.12 12:06:50,925| HBQ In: 06.12 12:06:50,932|  DLQ Out: 06.12 12:06:53,323|  ; C In: 06.12 12:06:53,340|#1#3#2#4
+6-clientA@Qigong-KLC-<0.99.0>-KLC: 563te_Nachricht. C Out: 06.12 12:06:50,941| HBQ In: 06.12 12:06:50,948|  DLQ Out: 06.12 12:06:53,339|  ; C In: 06.12 12:06:53,340|#1#3#2#4
+7-clientB@Qigong-KLC-<0.98.0>-KLC: 564te_Nachricht. C Out: 06.12 12:06:50,230| HBQ In: 06.12 12:06:50,245|  DLQ Out: 06.12 12:06:53,339|  ; C In: 06.12 12:06:53,340|#1#3#2#4
+4-clientA@Qigong-KLC-<0.101.0>-KLC: 565te_Nachricht. C Out: 06.12 12:06:51,394| HBQ In: 06.12 12:06:51,417|  DLQ Out: 06.12 12:06:53,339|  ; C In: 06.12 12:06:53,340|#1#3#2#4
+8-clientA@Qigong-KLC-<0.97.0>-KLC: 566te_Nachricht. C Out: 06.12 12:06:49,410| HBQ In: 06.12 12:06:49,417|  DLQ Out: 06.12 12:06:53,370|  ; C In: 06.12 12:06:53,371|#1#3#2#4
+5-clientA@Qigong-KLC-<0.100.0>-KLC: 567te_Nachricht. C Out: 06.12 12:06:50,410| HBQ In: 06.12 12:06:50,432|  DLQ Out: 06.12 12:06:53,370|  ; C In: 06.12 12:06:53,371|#1#3#2#4
+3-clientA@Qigong-KLC-<0.102.0>-KLC: 568te_Nachricht. C Out: 06.12 12:06:49,441| HBQ In: 06.12 12:06:49,448|  DLQ Out: 06.12 12:06:53,401|  ; C In: 06.12 12:06:53,402|#1#3#2#4
+4-clientB@Qigong-KLC-<0.101.0>-KLC: 569te_Nachricht. C Out: 06.12 12:06:49,746| HBQ In: 06.12 12:06:49,745|  DLQ Out: 06.12 12:06:53,401|  ; C In: 06.12 12:06:53,402|#1#3 >**Nachricht aus der Zukunft fuer Server:00.00 00:00:00,0010660|< #4
+7-clientA@Qigong-KLC-<0.98.0>-KLC: 570te_Nachricht. C Out: 06.12 12:06:51,972| HBQ In: 06.12 12:06:51,979|  DLQ Out: 06.12 12:06:53,417|  ; C In: 06.12 12:06:53,418|#1#3#2#4..getmessages..Done...
+616te_Nachricht um 06.12 12:06:53,418| vergessen zu senden ******
+617te_Nachricht um 06.12 12:06:53,465| vergessen zu senden ******
+619te_Nachricht um 06.12 12:06:53,465| vergessen zu senden ******
+620te_Nachricht um 06.12 12:06:53,480| vergessen zu senden ******
+Neues Sendeintervall: 3 Sekunden (7).
+621te_Nachricht um 06.12 12:06:53,480| vergessen zu senden ******
+6-clientB@Qigong-KLC-<0.99.0>-KLC: 622te_Nachricht. C Out: 06.12 12:06:56,496| gesendet
+6-clientB@Qigong-KLC-<0.99.0>-KLC: 699te_Nachricht. C Out: 06.12 12:06:59,512| gesendet
+Downtime: 06.12 12:06:59,512| vom Client 6-clientB@Qigong-KLC-<0.99.0>-KLC

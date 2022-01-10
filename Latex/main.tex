@@ -1,0 +1,49 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{geometry}
+\geometry{
+  left=1cm,
+  right=1cm,
+  top=2cm,
+  bottom=2cm,
+  bindingoffset=5mm
+}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{pdfpages}
+\usepackage{parskip}
+
+\usepackage[backend=biber,
+style=alphabetic,]
+{biblatex}
+
+\addbibresource{library.bib}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{AD Hausarbeit}
+\lhead{Kristoffer Schaaf}
+\rfoot{Page \thepage}
+
+\newcommand*{\quelle}{%
+  \footnotesize Quelle:
+}
+
+\title{BITS3-AD WS2021, Hausarbeit}
+\author{Kristoffer Schaaf (2588265)} 
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\include{txtFiles/Einleitung}
+
+\include{AD_Hausarbeit-2/txtFiles/HoldbackQueue}
+
+\include{txtFiles/DeliveryQueue}
+
+\include{txtFiles/Problemstellungen}
+
+\include{txtFiles/Quellen}
+
+\end{document}
