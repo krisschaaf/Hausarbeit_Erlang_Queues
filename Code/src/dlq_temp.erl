@@ -3,25 +3,27 @@
 -export([initDLQ/2,expectedNr/1,push2DLQ/3, deliverMSG/4, listDLQ/1, lengthDLQ/1, delDLQ/1]).
 
 % Initialisieren der DLQ
-initDLQ(Size, Datei) -> 
-    DLQ = spawn(dlq, loop, [Size, Datei]),
+% //TODO: loggen der Datei verstehen
+initDLQ(Size, _Datei) -> 
+    DLQ = spawn(dlq, loop, [Size]),
     register(dlqPID, DLQ),
     [].
 
-loop(MaxSize, Datei) -> 
-    receive        
-        {From, getMaxSize} ->
-            From ! {self(), MaxSize},
-            loop(MaxSize, Datei);
-        {From, setMaxSize, NewSize} ->
-            From ! {self(), setNewSize},
-            loop(NewSize, Datei);
-        {From, getDatei} ->
-            From ! {self(), Datei},
-            loop(MaxSize, Datei);
-        {From, setDatei, NewDatei} ->
-            From ! {self(), ok},
-            loop(MaxSize, NewDatei)
+loop(MaxSize) -> 
+    receive 
+        {From, {push2DLQ, [NNr, Msg, TSclientout, TShbqin], Queue, Datei}}  -> 
+            TSdlqin = erlang:timestamp(),
+            TempSize = getSize(0, Queue),
+            if
+                TempSize < MaxSize -> 
+                    From ! {self(), [Queue | [Nnr, [Msg | erlang:timestamp()], TSclientout, TShbqin, TSdlqin]]};
+                    %//TODO: schreibe in logging Datei;
+                true ->
+                    [Head | Tail] = Queue,
+                    From ! {self(), [Tail | [Nnr, [Msg | erlang:timestamp()], TSclientout, TShbqin, TSdlqin]]} 
+                    %//TODO: schreibe in logging Datei      
+            end,
+            loop(MaxSize)
     end.
 
 % Beim erfolgreichen Löschen der übergebenen Queue wird ok zurückgegeben.
@@ -38,22 +40,10 @@ expectedNr(DLQ) ->
 % Speichern einer Nachricht in der DLQ
 % Bei überschreitung der Größe werden die ältesten Nachrichten gelöscht 
 push2DLQ([NNr, Msg, TSclientout, TShbqin], Queue, Datei) -> 
-        dlqPID ! {self(), getMaxSize},
-        receive 
-            {_Pid, Size} -> MaxSize = Size
-        end,
-        TSdlqin = erlang:timestamp(),
-        TempSize = getSize(0, Queue),
-        NNrString = util:to_String(NNr),
-        if
-            TempSize < MaxSize -> 
-                [Queue | [NNr, [Msg | erlang:timestamp()], TSclientout, TShbqin, TSdlqin]],
-                util:logging(Datei, "dlq>>> Nachricht "++NNrString++" in DLQ eingefuegt.\n");
-            true ->
-                [_Head | Tail] = Queue,
-                [Tail | [NNr, [Msg | erlang:timestamp()], TSclientout, TShbqin, TSdlqin]],
-                util:logging(Datei, "dlq>>> Nachricht "++NNrString++" in DLQ eingefuegt.\n")  
-        end.
+        dlqPIP ! {self(),{push2DLQ, [NNr, Msg, TSclientout, TShbqin], Queue, Datei}},
+        receive
+            {_Pid, DQueue} -> DQueue
+        end. 
 
 % Gibt das letzte Element der übergebenen Queue zurück (Queue hat die Struktur einer Liste)
 getLastElem([_Head|Tail]) -> getLastElem(Tail);
@@ -72,9 +62,7 @@ deliverMSG(MSGNr, ClientPID, Queue, Datei)	->
         -1 -> ClientPID ! {reply, [-1,nokb,0,0,0], true};
         default -> ClientPID ! {reply, [NewMessage | TSdlqout], false}
     end,
-    NnrString = util:to_String(Nnr),
-    ClientPIDString = util:to_String(ClientPID),
-    util:logging(Datei,"dlq>>> Nachricht "++NnrString++" an Client<"++ClientPIDString++"> ausgeliefert.\r"),
+    %//TODO: loggen 
     Nnr. 
 
 % Gibt die zu der MSGNr zugehörige Nachrichtenliste aus der übergebenen Queue aus 
