@@ -32,8 +32,7 @@ Umsetzung der Nebenläufigkeit in Erlang. Durch Rekursion kann der Status des Pr
 \subsubsection{pushHBQ}
 
 In dieser Funktion wird eine Nachricht in die Queue geschrieben. Die Nachricht enthält die entsprechende Nachrichtennummer, den Inhalt der Nachricht und einen Timestamp, wann der Client die Nachricht abgeschickt, bzw. die Holdback Queue diese empfangen hat. Wie bereits oben beschrieben wird, bedingt durch die fehlende Sortierung der Clients, jedes Element oben als Wurzel eingefügt und dann nach unten versickert. Hierbei gilt, solange linkerTeilbaum \textgreater Wurzelelement dann Wurzelelement $\rightarrow$ linkerTeilbaum und linkerTeilbaum $\rightarrow$ Wurzelknoten.
-
-Zuerst muss hierfür die Nachricht erweitert werden. Eine Nachricht hat jeweils zwei Teilbäume, welche aber auch leer sein können. Außerdem brauchen sie eine Höhe. Diese ist unter anderem wichtig, da ansonsten nicht das letzte Element bestimmt werden kann. Beim Einfügen wäre es hierdurch unmöglich die Position zu finden, an welchem das Element einzufügen wäre. 
+ 
 Zum Bestimmen der Position wird wie in der letzten Praktikumsaufgabe die sortv.erl Datei verwendet. Hier wird als Parameter die Position, also der höchste freie Index mit übergeben. Dieser muss also bei jedem Einfügen eines Elements erhöht und beim Löschen eines Elements um eins verkleinert werden. 
 Aus der zurückgegebenen Liste kann der Pfad bestimmt werden, an welchem das letzte Element eingefügt werden soll. So kann zum Beispiel eine Liste mit den Elementen {r,l,r,r} zurückgegeben werden. Diese beschreibt den von oben versickernden Pfad für den letzten freien Index.
 Die Position des höchsten Index wird als Integer zusammen mit der Holdback Queue als Parameter in der loop Funktion mit übergeben und somit rekursiv gespeichert. 
@@ -41,11 +40,11 @@ Die Position des höchsten Index wird als Integer zusammen mit der Holdback Queu
 Da in der Delivery Queue nur eine bestimmte Anzahl an Nachrichten stehen kann, wird bei der Holdback Queue ab einer erreichten Größe von $2/3\;*\;sizeOfDLQ$ versucht der Inhalt der Queue zu reduzieren. Dafür wird geprüft, ob eine Lücke zwischen den beiden Queues entstanden ist. Ein Beispiel dafür ist in Abbildung \ref{fig:BeispielHBQFehler} zu sehen. Hier hat die Holdback Queue eine bestimmte Größe erreicht und die Lücke in der Delivery Queue wird dementsprechend aufgefüllt. Die Fehlermeldung wird in Textform in die Delivery Queue eingetragen.
 
 Die Elemente welche aus der Holdback Queue an die Delivery Queue gesendet wurden, müssen aus der Holdback Queue gelöscht werden, da ansonsten ihre Größe nicht berechnet werden kann. 
+Dies geschieht, da beim Einfügen immer das kleinste Element aus der Holdback Queue mit der von der Delivery Queue erwarteten Nummer verglichen wird. Das kleinste Element der HBQ ist dessen Wurzelelement. Dieses muss größer gleich der erwarteten Nummer sein. 
+Ansonsten kommt es zu einem Ausnahmefall, welcher aber bedingt durch das Verwerfen von Nachrichten, welche kleiner als die erwartete Nummer sind, eigentlich nicht vorkommen dürfte. Zur Sicherheit wird in dieser Funktion die Holdback Queue ansonsten synchronisiert, das heißt, dass das Wurzelelement solange gelöscht wird, bis dieses größer gleich dem erwartetem Element der Delivery Queue ist. 
+Für den Fall das es größer ist, wird eine Fehlermeldung in die log Datei geschrieben. In dieser steht die Differenz der fehlenden Elemente. Wenn also zum Beispiel am Anfang alle Elemente > 3 in die Holdback Queue eingefügt worden, dann fehlen die Elemente 1, 2 und 3 zum Einfügen in die Delivery Queue. In der Fehlermeldung steht also "Fehlernachricht für Nachrichten 1 bis 3 generiert. Die 3 wird als extra Nachricht in die Delivery Queue eingefügt.
 
-Ein weiteres Problem entsteht, wenn Elemente eingefügt werden, welche eine kleinere Nachrichtennummer haben als das zu erwartende nächste Element der Delivery Queue. In diesem Falle wird die einzufügenden Nachricht verworfen und es wird ok ausgegeben.
-//TODO Alternativ kann eine Fehlermeldung ausgegeben werden. 
-
-
+Ein weiteres Problem entsteht, wenn Elemente eingefügt werden, welche eine kleinere Nachrichtennummer haben als das zu erwartende nächste Element der Delivery Queue. In diesem Falle wird die einzufügenden Nachricht verworfen und es wird NNr<expNrDLQ ausgegeben.
 
 \begin{figure}[htbp]
 \begin{center}
