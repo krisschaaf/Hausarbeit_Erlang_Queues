@@ -1,0 +1,52 @@
+\section{Testing}
+
+\subsection{Delivery Queue}
+
+Nachrichten in der Delivery Queue enthalten nur zwei Timestamps 
+
+initDLQ/2,expectedNr/1,push2DLQ/3, deliverMSG/4, listDLQ/1, lengthDLQ/1, delDLQ/1
+
+1. initDLQ
+-> Prüfen, ob Prozess gestartet wurde indem geprüft wird ob dieser beendet werden kann
+
+2. expectedNr
+-> Liste erstellen mit mindestens einem Element N und prüfen, ob expNr N+1 ist
+-> leere Liste erstellen und prüfen, ob expNr = 1 ist
+
+3. push2DLQ
+-> Liste erstellen und prüfen, ob Element danach in Liste enthalten ist (auf richtige Position und Struktur achten)
+-> leere Liste erstellen und prüfen, ob Element eingefügt wurde und list.size = 1 ist 
+-> MaxSize und ActSize prüfen
+-> Prüfen ob erstes Element bei erreichen von MaxSize gelöscht wird 
+
+4. deliverMSG
+-> Wenn Nachricht nicht vorhanden, dann nächstgrößere nehmen
+-> was passiert bei leerer Liste 
+-> Stimmt die an den Clienten gesendete Nachrichtennummer mit der zurückgegebenen überein
+-> Prüfen ob Nachricht Timestamps enthaehlt (einer mehr als beim eingehen)
+-> MaxSize und ActSize prüfen
+
+5. listDLQ
+-> leere Liste prüfen 
+-> Rückgabewert mit einer erstellten Liste vergleichen 
+
+6. lengthDLQ
+-> leere Liste 
+-> mit erlang Funktion vergleichen 
+
+7. delDLQ
+-> Prüfen ob dlqPid nach Aufruf noch erreichbar ist 
+
+Reihenfolge:
+
+initDLQ
+expectedNr -> leere Liste 
+listDLQ -> leere Liste
+lengthDLQ -> leere Liste
+push2DLQ -> einige Elemente auffüllen und testen 
+listDLQ 
+lengthDLQ
+deliverMSG -> verdrehte Reihenfolge und mehr als vorhanden
+delDLQ
+
+\subsection{Holdback Queue}

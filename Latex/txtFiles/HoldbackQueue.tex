@@ -29,7 +29,18 @@ Außerdem wird die Initialisierung der Delivery Queue auch über die Holdback Qu
 
 Umsetzung der Nebenläufigkeit in Erlang. Durch Rekursion kann der Status des Prozesses, also in diesem Falle der Inhalt der Holdback Queue, die Delivery Queue, die in die zu loggende Datei und der aktuell nächste leere Index, vollständig in den Parametern der Funktion gehalten werden \cite{learnErlang}. Der Prozess der Holdback Queue wird hierfür über die Funktion loop gestartet. Dieser Funktion wird als Parameter die Holdback Queue übergeben und somit kann diese über jeden loop Aufruf beschrieben und gelesen werden. 
 
-\subsubsection{pushHBQ}
+\subsection{checkHBQ}
+
+Da die Nachrichten der Holdback Queue regelmäßig auf Auslieferbarkeit geprüft werden sollen, wurde hierfür eine weitere Funktion implementiert. 
+In dieser wird das derzeitige erste Element der Holdback Queue (im Folgenden "SmallestElem")  mit der von der Delivery Queue erwarteten Nummer ("ExpNrDLQ") verglichen. 
+Somit kann erkannt werden, ob Elemente aus der Holdback Queue verworfen oder an die Delivery Queue ausgeliefert werden sollen. 
+Wenn zum Beispiel SmallestElem == ExpNrDLQ gilt, dann wird SmallestElem an die Delivery Queue ausgeliefert. Im Falle SmallestElem < ExpNrDLQ wird das SmallestElem verworfen, da es nicht mehr benötigt wird und ansonsten die Holdback Queue nur unnötig blockieren würde. Benötigt wird es nicht mehr, da die Delivery Queue als \( $dlq(n)$ = \sum \limits_{i=1}^n i\)
+definiert ist. Wenn also i = n ist, dann werden alle Elemente kleiner n von der Delivery Queue nicht mehr angefragt und können somit aus der Holdback Queue verworfen werden.  
+Für den Fall, dass die Holdback Queue keine Elemente mehr enthält wird eine entsprechende Ausgabe geloggt. 
+
+Die Funktion wird nach jeder Ausführung der pushHBQ Funktion aufgerufen. Somit ist sichergestellt, dass nach jeder Veränderung der Queue einmal geprüft wird, ob diese noch synchronisiert ist und keine unnötigen Elemente enthält. 
+
+\subsubsection{pushHBQ} 
 
 In dieser Funktion wird eine Nachricht in die Queue geschrieben. Die Nachricht enthält die entsprechende Nachrichtennummer, den Inhalt der Nachricht und einen Timestamp, wann der Client die Nachricht abgeschickt, bzw. die Holdback Queue diese empfangen hat. Wie bereits oben beschrieben wird, bedingt durch die fehlende Sortierung der Clients, jedes Element oben als Wurzel eingefügt und dann nach unten versickert. Hierbei gilt, solange linkerTeilbaum \textgreater Wurzelelement dann Wurzelelement $\rightarrow$ linkerTeilbaum und linkerTeilbaum $\rightarrow$ Wurzelknoten.
  
@@ -75,8 +86,8 @@ Da die Funktionalität in diesem Falle im Vordergrund steht, wird bei listHBQ ei
 Die Ergebnisse werden in eine log Datei geschrieben und bei Erfolg wird als Rückgabewert ein ok als Antwort gesendet.
 
 \paragraph{listDLQ}
-Da es schon eine Funktion listDLQ für die Delivery Queue gibt, wird diese hier verwendet. Ein Problem stellt das Senden des Funktionsaufruf an die richtige PID dar. 
-//TODO oben beschriebenes Problem lösen
+Da es schon eine Funktion listDLQ für die Delivery Queue gibt, wird diese hier verwendet. 
+Als Queue wird einfach die in der Holdback Queue gespeicherte DLQ übergeben und die zurückgegebene Liste wird dann in die Logging Datei geschrieben. 
 
 \subsubsection{dellHBQ}
 
