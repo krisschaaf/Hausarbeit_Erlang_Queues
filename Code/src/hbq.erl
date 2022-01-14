@@ -7,7 +7,7 @@ initHBQ(DLQLimit, HBQName) ->
 	{ok, NodeString} = inet:gethostname(),
 	Datei = "HBQ-DLQ@"++NodeString++".log",
 	DLQ = dlq:initDLQ(DLQLimit, Datei),
-    HBQPid = spawn(hbq, loop, [[], DLQ, Datei, 1]),	%1, da dies der derzeitige Index ist 
+    HBQPid = spawn(fun() -> loop([], DLQ, Datei, 1) end),	%1, da dies der derzeitige Index ist 
 	register(HBQName, HBQPid),
     HBQPid.	%ProzessID wird zurückgegeben 
 
@@ -40,7 +40,7 @@ loop(HBQ, DLQ, Datei, Pos) ->
 				true ->
 					dlqPID ! {request, getMaxSize},
 					receive 
-						{reply, MaxSize} -> ok
+						{reply, MaxSize} -> MaxSize
 					end,	
 					if
 						Pos-1 < (MaxSize*2/3) ->
@@ -109,15 +109,7 @@ listHBQHelp(TempHBQ, List) ->
 	listHBQHelp(NewHBQ, [List | SmallestElem]).
 
 getListSize([], Size) -> Size;
-getListSize([Head|Tail], Size) -> getListSize(Tail, Size+1).
-
-% gibt kleinstes Element (>= ExpNr) und neue HBQ ohne dieses Element zurück
-synchronizeHBQ(HBQ, ExpNr) ->
-	{SmallestElem, TempHBQ} = removeFirst(HBQ),
-	if 
-		SmallestElem >= ExpNr -> {SmallestElem, TempHBQ};
-		true -> synchronizeHBQ(TempHBQ, ExpNr)
-	end.
+getListSize([_Head|Tail], Size) -> getListSize(Tail, Size+1).
 
 %@returns neue Queue welche übergebenes Element enthält
 insertToHBQ(NewMessage, HBQ, Pos) ->
