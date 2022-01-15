@@ -2,8 +2,6 @@
 
 -include_lib("eunit/include/eunit.hrl").
 
--compile(export_all).
-
 %calling the test dlq_test:test().
 
 createDLQ(String) ->

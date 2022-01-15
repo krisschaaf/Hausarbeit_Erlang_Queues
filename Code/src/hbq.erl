@@ -11,18 +11,22 @@ initHBQ(DLQLimit, HBQName) ->
 	register(HBQName, HBQPid),
     HBQPid.	%ProzessID wird zurückgegeben 
 
+msgTuple2List({NNr, Msg, TSclientout, TShbqin}) -> [NNr, Msg, TSclientout, TShbqin].
+msg2Tuple(NNr, Msg, TSclientout, TShbqin) -> {NNr, Msg, TSclientout, TShbqin}.
+
 checkHBQ(HBQ, DLQ, Datei, Pos)	->
 	case HBQ of
 		[] -> util:logging(Datei, "HBQ>>> HBQ wurde komplett in DLQ uebertragen.")
 	end,
-	{[FirstElem|_MsgRest],_H,_LT,_RT} = HBQ,
+	{{NNr, Msg, TSclientout, TShbqin}},_H,_LT,_RT} = HBQ,
 	ExpNr = dlq:expectedNr(DLQ),
 	if
-		FirstElem == ExpNr ->
+		NNr == ExpNr ->
 			{SmallestElement, NewHBQ} = removeFirst(HBQ),
-			NewDLQ = dlq:push2DLQ(SmallestElement, DLQ, Datei),
-			checkHBQ(NewHBQ, NewDLQ, Datei, Pos-1);
-		FirstElem < ExpNr ->
+			DLQMsg = msgTuple2List(SmallestElement),
+			NewDLQ = dlq:push2DLQ(DLQMsg, DLQ, Datei),
+			checkHBQ(NewHBQ, NewDLQ, Datei, Pos-1); 
+		NNr < ExpNr ->
 			{_SmallestElement, NewHBQ} = removeFirst(HBQ),
 			checkHBQ(NewHBQ, DLQ, Datei, Pos-1);
 		true ->
@@ -32,6 +36,8 @@ checkHBQ(HBQ, DLQ, Datei, Pos)	->
 loop(HBQ, DLQ, Datei, Pos) ->
 	receive
 		{From, {request, pushHBQ, [NNr, Msg, TSclientout]}} ->
+			TShbqin = erlang:timestamp(),
+			HBQMsg = {NNr, Msg, TSclientout, TShbqin},
 			ExpNr = dlq:expectedNr(DLQ),
 			if 
 				NNr < ExpNr ->
@@ -44,32 +50,33 @@ loop(HBQ, DLQ, Datei, Pos) ->
 					end,	
 					if
 						Pos-1 < (MaxSize*2/3) ->
-							NewHBQ = insertToHBQ([NNr, Msg, TSclientout], HBQ, Pos),
+							NewHBQ = insertToHBQ(HBQMsg, HBQ, Pos),
 							NNrString = util:to_String(NNr),
 							util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
 							From ! {reply, ok},
 							checkHBQ(NewHBQ, DLQ, Datei, Pos+1);
 						true -> 
 							{SmallestElement, TempHBQ} = removeFirst(HBQ),
+							{SNNr, _SMsg, _STSClientout, _STShbqin} = SmallestElement,
+							DLQMsg = msgTuple2List(SmallestElement),
 							if
-								SmallestElement == ExpNr ->
-									NewDLQ = dlq:push2DLQ(SmallestElement, DLQ, Datei),
-									NewHBQ = insertToHBQ([NNr, Msg, TSclientout], TempHBQ, Pos),
+								SNNr == ExpNr ->
+									NewDLQ = dlq:push2DLQ(DLQMsg, DLQ, Datei),
+									NewHBQ = insertToHBQ(HBQMsg, TempHBQ, Pos),
 									NNrString = util:to_String(NNr),
 									util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
 									From ! {reply, ok},
 									checkHBQ(NewHBQ, NewDLQ, Datei, Pos);
-								true ->
-									[Head|_Tail] = SmallestElement,
-									MSGNr = Head-1,
+								true ->									
+									MSGNr = SNNr-1,
 									TSError = erlang:timestamp(),
 									ErrorLog = "**Fehlernachricht fuer Nachrichtennummern "++util:to_String(ExpNr)++" bis "++util:to_String(MSGNr)++" um "++util:to_String(TSError),
-									% erst die Fehlermeldung loggen, da in push2DLQ(newMessage) die MSGNr geloggt wird 
+									% erst die Fehlermeldung loggen, da in push2DLQ(ErrorMessage) die MSGNr geloggt wird 
 									util:logging(Datei, "HBQ>>>Fehlernachricht fuer Nachrichten "++util:to_String(ExpNr)++" bis "++util:to_String(MSGNr)++" generiert."),
-									NewMessage = [MSGNr, ErrorLog, TSError],
-									TempDLQ = dlq:push2DLQ(NewMessage, DLQ, Datei),
-									NewDLQ = dlq:push2DLQ(SmallestElement, TempDLQ, Datei),
-									NewHBQ = insertToHBQ([NNr, Msg, TSclientout], TempHBQ, Pos),
+									ErrorMessage = [MSGNr, ErrorLog, unkn, TSError],
+									TempDLQ = dlq:push2DLQ(ErrorMessage, DLQ, Datei),
+									NewDLQ = dlq:push2DLQ(DLQMsg, TempDLQ, Datei),
+									NewHBQ = insertToHBQ(HBQMsg, TempHBQ, Pos),
 									NNrString = util:to_String(NNr),
 									util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
 									From ! {reply, ok},
@@ -98,20 +105,21 @@ loop(HBQ, DLQ, Datei, Pos) ->
 			loop(HBQ, DLQ, Datei, Pos);
 		% delHBQ
 		{From, {dellHBQ}} -> 
-			From ! {self(), ok}
+			From ! {reply, ok}
 	end.
 
 %HILFSFUNKTIONEN
 
 listHBQHelp([], List) -> List;
 listHBQHelp(TempHBQ, List) -> 
-	{SmallestElem, NewHBQ} = removeFirst(TempHBQ),
-	listHBQHelp(NewHBQ, [List | SmallestElem]).
+	{{NNr, _Msg, _TSclientout, _TShbqin}}, NewHBQ} = removeFirst(TempHBQ),
+	listHBQHelp(NewHBQ, List++[NNr]).
 
 getListSize([], Size) -> Size;
 getListSize([_Head|Tail], Size) -> getListSize(Tail, Size+1).
 
 %@returns neue Queue welche übergebenes Element enthält
+% Beim Einfügen hat die Nachricht die Struktur eines Tupels mit {NNr, Msg, TSclientout, TShbqin}
 insertToHBQ(NewMessage, HBQ, Pos) ->
 	PosList = sortv:calcPath(Pos),
 	NewHBQ = insertHBQ(HBQ, NewMessage, PosList),
@@ -119,30 +127,30 @@ insertToHBQ(NewMessage, HBQ, Pos) ->
 
 % gibt neu strukturierte HBQ mit eingefügtem Element zurück
 insertHBQ(_HBQ, Elem, []) -> {Elem, 1, {}, {}};
-insertHBQ({E, _Hoehe, LTB, RTB}, Elem, [r|T]) ->
-    {ER, HoeheR, LTBR, RTBR} = insertHBQ(RTB, Elem, T),
+insertHBQ({{NNr, Msg, TSclientout, TShbqin}, _Hoehe, LTB, RTB}, Elem, [r|T]) ->
+    {{NNrR, MsgR, TSclientoutR, TShbqinR}, HoeheR, LTBR, RTBR} = insertHBQ(RTB, Elem, T),
     if
-        ER < E ->
-            {ER, max(getHoehe(LTB), HoeheR)+1, LTB, {E, HoeheR, LTBR, RTBR}};
+        NNrR < NNr ->
+            {{NNrR, MsgR, TSclientoutR, TShbqinR}, max(getHoehe(LTB), HoeheR)+1, LTB, {{NNr, Msg, TSclientout, TShbqin}, HoeheR, LTBR, RTBR}};
         true ->
-            {E, max(getHoehe(LTB), HoeheR)+1, LTB, {ER, HoeheR, LTBR, RTBR}}
+            {{NNr, Msg, TSclientout, TShbqin}, max(getHoehe(LTB), HoeheR)+1, LTB, {{NNrR, MsgR, TSclientoutR, TShbqinR}, HoeheR, LTBR, RTBR}}
     end;
-insertHBQ({E, _Hoehe, LTB, RTB}, Elem, [l|T]) ->
-    {EL, HoeheL, LTBL, RTBL} = insertHBQ(LTB, Elem, T),
+insertHBQ({{NNr, Msg, TSclientout, TShbqin}, _Hoehe, LTB, RTB}, Elem, [l|T]) ->
+    {{NNrL, MsgL, TSclientoutL, TShbqinL}, HoeheL, LTBL, RTBL} = insertHBQ(LTB, Elem, T),
     if
-        EL < E ->
-            {EL, max(HoeheL, getHoehe(RTB))+1, {E, HoeheL, LTBL, RTBL}, RTB};
+        NNrL < NNr ->
+            {{NNrL, MsgL, TSclientoutL, TShbqinL}, max(HoeheL, getHoehe(RTB))+1, {{NNr, Msg, TSclientout, TShbqin}, HoeheL, LTBL, RTBL}, RTB};
         true ->
-            {E, max(HoeheL, getHoehe(RTB))+1, {EL, HoeheL, LTBL, RTBL}, RTB}
+            {{NNr, Msg, TSclientout, TShbqin}, max(HoeheL, getHoehe(RTB))+1, {{NNrL, MsgL, TSclientoutL, TShbqinL}, HoeheL, LTBL, RTBL}, RTB}
     end.
 
 % gibt Wurzelelement aus HBQ und neu strukturierte HBQ ohne dieses Element zurück
 removeFirst(HBQ) ->
-	{LastElem, NewHBQ} = removeLast(HBQ),
+	{LastMsg, NewHBQ} = removeLast(HBQ),
 	case NewHBQ of
-		{} -> {LastElem, {}};
+		{} -> {LastMsg, {}};
 		{Elem, Hoehe, LT, RT} ->
-			{Elem, hbqSeep({LastElem, Hoehe, LT, RT})}
+			{Elem, hbqSeep({LastMsg, Hoehe, LT, RT})}
 	end. 
 
 % gibt Element aus HBQ mit höchstem Index und neu strukturierte HBQ ohne dieses Element zurück
@@ -165,14 +173,14 @@ removeLast({E,_H,LT,RT}) ->
 % gibt neu strukturierte HBQ zurück
 hbqSeep({}) -> {};
 hbqSeep({Elem, Hoehe, {}, {}}) -> {Elem, Hoehe, {}, {}};	
-hbqSeep({Elem, Hoehe, {}, {ElemR, HoeheR, RTR, LTR}}) when Elem > ElemR ->
-	{ElemR, Hoehe, {}, {Elem, HoeheR, RTR, LTR}};	
-hbqSeep({Elem, Hoehe, {ElemL, HoeheL, RTL, LTL}, {}}) when Elem > ElemL ->
-	{ElemL, Hoehe, {Elem, HoeheL, RTL, LTL}, {}};	
-hbqSeep({Elem, Hoehe, {ElemL, HoeheL, RTL, LTL}, {ElemR, HoeheR, RTR, LTR}}) when  Elem > ElemR, ElemR < ElemL ->
-	{ElemR, Hoehe, {ElemL, HoeheL, RTL, LTL}, hbqSeep({Elem, HoeheR, RTR, LTR})};
-hbqSeep({Elem, Hoehe, {ElemL, HoeheL, RTL, LTL}, {ElemR, HoeheR, RTR, LTR}}) when Elem > ElemL ->
-	{ElemL, Hoehe, hbqSeep({Elem, HoeheL, RTL, LTL}), {ElemR, HoeheR, RTR, LTR}};	
+hbqSeep({{NNr, Msg, TSclientout, TShbqin}, Hoehe, {}, {{NNrR, MsgR, TSclientoutR, TShbqinR}, HoeheR, RTR, LTR}}) when NNr > NNrR ->
+	{{NNrR, MsgR, TSclientoutR, TShbqinR}, Hoehe, {}, {{NNr, Msg, TSclientout, TShbqin}, HoeheR, RTR, LTR}};	
+hbqSeep({{NNr, Msg, TSclientout, TShbqin}, Hoehe, {{NNrL, MsgL, TSclientoutL, TShbqinL}, HoeheL, RTL, LTL}, {}}) when NNr > NNrL ->
+	{{NNrL, MsgL, TSclientoutL, TShbqinL}, Hoehe, {{NNr, Msg, TSclientout, TShbqin}, HoeheL, RTL, LTL}, {}};	
+hbqSeep({{NNr, Msg, TSclientout, TShbqin}, Hoehe, {{NNrL, MsgL, TSclientoutL, TShbqinL}, HoeheL, RTL, LTL}, {{NNrR, MsgR, TSclientoutR, TShbqinR}, HoeheR, RTR, LTR}}) when  NNr > NNrR, NNrR < NNrL ->
+	{{NNrR, MsgR, TSclientoutR, TShbqinR}, Hoehe, {{NNrL, MsgL, TSclientoutL, TShbqinL}, HoeheL, RTL, LTL}, hbqSeep({{NNr, Msg, TSclientout, TShbqin}, HoeheR, RTR, LTR})};
+hbqSeep({{NNr, Msg, TSclientout, TShbqin}, Hoehe, {{NNrL, MsgL, TSclientoutL, TShbqinL}, HoeheL, RTL, LTL}, {{NNrR, MsgR, TSclientoutR, TShbqinR}, HoeheR, RTR, LTR}}) when NNr > NNrL ->
+	{{NNrL, MsgL, TSclientoutL, TShbqinL}, Hoehe, hbqSeep({{NNr, Msg, TSclientout, TShbqin}, HoeheL, RTL, LTL}), {{NNrR, MsgR, TSclientoutR, TShbqinR}, HoeheR, RTR, LTR}};	
 hbqSeep({Elem, Hoehe, LT, RT}) -> {Elem, Hoehe, LT, RT}.
 
 % Gibt Hoehe des übergebenen Elements in HBQ zurueck
