@@ -49,6 +49,7 @@ loop(HBQ, DLQ, Datei, Pos) ->
 				true ->
 					{MaxSize, _ActSize, _Q} = DLQ,
 					if
+						% Position ist die aktuelle Größe der Queue + 1
 						Pos < (MaxSize*2/3) ->
 							NewHBQ = insertToHBQ(HBQMsg, HBQ, Pos),
 							NNrString = util:to_String(NNr),
@@ -117,9 +118,38 @@ loop(HBQ, DLQ, Datei, Pos) ->
 			loop(HBQ, DLQ, Datei, Pos);
 		{From, {dellHBQ}} -> 
 			From ! {reply, ok}
+		after 5000 ->
+			removeAll(HBQ, DLQ, Datei, Pos)
 	end.
 
 %HILFSFUNKTIONEN
+
+% wird nur aufgerufen, wenn die Elemente nicht der expNr der DLQ entsprechen, also nur zwei verschiedene Fälle prüfen:
+% 1): SmallestElem > expNr DLQ -> Fehlermeldung und einfügen
+% 2): SmallestElem == expNr DLQ -> einfügen (nachdem Fehlermeldung erstellt wurde)
+removeAll(HBQ, DLQ, Datei, Pos) ->
+	if
+		Pos-1 /= 0 ->
+			{[SNNr, SMsg, STSClientout, STShbqin], NewHBQ} = removeFirst(HBQ),
+			ExpNr = dlq:expectedNr(DLQ),
+			if 
+				SNNr > ExpNr ->
+					MSGNr = SNNr-1,
+					TSError = erlang:timestamp(),
+					ErrorLog = "**Fehlernachricht fuer Nachrichtennummern "++util:to_String(ExpNr)++" bis "++util:to_String(MSGNr)++" um "++util:to_String(TSError),
+					% erst die Fehlermeldung loggen, da in push2DLQ(ErrorMessage) die MSGNr geloggt wird 
+					util:logging(Datei, "HBQ>>>Fehlernachricht fuer Nachrichten "++util:to_String(ExpNr)++" bis "++util:to_String(MSGNr)++" generiert.\n"),
+					ErrorMessage = [MSGNr, ErrorLog, unkn, TSError],
+					TempDLQ = dlq:push2DLQ(ErrorMessage, DLQ, Datei),
+					NewDLQ = dlq:push2DLQ([SNNr, SMsg, STSClientout, STShbqin], TempDLQ, Datei),
+					removeAll(NewHBQ, NewDLQ, Datei, Pos-1);
+				true ->
+					NewDLQ = dlq:push2DLQ([SNNr, SMsg, STSClientout, STShbqin], DLQ, Datei),
+					removeAll(NewHBQ, NewDLQ, Datei, Pos-1)	
+			end;
+		true -> ok
+	end.
+
 
 listHBQHelp({}, List) -> List;
 listHBQHelp(TempHBQ, List) -> 

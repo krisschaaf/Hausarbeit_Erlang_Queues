@@ -1,0 +1,91 @@
+These:
+Die Heap HBQ ist in allen Punkten der List HBQ überlegen, außer die Elemente werden in aufsteigend sortierter Reihenfolge eingefügt!
+
+Konzept für die Laufzeitmessungen:
+
+Allgemein:
+Start Element ist immer die 1
+Parameter: (AnzahlEinzufügenderElemente, AnzahlWiederholungenDerMessungen)
+
+In java:
+public int[] time() {
+    int[] Timestamps = new IntArray[AnzahlEinzufügenderElemente];
+
+    for(int i = 0; i < AnzahlEinzufügenderElemente; i++)    {
+        int AvgTime = 0;
+        for(int j = 0; j<AnzahlWiederholungenDerMessungen; i++) {
+            double timeStart = getTimestamp();
+            //Funktionsaufruf
+            //Signal für terminierung der Funktion
+            double timeEnde = getTimestamp();
+            AvgTime += timeEnde - timeStart;
+        }
+        AvgTime /= AnzahlWiederholungenDerMessungen;
+    }
+    Timestamps[i] = AvgTime;
+}
+
+In Erlang:
+
+runTime(AnzahlEinzufügenderElemente, AnzahlWiederholungenDerMessungen) ->
+    EinfEnde = AnzahlEinzufügenderElemente,
+    WhdEnde = AnzahlWiederholungenDerMessungen,
+
+    forOut()
+
+
+Für HBQ:
+1)
+Timestamp vor Aufruf der eigentlichen Funktion
+1 Element in die HBQ {1}
+Timestamp nehmen, wann Element die HBQ verlässt 
+-> beliebig oft wiederholen und durchschnittliche Zeit berechnen
+
+Timestamp vor Aufruf der eigentlichen Funktion
+2 Element in die HBQ einfügen {1,2}
+Timestamp nehmen, wann Element die HBQ verlässt 
+-> beliebig oft wiederholen und durchschnittliche Zeit berechnen
+
+usw.
+
+Hieraus lässt sich erkennen, wie effizient die HBQ arbeitet, wenn die Elemente aufsteigend sortiert eingefügt werden
+
+2)
+Timestamp vor Aufruf der eigentlichen Funktion
+1 Element in die HBQ {1}
+Timestamp nehmen, wann Element die HBQ verlässt 
+-> beliebig oft wiederholen und durchschnittliche Zeit berechnen
+
+Timestamp vor Aufruf der eigentlichen Funktion
+2 Element in die HBQ einfügen {2,1}
+Timestamp nehmen, wann Element die HBQ verlässt 
+-> beliebig oft wiederholen und durchschnittliche Zeit berechnen
+
+Timestamp vor Aufruf der eigentlichen Funktion
+3 Element in die HBQ einfügen {3,2,1}
+Timestamp nehmen, wann Element die HBQ verlässt 
+-> beliebig oft wiederholen und durchschnittliche Zeit berechnen
+
+usw.
+
+Hieraus lässt sich erkennen, wie effizient die HBQ arbeitet, wenn die Elemente absteigend sortiert eingefügt werden
+
+3)
+Timestamp vor Aufruf der eigentlichen Funktion
+1 Element in die HBQ {1}
+Timestamp nehmen, wann Element die HBQ verlässt 
+-> beliebig oft wiederholen und durchschnittliche Zeit berechnen
+
+Timestamp vor Aufruf der eigentlichen Funktion
+2 Element in die HBQ einfügen {2,1}
+Timestamp nehmen, wann Element die HBQ verlässt 
+-> beliebig oft wiederholen und durchschnittliche Zeit berechnen
+
+Timestamp vor Aufruf der eigentlichen Funktion
+3 Element in die HBQ einfügen {3,2,1}
+Timestamp nehmen, wann Element die HBQ verlässt 
+-> beliebig oft wiederholen und durchschnittliche Zeit berechnen
+
+usw.
+
+Hieraus lässt sich erkennen, wie effizient die HBQ arbeitet, wenn die Elemente random sortiert eingefügt werden

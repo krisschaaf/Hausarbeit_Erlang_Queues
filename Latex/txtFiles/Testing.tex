@@ -74,7 +74,6 @@ Beide nach dem test beenden
 -> Prüfen, ob kleinste Nachricht an DLQ gesendet wird und dann Nachricht in HBQ eingefügt wird 
 -> Error Fall prüfen
 
-
 Allgemeiner test: klappt das einfügen korrekt, danach nur die anzahl der elemente und reihenfolge testen 
 
 3. Heap Tests 
@@ -96,3 +95,9 @@ Allgemeiner test: klappt das einfügen korrekt, danach nur die anzahl der elemen
 7. delHBQ
 -> Prüfen ob dlqPid nach Aufruf noch erreichbar ist 
 -> auch für dlqPID
+
+//TODO was passiert mit Duplikaten
+
+{[2,"Msg",1111,{1642,358348,453194}], 2,
+       {[3,"Msg",1111,{1642,358403,754891}],1,{},{}},
+       {[4,"Msg",1111,{1642,358462,375755}],1,{},{}}}

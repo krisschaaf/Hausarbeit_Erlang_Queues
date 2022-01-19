@@ -1,0 +1,30 @@
+3-client@ws-73-104-<0.106.0>-KLC Start: 19.01 13:19:51,799|.
+3-client@ws-73-104-<0.106.0>-KLC: 5te_Nachricht. C Out: 19.01 13:20:00,802| gesendet
+3-client@ws-73-104-<0.106.0>-KLC: 20te_Nachricht. C Out: 19.01 13:20:16,816| gesendet
+Downtime: 19.01 13:20:16,816| vom Client 3-client@ws-73-104-<0.106.0>-KLC
+3-client@ws-73-104-<0.180.0>-KLC Start: 19.01 13:24:55,456|.
+3-client@ws-73-104-<0.180.0>-KLC: 8te_Nachricht. C Out: 19.01 13:25:04,460| gesendet
+3-client@ws-73-104-<0.180.0>-KLC: 22te_Nachricht. C Out: 19.01 13:25:13,463| gesendet
+3-client@ws-73-104-<0.180.0>-KLC: 41te_Nachricht. C Out: 19.01 13:25:22,465| gesendet
+Downtime: 19.01 13:25:22,465| vom Client 3-client@ws-73-104-<0.180.0>-KLC
+3-client@ws-73-104-<0.274.0>-KLC Start: 19.01 14:52:30,690|.
+3-client@ws-73-104-<0.274.0>-KLC: 8te_Nachricht. C Out: 19.01 14:52:34,692| gesendet
+3-client@ws-73-104-<0.274.0>-KLC: 12te_Nachricht. C Out: 19.01 14:52:40,697| gesendet
+3-client@ws-73-104-<0.274.0>-KLC: 21te_Nachricht. C Out: 19.01 14:52:49,706| gesendet
+Downtime: 19.01 14:52:50,691| vom Client 3-client@ws-73-104-<0.274.0>-KLC
+3-client@ws-73-104-<0.340.0>-KLC Start: 19.01 14:53:29,476|.
+3-client@ws-73-104-<0.340.0>-KLC: 7te_Nachricht. C Out: 19.01 14:53:35,478| gesendet
+3-client@ws-73-104-<0.340.0>-KLC: 15te_Nachricht. C Out: 19.01 14:53:45,486| gesendet
+3-client@ws-73-104-<0.340.0>-KLC: 24te_Nachricht. C Out: 19.01 14:53:54,496| gesendet
+Downtime: 19.01 14:53:54,496| vom Client 3-client@ws-73-104-<0.340.0>-KLC
+3-client@ws-73-104-<0.405.0>-KLC Start: 19.01 14:54:02,005|.
+3-client@ws-73-104-<0.405.0>-KLC: 39te_Nachricht. C Out: 19.01 14:54:10,009| gesendet
+3-client@ws-73-104-<0.405.0>-KLC: 48te_Nachricht. C Out: 19.01 14:54:20,019| gesendet
+Downtime: 19.01 14:54:22,006| vom Client 3-client@ws-73-104-<0.405.0>-KLC
+3-client@ws-73-104-<0.470.0>-KLC Start: 19.01 14:54:57,530|.
+3-client@ws-73-104-<0.470.0>-KLC: 7te_Nachricht. C Out: 19.01 14:55:06,532| gesendet
+3-client@ws-73-104-<0.102.0>-KLC Start: 19.01 14:56:20,942|.
+3-client@ws-73-104-<0.102.0>-KLC: 5te_Nachricht. C Out: 19.01 14:56:23,943| gesendet
+3-client@ws-73-104-<0.102.0>-KLC: 12te_Nachricht. C Out: 19.01 14:56:26,955| gesendet
+3-client@ws-73-104-<0.102.0>-KLC: 17te_Nachricht. C Out: 19.01 14:56:29,957| gesendet
+3-client@ws-73-104-<0.102.0>-KLC: 26te_Nachricht. C Out: 19.01 14:56:32,959| gesendet

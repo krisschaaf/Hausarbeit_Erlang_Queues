@@ -3,15 +3,46 @@
 -export([initDLQ/2,expectedNr/1,push2DLQ/3, deliverMSG/4, listDLQ/1, lengthDLQ/1, delDLQ/1]).
 
 % Initialisieren der DLQ
-initDLQ(Size, _Datei) -> 
-    {Size, 0, []}.
+initDLQ(Size, Datei) -> 
+    DLQ = spawn(fun() -> loop(Size, Datei, 0) end),
+    register(dlqPID, DLQ),
+    [].
+
+loop(MaxSize, Datei, ActSize) -> 
+    receive       
+        {From, getVarForPush2DLQ} ->
+            From ! {reply, MaxSize, ActSize},
+            loop(MaxSize, Datei, ActSize);
+        {From, getMaxSize} ->
+            From ! {reply, MaxSize},
+            loop(MaxSize, Datei, ActSize);
+        {From, setMaxSize, NewSize} ->
+            From ! {reply, setNewSize},
+            loop(NewSize, Datei, ActSize);
+        {From, getActSize} ->
+            From ! {reply, ActSize},
+            loop(MaxSize, Datei, ActSize);
+        {From, upperActSize} ->
+            From ! {reply, upperActSize},
+            loop(MaxSize, Datei, ActSize+1);
+        {From, lowerActSize} ->
+            From ! {reply, lowerActSize},
+            loop(MaxSize, Datei, ActSize-1); 
+        {From, delDLQ} ->
+            From ! {reply, ok}      
+    end.
 
 % Beim erfolgreichen Löschen der übergebenen Queue wird ok zurückgegeben.
 delDLQ(_Queue) ->   
-    ok. 
+        dlqPID ! {self(), delDLQ},
+        receive 
+            {reply, Return} -> Return
+            after 1000 -> Return = del_failed
+        end,
+        Return. 
 
 % Abfrage welche Nachrichtennummer in der DLQ gespeichert werden kann
-expectedNr({_MS, _AS, DLQ}) -> 
+expectedNr(DLQ) -> 
         case DLQ of
             [] ->   1;
             _Default ->  getLastElem(DLQ)+1
@@ -23,28 +54,40 @@ getLastElem([_Head|Tail]) -> getLastElem(Tail).
 
 % Speichern einer Nachricht in der DLQ
 % Bei überschreitung der Größe werden die ältesten Nachrichten gelöscht 
-push2DLQ([NNr, Msg, TSclientout, TShbqin], {MaxSize, ActSize, DLQ}, Datei) -> 
+push2DLQ([NNr, Msg, TSclientout, TShbqin], Queue, Datei) -> 
+        dlqPID ! {self(), getVarForPush2DLQ},
+        receive 
+            {_, MaxSize, ActSize} -> ok
+        end,
         TSdlqin = erlang:timestamp(),
         NewMsg = {NNr, Msg++util:to_String(TSdlqin), TSclientout, TShbqin, TSdlqin},
         NNrString = util:to_String(NNr),
         if
             ActSize < MaxSize -> 
-                NewQueue = DLQ++[NewMsg],
+                NewQueue = Queue++[NewMsg],
                 util:logging(Datei, "dlq>>> Nachricht "++NNrString++" in DLQ eingefuegt.\n"),
-                {MaxSize, ActSize+1, NewQueue};
+                dlqPID ! {self(), upperActSize},
+                receive
+                    {reply, Reply} -> Reply
+                end;
             true ->
-                [{NNrT, _MsgT, _TSclientoutT, _TShbqinT, _TSdlqinT} | Tail] = DLQ,
+                [{NNrT, _MsgT, _TSclientoutT, _TShbqinT, _TSdlqinT} | Tail] = Queue,
                 DelNNrString = util:to_String(NNrT),
                 NewQueue = Tail++[NewMsg],
                 util:logging(Datei, "dlq>>> Nachricht "++DelNNrString++" aus DLQ geloescht.\n"),                  
-                util:logging(Datei, "dlq>>> Nachricht "++NNrString++" in DLQ eingefuegt.\n"),
-                {MaxSize, ActSize, NewQueue}
-        end.
+                util:logging(Datei, "dlq>>> Nachricht "++NNrString++" in DLQ eingefuegt.\n")  
+        end,
+        % Größe der Queue um 1 erhöhen
+        NewQueue.
+
+% Gibt die Größe der übergebenen Queue zurück (Queue hat die Struktur einer Liste)
+getSize(TempSize, []) -> TempSize;
+getSize(TempSize, [_Head|Tail]) -> getSize(TempSize+1, Tail).
 
 % Auslieferung einer Nachricht an einen Leser-Client
-deliverMSG(MSGNr, ClientPID, {_MaxSize, _ActSize, DLQ}, Datei)	-> 
+deliverMSG(MSGNr, ClientPID, Queue, Datei)	-> 
     TSdlqout = erlang:timestamp(),
-    {NNr, Msg, TSclientout, TShbqin, TSdlqin} = getMSGAtMSGNr(MSGNr, DLQ),
+    {NNr, Msg, TSclientout, TShbqin, TSdlqin} = getMSGAtMSGNr(MSGNr, Queue),
     case NNr of
         -1 -> ClientPID ! {reply, [-1,nokb,0,0,0], true};
         _Default -> 
@@ -53,6 +96,11 @@ deliverMSG(MSGNr, ClientPID, {_MaxSize, _ActSize, DLQ}, Datei)	->
     NNrString = util:to_String(NNr),
     ClientPIDString = util:to_String(ClientPID),
     util:logging(Datei,"dlq>>> Nachricht "++NNrString++" an Client "++ClientPIDString++" ausgeliefert.\r"),
+    %Größe der Queue um 1 verkleinern
+    dlqPID ! {self(), lowerActSize},
+    receive
+        {reply, Reply} -> Reply
+    end,
     NNr. 
 
 % Gibt die zu der MSGNr zugehörige Nachrichtenliste aus der übergebenen Queue aus 
@@ -65,8 +113,8 @@ getMSGAtMSGNr(MSGNr, [Head|Tail]) ->
     end.
 
 % Gibt Liste aller in der übergebenen Queue enthaltenen Nachrichtenummern zurück
-listDLQ({_MaxSize, _ActSize, []}) -> [];
-listDLQ({_MaxSize, _ActSize, DLQ}) -> listDLQHelp(DLQ, []).
+listDLQ([]) -> [];
+listDLQ(Queue) -> listDLQHelp(Queue, []).
 
 % Hilfsfunktion für listDLQ/1
 listDLQHelp([{NNr, _Msg, _TSclientout, _TShbqin, _TSdlqin}|Tail], List) ->
@@ -76,4 +124,4 @@ listDLQHelp([{NNr, _Msg, _TSclientout, _TShbqin, _TSdlqin}|Tail], List) ->
     end.
 
 % Gibt die Größe der übergebenen Queue zurück
-lengthDLQ({MaxSize, _ActSize, _DLQ}) -> MaxSize. 
+lengthDLQ(Queue) -> getSize(0, Queue). 

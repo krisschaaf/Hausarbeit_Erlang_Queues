@@ -202,7 +202,7 @@ pushHBQ_test2() ->
     % Leere HBQ erzeugen    3 Elemente insgesamt -> ab zwei Elementen wird eins entfernt 
     hbq:initHBQ(3, hbqPID),
 
-    {_MO1, MO2, MO3, _MO4} = getMsgPre(),
+    {_MO1, _MO2, MO3, _MO4} = getMsgPre(),
 
     % Testen, ob DLQ Prozess gestartet wurde 
     case erlang:whereis(dlqPID) of
@@ -210,15 +210,15 @@ pushHBQ_test2() ->
         _Def -> ?assert(true)
     end,
 
-    hbqPID ! {self(), getDLQ},
+    dlqPID ! {self(), getActSize},
     receive
-        {reply, DS0} -> 
-            {_MS0, AS0, _DLQ0} = DS0
+        {reply, DS0} -> DS0
     end, 
-    ?assertEqual(0, AS0),
+    ?assertEqual(0, DS0),
 
     % HBQ mit einem Element erzeugen 
-    hbqPID ! {self(), {request, pushHBQ, MO2}},
+    HBQ1 = createHBQ(one),
+    hbqPID ! {setHBQ, HBQ1, 2},
 
     % weiteres Element in HBQ einfügen -> Erstes Element wird an DLQ ausgeliefert
     hbqPID ! {self(), {request, pushHBQ, MO3}},
@@ -232,12 +232,11 @@ pushHBQ_test2() ->
     ?assertEqual(2, P1),
 
     % Testen, ob Element an DLQ gesendet und eingefügt wurde 
-    hbqPID ! {self(), getDLQ},
+    dlqPID ! {self(), getActSize},
     receive
-        {reply, DS1} -> 
-            {_MS, AS, _DLQ} = DS1
+        {reply, DS1} -> DS1
     end, 
-    ?assertEqual(1, AS),
+    ?assertEqual(1, DS1),
 
     killIfRunning().
 
@@ -245,13 +244,14 @@ pushHBQ_test2() ->
 pushHBQ_test3() ->
     killIfRunning(),
     % Leere HBQ erzeugen 
-    hbq:initHBQ(4, hbqPID),
+    hbq:initHBQ(3, hbqPID),
 
-    {MO1, MO2, _MO3, _MO4} = getMsgPre(),
+    {MO1, _MO2, _MO3, _MO4} = getMsgPre(),
 
     % DlQ aufsetzen mit mind einem Element > 1
-    hbqPID ! {self(), {request, pushHBQ, MO1}},
-    hbqPID ! {self(), {request, pushHBQ, MO2}},
+    D1 = dlq_test:createDLQ(firstMissing),
+    hbqPID ! {self(), {setDLQ, D1}},
+    dlqPID ! {self(), upperActSize},
 
     % Msg1 in HBQ einfügen -> dieses Element sollte verworfen werden 
     hbqPID ! {self(), {request, pushHBQ, MO1}},
@@ -272,8 +272,8 @@ pushHBQ_test3() ->
 % Fehlermeldung testen und Lücke in DLQ auffüllen
 pushHBQ_test4() -> 
     killIfRunning(),
-    % Leere HBQ erzeugen: maxGröße 4, d.h drittes Element wird direkt an DLQ ausgeliefert
-    hbq:initHBQ(4, hbqPID),
+    % Leere HBQ erzeugen: maxGröße 3, d.h zweites Element wird direkt an DLQ ausgeliefert
+    hbq:initHBQ(5, hbqPID),
 
     {_MO1, MO2, MO3, MO4} = getMsgPre(),
     MO5 = [5, "Msg", 1111],
@@ -284,18 +284,23 @@ pushHBQ_test4() ->
     hbqPID ! {self(), {request, pushHBQ, MO4}},
     hbqPID ! {self(), {request, pushHBQ, MO5}},
     % Msg1 nicht in HBQ vorhanden, also Fehlermeldung an DLQ senden
+    util:logging("test.log", ""),
 
-    %restlichen Elemente an DLQ sendet -> HBQ leer
-    hbqPID ! {self(), getHBQPos},
-    receive
-        {reply, H1, P1} -> H1, P1
-        after 1000 -> 
-            ?assert(false), 
-            H1 = {},
-            P1 = 1
-    end,
-    ?assertEqual(createHBQ(empty), H1),
-    ?assertEqual(1, P1),
+    % Msg1 generien und in DLQ einfügen 
+
+    % Msg2 in HBQ
+    
+
+    % hbqPID ! {self(), getHBQPos},
+    % receive
+    %     {reply, H1, P1} -> H1, P1
+    %     after 1000 -> 
+    %         ?assert(false), 
+    %         H1 = {},
+    %         P1 = 1
+    % end,
+    % ?assertEqual(createHBQ(empty), H1),
+    % ?assertEqual(1, P1),
 
     killIfRunning().
 
@@ -304,7 +309,7 @@ deliverMSG_test() ->
     killIfRunning(),
     hbq:initHBQ(7, hbqPID),
     
-    {_Msg1,Msg2,_Msg3,Msg4} = getMsgPre(),
+    {Msg1,Msg2,_Msg3,Msg4} = getMsgPre(),
     
     hbqPID ! {self(), {request, pushHBQ, Msg2}},
     hbqPID ! {self(), {request, pushHBQ, Msg4}},
@@ -321,9 +326,6 @@ deliverMSG_test() ->
     % testen ob nächstgrößere Nachricht gesendet wird 
     hbqPid ! {self(), {request, deliverMsg, 3, self()}},
     receive 
-        Msg -> Msg
-    end,
-    receive 
         {reply, SendeNr2} -> SendeNr2
         after 1000 -> 
             ?assert(false), 
@@ -336,38 +338,35 @@ deliverMSG_test() ->
 % Da das Ergebnis in log geschrieben wird, kann das genaue outcome nicht getestet werden 
 listDLQ_test() ->
     killIfRunning(),
-    hbq:initHBQ(10, hbqPID),    
-    
-    {MO1, MO2, MO3, MO4} = getMsgPre(),
-    MO5 = [5, "Msg", 1111],
+    hbq:initHBQ(2, hbqPID),
 
-    % Msg2 in HBQ einfügen -> dieses Element ist aber größer als expNrDLQ 
-    hbqPID ! {self(), {request, pushHBQ, MO2}},
-    hbqPID ! {self(), {request, pushHBQ, MO3}}, % maxHBQSize erreicht -> erstes Element ausliefern
-    hbqPID ! {self(), {request, pushHBQ, MO4}},
-    hbqPID ! {self(), {request, pushHBQ, MO5}},
-    hbqPID ! {self(), {request, pushHBQ, MO1}},
+    DLQ = dlq_test:createDLQ(three),
 
-    hbqPID ! {self(), {request, listDLQ}},
+    dlqPID ! {self(), {request, listDLQ}},
+    receive 
+        {reply, Ok} -> Ok
+        after 1000 -> 
+            ?assert(false), 
+            Ok = ok
+    end,
+    ?assertEqual(ok, Ok),
     
     killIfRunning().
 
 % Da das Ergebnis in log geschrieben wird, kann das genaue outcome nicht getestet werden 
 listHBQ_test() ->
     killIfRunning(),
-    hbq:initHBQ(10, hbqPID),
+    hbq:initHBQ(2, hbqPID),
 
-    {_MO1, MO2, MO3, MO4} = getMsgPre(),
-    MO5 = [5, "Msg", 1111],
-
-    % Msg2 in HBQ einfügen -> dieses Element ist aber größer als expNrDLQ 
-    hbqPID ! {self(), {request, pushHBQ, MO2}},
-    hbqPID ! {self(), {request, pushHBQ, MO3}}, % maxHBQSize erreicht -> erstes Element ausliefern
-    hbqPID ! {self(), {request, pushHBQ, MO4}},
-    hbqPID ! {self(), {request, pushHBQ, MO5}},
-
-    hbqPID ! {self(), {request, listHBQ}},
-
+    dlqPID ! {self(), {request, listHBQ}},
+    receive 
+        {reply, Ok} -> Ok
+        after 1000 -> 
+            ?assert(false), 
+            Ok = ok
+    end,
+    ?assertEqual(ok, Ok),
+    
     killIfRunning().
 
 
