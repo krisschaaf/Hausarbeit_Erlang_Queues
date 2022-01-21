@@ -32,3 +32,27 @@ Downtime: 19.01 14:55:18,546| vom Client 4-client@ws-73-104-<0.469.0>-KLC
 4-client@ws-73-104-<0.101.0>-KLC: 11te_Nachricht. C Out: 19.01 14:56:26,954| gesendet
 4-client@ws-73-104-<0.101.0>-KLC: 15te_Nachricht. C Out: 19.01 14:56:29,956| gesendet
 4-client@ws-73-104-<0.101.0>-KLC: 24te_Nachricht. C Out: 19.01 14:56:32,958| gesendet
+4-client@ws-73-104-<0.101.0>-KLC Start: 20.01 09:34:00,134|.
+4-client@ws-73-104-<0.101.0>-KLC: 6te_Nachricht. C Out: 20.01 09:34:06,136| gesendet
+4-client@ws-73-104-<0.101.0>-KLC: 15te_Nachricht. C Out: 20.01 09:34:12,139| gesendet
+4-client@ws-73-104-<0.101.0>-KLC: 26te_Nachricht. C Out: 20.01 09:34:18,142| gesendet
+4-client@ws-73-104-<0.101.0>-KLC: 46te_Nachricht. C Out: 20.01 09:34:24,144| gesendet
+Downtime: 20.01 09:34:24,144| vom Client 4-client@ws-73-104-<0.101.0>-KLC
+4-client@ws-73-104-<0.208.0>-KLC Start: 20.01 09:36:24,033|.
+4-client@ws-73-104-<0.208.0>-KLC: 6te_Nachricht. C Out: 20.01 09:36:29,035| gesendet
+4-client@ws-73-104-<0.208.0>-KLC: 13te_Nachricht. C Out: 20.01 09:36:34,049| gesendet
+4-client@ws-73-104-<0.208.0>-KLC: 22te_Nachricht. C Out: 20.01 09:36:39,050| gesendet
+4-client@ws-73-104-<0.208.0>-KLC: 28te_Nachricht. C Out: 20.01 09:36:44,052| gesendet
+Downtime: 20.01 09:36:44,052| vom Client 4-client@ws-73-104-<0.208.0>-KLC
+4-client@ws-73-104-<0.101.0>-KLC Start: 20.01 11:30:54,186|.
+4-client@ws-73-104-<0.101.0>-KLC: 5te_Nachricht. C Out: 20.01 11:30:57,188| gesendet
+4-client@ws-73-104-<0.101.0>-KLC: 10te_Nachricht. C Out: 20.01 11:31:00,202| gesendet
+4-client@ws-73-104-<0.101.0>-KLC: 15te_Nachricht. C Out: 20.01 11:31:03,204| gesendet
+4-client@ws-73-104-<0.101.0>-KLC: 21te_Nachricht. C Out: 20.01 11:31:06,215| gesendet
+4-client@ws-73-104-<0.101.0>-KLC: 26te_Nachricht. C Out: 20.01 11:31:09,219| gesendet
+32te_Nachricht um 20.01 11:31:09,228| vergessen zu senden ******
+33te_Nachricht um 20.01 11:31:09,229| vergessen zu senden ******
+34te_Nachricht um 20.01 11:31:09,229| vergessen zu senden ******
+35te_Nachricht um 20.01 11:31:09,230| vergessen zu senden ******
+36te_Nachricht um 20.01 11:31:09,230| vergessen zu senden ******
+Downtime: 20.01 11:31:14,188| vom Client 4-client@ws-73-104-<0.101.0>-KLC

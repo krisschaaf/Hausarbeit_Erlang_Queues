@@ -30,3 +30,26 @@ Downtime: 19.01 14:54:25,027| vom Client 8-client@ws-73-104-<0.400.0>-KLC
 Downtime: 19.01 14:55:17,548| vom Client 8-client@ws-73-104-<0.465.0>-KLC
 8-client@ws-73-104-<0.97.0>-KLC Start: 19.01 14:56:20,942|.
 8-client@ws-73-104-<0.97.0>-KLC: 8te_Nachricht. C Out: 19.01 14:56:29,943| gesendet
+8-client@ws-73-104-<0.97.0>-KLC Start: 20.01 09:34:00,134|.
+8-client@ws-73-104-<0.97.0>-KLC: 2te_Nachricht. C Out: 20.01 09:34:03,136| gesendet
+8-client@ws-73-104-<0.97.0>-KLC: 11te_Nachricht. C Out: 20.01 09:34:06,156| gesendet
+8-client@ws-73-104-<0.97.0>-KLC: 17te_Nachricht. C Out: 20.01 09:34:09,158| gesendet
+8-client@ws-73-104-<0.97.0>-KLC: 23te_Nachricht. C Out: 20.01 09:34:12,161| gesendet
+8-client@ws-73-104-<0.97.0>-KLC: 29te_Nachricht. C Out: 20.01 09:34:15,168| gesendet
+39te_Nachricht um 20.01 09:34:16,175| vergessen zu senden ******
+42te_Nachricht um 20.01 09:34:16,179| vergessen zu senden ******
+43te_Nachricht um 20.01 09:34:16,180| vergessen zu senden ******
+44te_Nachricht um 20.01 09:34:16,181| vergessen zu senden ******
+45te_Nachricht um 20.01 09:34:16,184| vergessen zu senden ******
+Downtime: 20.01 09:34:20,135| vom Client 8-client@ws-73-104-<0.97.0>-KLC
+8-client@ws-73-104-<0.204.0>-KLC Start: 20.01 09:36:24,033|.
+8-client@ws-73-104-<0.204.0>-KLC: 3te_Nachricht. C Out: 20.01 09:36:32,035| gesendet
+8-client@ws-73-104-<0.204.0>-KLC: 16te_Nachricht. C Out: 20.01 09:36:40,038| gesendet
+8-client@ws-73-104-<0.204.0>-KLC: 29te_Nachricht. C Out: 20.01 09:36:48,043| gesendet
+Downtime: 20.01 09:36:48,043| vom Client 8-client@ws-73-104-<0.204.0>-KLC
+8-client@ws-73-104-<0.97.0>-KLC Start: 20.01 11:30:54,186|.
+8-client@ws-73-104-<0.97.0>-KLC: 3te_Nachricht. C Out: 20.01 11:30:59,188| gesendet
+8-client@ws-73-104-<0.97.0>-KLC: 13te_Nachricht. C Out: 20.01 11:31:04,192| gesendet
+8-client@ws-73-104-<0.97.0>-KLC: 23te_Nachricht. C Out: 20.01 11:31:09,197| gesendet
+8-client@ws-73-104-<0.97.0>-KLC: 30te_Nachricht. C Out: 20.01 11:31:14,204| gesendet
+Downtime: 20.01 11:31:14,204| vom Client 8-client@ws-73-104-<0.97.0>-KLC

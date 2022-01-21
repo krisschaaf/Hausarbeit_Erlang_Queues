@@ -453,3 +453,287 @@ Server: Startzeit: 19.01 14:57:13,417| mit PID <0.95.0>
 CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
 Server: HBQ konnte nicht terminiert werden.
 Server: Downtime 19.01 14:57:23,418| vom Nachrichtenserver <0.95.0>.
+Server: server.cfg geöffnet...
+Server: Startzeit: 20.01 09:33:56,897| mit PID <0.95.0>
+CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
+Server: Nachrichtennummer 1 an <9458.96.0> gesendet
+Server: Nachrichtennummer 2 an <9458.97.0> gesendet
+Server: Nachrichtennummer 3 an <9458.98.0> gesendet
+Server: Nachrichtennummer 4 an <9458.99.0> gesendet
+Server: Nachrichtennummer 5 an <9458.100.0> gesendet
+Server: Nachrichtennummer 6 an <9458.101.0> gesendet
+Server: Nachrichtennummer 7 an <9458.102.0> gesendet
+Server: Nachrichtennummer 8 an <9458.103.0> gesendet
+Server: Nachrichtennummer 9 an <9458.104.0> gesendet
+Server: Nachricht 9 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 10 an <9458.104.0> gesendet
+Server: Nachricht 2 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 11 an <9458.97.0> gesendet
+Server: Nachricht 7 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 12 an <9458.102.0> gesendet
+Server: Nachricht 4 wurde in HBQ eingefügt.
+Server: Nachricht 1 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 13 an <9458.99.0> gesendet
+Server: Nachrichtennummer 14 an <9458.96.0> gesendet
+Server: Nachricht 6 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 15 an <9458.101.0> gesendet
+Server: Nachricht 10 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 16 an <9458.104.0> gesendet
+Server: Nachricht 11 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 17 an <9458.97.0> gesendet
+Server: Nachricht 5 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 18 an <9458.100.0> gesendet
+Server: Nachricht 8 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 19 an <9458.103.0> gesendet
+Server: Nachricht 3 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 20 an <9458.98.0> gesendet
+Server: Nachricht 12 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 21 an <9458.102.0> gesendet
+Server: Nachricht 16 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 22 an <9458.104.0> gesendet
+Server: Nachricht 17 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 23 an <9458.97.0> gesendet
+Server: Nachricht 14 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 24 an <9458.96.0> gesendet
+Server: Nachricht 13 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 25 an <9458.99.0> gesendet
+Server: Nachricht 15 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 26 an <9458.101.0> gesendet
+Server: Nachricht 21 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 27 an <9458.102.0> gesendet
+Server: Nachricht 22 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 28 an <9458.104.0> gesendet
+Server: Nachricht 23 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 29 an <9458.97.0> gesendet
+Server: Nachricht 18 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 30 an <9458.100.0> gesendet
+Server: Nachricht 19 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 31 an <9458.103.0> gesendet
+Server: Nachricht 24 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 32 an <9458.96.0> gesendet
+Server: Nachricht 25 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 33 an <9458.99.0> gesendet
+Server: Nachricht 28 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 34 an <9458.104.0> gesendet
+Server: Nachrichtennummer 35 an <9458.104.0> gesendet
+Server: Nachrichtennummer 36 an <9458.104.0> gesendet
+Server: Nachrichtennummer 37 an <9458.104.0> gesendet
+Server: Nachrichtennummer 38 an <9458.104.0> gesendet
+Server: Nachricht 39 konnte nicht zugestellt werden.
+CMEM>>> Client <9458.104.0> wird aktualisiert:
+CMEM>>> Client <9458.104.0> im CMEM gelöscht.
+CMEM>>> Client <9458.104.0> in CMEM eingefügt (0/1642667676167).
+Server: Nachricht 29 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 39 an <9458.97.0> gesendet
+Server: Nachricht 20 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 40 an <9458.98.0> gesendet
+Server: Nachricht 27 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 41 an <9458.102.0> gesendet
+Server: Nachrichtennummer 42 an <9458.97.0> gesendet
+Server: Nachrichtennummer 43 an <9458.97.0> gesendet
+Server: Nachrichtennummer 44 an <9458.97.0> gesendet
+Server: Nachrichtennummer 45 an <9458.97.0> gesendet
+Server: Nachricht 46 konnte nicht zugestellt werden.
+CMEM>>> Client <9458.97.0> wird aktualisiert:
+CMEM>>> Client <9458.97.0> im CMEM gelöscht.
+CMEM>>> Client <9458.97.0> in CMEM eingefügt (0/1642667677185).
+Server: Nachricht 26 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 46 an <9458.101.0> gesendet
+Server: Nachricht 32 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 47 an <9458.96.0> gesendet
+Server: Nachricht 33 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 48 an <9458.99.0> gesendet
+Server: Nachricht 41 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 49 an <9458.102.0> gesendet
+Server: Nachricht 30 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 50 an <9458.100.0> gesendet
+Server: Nachricht 31 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 51 an <9458.103.0> gesendet
+Server: Nachricht 46 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 52 an <9458.101.0> gesendet
+Server: Nachricht 40 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 53 an <9458.98.0> gesendet
+Server: HBQ konnte nicht terminiert werden.
+Server: Downtime 20.01 09:34:34,178| vom Nachrichtenserver <0.95.0>.
+Server: server.cfg geöffnet...
+Server: Startzeit: 20.01 09:36:20,536| mit PID <0.215.0>
+CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
+Server: Nachrichtennummer 1 an <9458.203.0> gesendet
+Server: Nachrichtennummer 2 an <9458.207.0> gesendet
+Server: Nachrichtennummer 3 an <9458.204.0> gesendet
+Server: Nachrichtennummer 4 an <9458.205.0> gesendet
+Server: Nachrichtennummer 5 an <9458.206.0> gesendet
+Server: Nachrichtennummer 6 an <9458.208.0> gesendet
+Server: Nachrichtennummer 7 an <9458.209.0> gesendet
+Server: Nachrichtennummer 8 an <9458.210.0> gesendet
+Server: Nachrichtennummer 9 an <9458.211.0> gesendet
+Server: Nachricht 9 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 10 an <9458.211.0> gesendet
+Server: Nachricht 1 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 11 an <9458.203.0> gesendet
+Server: Nachricht 4 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 12 an <9458.205.0> gesendet
+Server: Nachricht 6 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 13 an <9458.208.0> gesendet
+Server: Nachricht 5 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 14 an <9458.206.0> gesendet
+Server: Nachricht 2 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 15 an <9458.207.0> gesendet
+Server: Nachricht 8 wurde in HBQ eingefügt.
+Server: Nachricht 3 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 16 an <9458.204.0> gesendet
+Server: Nachrichtennummer 17 an <9458.210.0> gesendet
+Server: Nachricht 10 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 18 an <9458.211.0> gesendet
+Server: Nachricht 7 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 19 an <9458.209.0> gesendet
+Server: Nachricht 11 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 20 an <9458.203.0> gesendet
+Server: Nachricht 12 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 21 an <9458.205.0> gesendet
+Server: Nachricht 13 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 22 an <9458.208.0> gesendet
+Server: Nachricht 14 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 23 an <9458.206.0> gesendet
+Server: Nachricht 18 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 24 an <9458.211.0> gesendet
+Server: Nachricht 15 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 25 an <9458.207.0> gesendet
+Server: Nachricht 20 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 26 an <9458.203.0> gesendet
+Server: Nachricht 21 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 27 an <9458.205.0> gesendet
+Server: Nachricht 22 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 28 an <9458.208.0> gesendet
+Server: Nachricht 17 wurde in HBQ eingefügt.
+Server: Nachricht 16 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 29 an <9458.204.0> gesendet
+Server: Nachrichtennummer 30 an <9458.210.0> gesendet
+Server: Nachricht 24 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 31 an <9458.211.0> gesendet
+Server: Nachricht 19 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 32 an <9458.209.0> gesendet
+Server: Nachricht 23 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 33 an <9458.206.0> gesendet
+Server: Nachricht 26 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 34 an <9458.203.0> gesendet
+Server: Nachricht 31 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 35 an <9458.211.0> gesendet
+Server: Nachricht 27 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 36 an <9458.205.0> gesendet
+Server: Nachricht 28 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 37 an <9458.208.0> gesendet
+Server: Nachricht 25 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 38 an <9458.207.0> gesendet
+Server: Nachricht 29 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 39 an <9458.204.0> gesendet
+Server: Nachricht 30 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 40 an <9458.210.0> gesendet
+Server: Nachricht 33 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 41 an <9458.206.0> gesendet
+Server: Nachricht 32 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 42 an <9458.209.0> gesendet
+Server: HBQ konnte nicht terminiert werden.
+Server: Downtime 20.01 09:37:02,047| vom Nachrichtenserver <0.215.0>.
+Server: server.cfg geöffnet...
+Server: Startzeit: 20.01 11:30:50,519| mit PID <0.95.0>
+CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
+Server: Nachrichtennummer 1 an <9458.103.0> gesendet
+Server: Nachrichtennummer 2 an <9458.104.0> gesendet
+Server: Nachrichtennummer 3 an <9458.97.0> gesendet
+Server: Nachrichtennummer 4 an <9458.99.0> gesendet
+Server: Nachrichtennummer 5 an <9458.101.0> gesendet
+Server: Nachrichtennummer 6 an <9458.102.0> gesendet
+Server: Nachrichtennummer 7 an <9458.96.0> gesendet
+Server: Nachrichtennummer 8 an <9458.98.0> gesendet
+Server: Nachrichtennummer 9 an <9458.100.0> gesendet
+Server: Nachricht 5 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 10 an <9458.101.0> gesendet
+Server: Nachricht 4 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 11 an <9458.99.0> gesendet
+Server: Nachricht 7 wurde in HBQ eingefügt.
+Server: Nachricht 3 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 12 an <9458.96.0> gesendet
+Server: Nachrichtennummer 13 an <9458.97.0> gesendet
+Server: Nachricht 9 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 14 an <9458.100.0> gesendet
+Server: Nachricht 10 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 15 an <9458.101.0> gesendet
+Server: Nachricht 6 wurde in HBQ eingefügt.
+Server: Nachricht 8 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 16 an <9458.98.0> gesendet
+Server: Nachrichtennummer 17 an <9458.102.0> gesendet
+Server: Nachricht 1 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 18 an <9458.103.0> gesendet
+Server: Nachricht 11 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 19 an <9458.99.0> gesendet
+Server: Nachricht 2 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 20 an <9458.104.0> gesendet
+Server: Nachricht 15 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 21 an <9458.101.0> gesendet
+Server: Nachricht 12 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 22 an <9458.96.0> gesendet
+Server: Nachricht 13 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 23 an <9458.97.0> gesendet
+Server: Nachricht 14 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 24 an <9458.100.0> gesendet
+Server: Nachricht 19 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 25 an <9458.99.0> gesendet
+Server: Nachricht 21 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 26 an <9458.101.0> gesendet
+Server: Nachricht 16 wurde in HBQ eingefügt.
+Server: Nachricht 17 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 27 an <9458.102.0> gesendet
+Server: Nachrichtennummer 28 an <9458.98.0> gesendet
+Server: Nachricht 22 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 29 an <9458.96.0> gesendet
+Server: Nachricht 23 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 30 an <9458.97.0> gesendet
+Server: Nachricht 24 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 31 an <9458.100.0> gesendet
+Server: Nachricht 26 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 32 an <9458.101.0> gesendet
+Server: Nachrichtennummer 33 an <9458.101.0> gesendet
+Server: Nachrichtennummer 34 an <9458.101.0> gesendet
+Server: Nachrichtennummer 35 an <9458.101.0> gesendet
+Server: Nachrichtennummer 36 an <9458.101.0> gesendet
+Server: Nachricht 37 konnte nicht zugestellt werden.
+CMEM>>> Client <9458.101.0> wird aktualisiert:
+CMEM>>> Client <9458.101.0> im CMEM gelöscht.
+CMEM>>> Client <9458.101.0> in CMEM eingefügt (0/1642674690232).
+Server: Nachricht 18 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 37 an <9458.103.0> gesendet
+Server: Nachricht 25 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 38 an <9458.99.0> gesendet
+Server: Nachricht 20 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 39 an <9458.104.0> gesendet
+Server: Nachricht 29 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 40 an <9458.96.0> gesendet
+Server: Nachricht 30 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 41 an <9458.97.0> gesendet
+Server: Nachricht 31 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 42 an <9458.100.0> gesendet
+Server: Nachricht 38 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 43 an <9458.99.0> gesendet
+Server: Nachricht 27 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 44 an <9458.102.0> gesendet
+Server: Nachricht 28 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 45 an <9458.98.0> gesendet
+Server: Nachricht 37 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 46 an <9458.103.0> gesendet
+Server: Nachricht 39 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 47 an <9458.104.0> gesendet
+Server: HBQ konnte nicht terminiert werden.
+Server: Downtime 20.01 11:31:31,200| vom Nachrichtenserver <0.95.0>.

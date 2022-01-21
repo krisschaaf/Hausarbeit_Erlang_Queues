@@ -119,7 +119,10 @@ loop(HBQ, DLQ, Datei, Pos) ->
 		{From, {dellHBQ}} -> 
 			From ! {reply, ok}
 		after 5000 ->
-			removeAll(HBQ, DLQ, Datei, Pos)
+			if 
+				Pos >= 2 -> removeAll(HBQ, DLQ, Datei, Pos);
+				true -> loop(HBQ, DLQ, Datei, Pos)
+			end
 	end.
 
 %HILFSFUNKTIONEN

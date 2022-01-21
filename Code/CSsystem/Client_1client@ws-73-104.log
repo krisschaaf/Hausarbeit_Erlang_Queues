@@ -36,3 +36,27 @@ Downtime: 19.01 14:54:23,027| vom Client 1-client@ws-73-104-<0.407.0>-KLC
 Downtime: 19.01 14:55:17,531| vom Client 1-client@ws-73-104-<0.472.0>-KLC
 1-client@ws-73-104-<0.104.0>-KLC Start: 19.01 14:56:20,942|.
 1-client@ws-73-104-<0.104.0>-KLC: 2te_Nachricht. C Out: 19.01 14:56:29,943| gesendet
+1-client@ws-73-104-<0.104.0>-KLC Start: 20.01 09:34:00,134|.
+1-client@ws-73-104-<0.104.0>-KLC: 9te_Nachricht. C Out: 20.01 09:34:03,136| gesendet
+1-client@ws-73-104-<0.104.0>-KLC: 10te_Nachricht. C Out: 20.01 09:34:06,153| gesendet
+1-client@ws-73-104-<0.104.0>-KLC: 16te_Nachricht. C Out: 20.01 09:34:09,155| gesendet
+1-client@ws-73-104-<0.104.0>-KLC: 22te_Nachricht. C Out: 20.01 09:34:12,159| gesendet
+1-client@ws-73-104-<0.104.0>-KLC: 28te_Nachricht. C Out: 20.01 09:34:15,162| gesendet
+34te_Nachricht um 20.01 09:34:15,164| vergessen zu senden ******
+35te_Nachricht um 20.01 09:34:15,165| vergessen zu senden ******
+36te_Nachricht um 20.01 09:34:15,165| vergessen zu senden ******
+37te_Nachricht um 20.01 09:34:15,165| vergessen zu senden ******
+38te_Nachricht um 20.01 09:34:15,166| vergessen zu senden ******
+Downtime: 20.01 09:34:20,135| vom Client 1-client@ws-73-104-<0.104.0>-KLC
+1-client@ws-73-104-<0.211.0>-KLC Start: 20.01 09:36:24,034|.
+1-client@ws-73-104-<0.211.0>-KLC: 9te_Nachricht. C Out: 20.01 09:36:28,035| gesendet
+1-client@ws-73-104-<0.211.0>-KLC: 10te_Nachricht. C Out: 20.01 09:36:32,043| gesendet
+1-client@ws-73-104-<0.211.0>-KLC: 18te_Nachricht. C Out: 20.01 09:36:36,045| gesendet
+1-client@ws-73-104-<0.211.0>-KLC: 24te_Nachricht. C Out: 20.01 09:36:40,047| gesendet
+1-client@ws-73-104-<0.211.0>-KLC: 31te_Nachricht. C Out: 20.01 09:36:44,052| gesendet
+Downtime: 20.01 09:36:44,052| vom Client 1-client@ws-73-104-<0.211.0>-KLC
+1-client@ws-73-104-<0.104.0>-KLC Start: 20.01 11:30:54,186|.
+1-client@ws-73-104-<0.104.0>-KLC: 2te_Nachricht. C Out: 20.01 11:31:03,189| gesendet
+1-client@ws-73-104-<0.104.0>-KLC: 20te_Nachricht. C Out: 20.01 11:31:12,194| gesendet
+1-client@ws-73-104-<0.104.0>-KLC: 39te_Nachricht. C Out: 20.01 11:31:21,197| gesendet
+Downtime: 20.01 11:31:21,198| vom Client 1-client@ws-73-104-<0.104.0>-KLC
