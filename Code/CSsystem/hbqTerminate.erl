@@ -5,21 +5,21 @@
 % Starten der HBQ auf der Node der HBQ (oder entfernt starten)
 initHBQ(DLQLimit, HBQName) ->
 	{ok, NodeString} = inet:gethostname(),
-	Datei = "HB-DLQ@"++NodeString++".log",
+	Datei = "HBQ-DLQ@"++NodeString++".log",
 	DLQ = dlq:initDLQ(DLQLimit, Datei),
 	case erlang:whereis(dlqPID) of
 		undefined -> dlqPIDnotdefined;
 		_Def -> ok
 	end, 
-    HBQPid = spawn(fun() -> loop({}, DLQ, Datei, 1, DLQLimit) end),	%1, da dies der derzeitige Index ist 
+    HBQPid = spawn(fun() -> loop({}, DLQ, Datei, 1) end),	%1, da dies der derzeitige Index ist 
 	register(HBQName, HBQPid),
     HBQPid.	%ProzessID wird zurückgegeben 
 
-checkHBQ(HBQ, DLQ, Datei, Pos, DLQLimit)	->
+checkHBQ(HBQ, DLQ, Datei, Pos)	->
 	case HBQ of
 		{} -> 
 			util:logging(Datei, "HBQ>>> HBQ wurde komplett in DLQ uebertragen.\n"),
-			loop(HBQ, DLQ, Datei, Pos, DLQLimit);
+			loop(HBQ, DLQ, Datei, Pos);
 		_Default ->
 			{[NNr, _Msg, _TSclientout, _TShbqin],_H,_LT,_RT} = HBQ,
 			ExpNr = dlq:expectedNr(DLQ),
@@ -27,16 +27,16 @@ checkHBQ(HBQ, DLQ, Datei, Pos, DLQLimit)	->
 				NNr == ExpNr ->
 					{DLQMsg, NewHBQ} = removeFirst(HBQ),
 					NewDLQ = dlq:push2DLQ(DLQMsg, DLQ, Datei),
-					checkHBQ(NewHBQ, NewDLQ, Datei, Pos-1, DLQLimit); 
+					checkHBQ(NewHBQ, NewDLQ, Datei, Pos-1); 
 				NNr < ExpNr ->
 					{_SmallestElement, NewHBQ} = removeFirst(HBQ),
-					checkHBQ(NewHBQ, DLQ, Datei, Pos-1, DLQLimit);
+					checkHBQ(NewHBQ, DLQ, Datei, Pos-1);
 				true ->
-					loop(HBQ, DLQ, Datei, Pos, DLQLimit)
+					loop(HBQ, DLQ, Datei, Pos)
 			end
 	end.
 
-loop(HBQ, DLQ, Datei, Pos, DLQLimit) ->
+loop(HBQ, DLQ, Datei, Pos) ->
 	receive
 		{From, {request, pushHBQ, [NNr, Msg, TSclientout]}} ->
 			TShbqin = erlang:timestamp(),
@@ -45,74 +45,114 @@ loop(HBQ, DLQ, Datei, Pos, DLQLimit) ->
 			if 
 				NNr < ExpNr ->
 					From ! {reply, nnr<expNrDLQ},
-					checkHBQ(HBQ, DLQ, Datei, Pos, DLQLimit);
+					checkHBQ(HBQ, DLQ, Datei, Pos);
 				true ->
+					{MaxSize, _ActSize, _Q} = DLQ,
 					if
 						% Position ist die aktuelle Größe der Queue + 1
-						Pos < (DLQLimit*2/3) ->
+						Pos < (MaxSize*2/3) ->
 							NewHBQ = insertToHBQ(HBQMsg, HBQ, Pos),
 							NNrString = util:to_String(NNr),
 							util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
 							From ! {reply, ok},
-							checkHBQ(NewHBQ, DLQ, Datei, Pos+1, DLQLimit);
+							checkHBQ(NewHBQ, DLQ, Datei, Pos+1);
 						true -> 
-							case HBQ of 
-								{} -> 
-									NewDLQ = dlq:push2DLQ([NNr, Msg, TSclientout, erlang:timestamp()], DLQ, Datei),
+							{[SNNr, _SMsg, _STSClientout, _STShbqin], TempHBQ} = removeFirst(HBQ),
+							DLQMsg = [SNNr, _SMsg, _STSClientout, _STShbqin],
+							if
+								SNNr == ExpNr ->
+									NewDLQ = dlq:push2DLQ(DLQMsg, DLQ, Datei),
+									NewHBQ = insertToHBQ(HBQMsg, TempHBQ, Pos),
+									NNrString = util:to_String(NNr),
+									util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
 									From ! {reply, ok},
-									checkHBQ(HBQ, NewDLQ, Datei, Pos, DLQLimit);
-								_Default -> 
-									{[SNNr, _SMsg, _STSClientout, _STShbqin], TempHBQ} = removeFirst(HBQ),
-									DLQMsg = [SNNr, _SMsg, _STSClientout, _STShbqin],
-									if
-										SNNr == ExpNr ->
-											NewDLQ = dlq:push2DLQ(DLQMsg, DLQ, Datei),
-											NewHBQ = insertToHBQ(HBQMsg, TempHBQ, Pos),
-											NNrString = util:to_String(NNr),
-											util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
-											From ! {reply, ok},
-											checkHBQ(NewHBQ, NewDLQ, Datei, Pos, DLQLimit);
-										true ->									
-											MSGNr = SNNr-1,
-											TSError = erlang:timestamp(),
-											ErrorLog = "**Fehlernachricht fuer Nachrichtennummern "++util:to_String(ExpNr)++" bis "++util:to_String(MSGNr)++" um "++util:to_String(TSError),
-											% erst die Fehlermeldung loggen, da in push2DLQ(ErrorMessage) die MSGNr geloggt wird 
-											util:logging(Datei, "HBQ>>>Fehlernachricht fuer Nachrichten "++util:to_String(ExpNr)++" bis "++util:to_String(MSGNr)++" generiert.\n"),
-											ErrorMessage = [MSGNr, ErrorLog, unkn, TSError],
-											TempDLQ = dlq:push2DLQ(ErrorMessage, DLQ, Datei),
-											NewDLQ = dlq:push2DLQ(DLQMsg, TempDLQ, Datei),
-											NewHBQ = insertToHBQ(HBQMsg, TempHBQ, Pos),
-											NNrString = util:to_String(NNr),
-											util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
-											From ! {reply, ok},
-											checkHBQ(NewHBQ, NewDLQ, Datei, Pos, DLQLimit)
-									end
+									checkHBQ(NewHBQ, NewDLQ, Datei, Pos);
+								true ->									
+									MSGNr = SNNr-1,
+									TSError = erlang:timestamp(),
+									ErrorLog = "**Fehlernachricht fuer Nachrichtennummern "++util:to_String(ExpNr)++" bis "++util:to_String(MSGNr)++" um "++util:to_String(TSError),
+									% erst die Fehlermeldung loggen, da in push2DLQ(ErrorMessage) die MSGNr geloggt wird 
+									util:logging(Datei, "HBQ>>>Fehlernachricht fuer Nachrichten "++util:to_String(ExpNr)++" bis "++util:to_String(MSGNr)++" generiert.\n"),
+									ErrorMessage = [MSGNr, ErrorLog, unkn, TSError],
+									TempDLQ = dlq:push2DLQ(ErrorMessage, DLQ, Datei),
+									NewDLQ = dlq:push2DLQ(DLQMsg, TempDLQ, Datei),
+									NewHBQ = insertToHBQ(HBQMsg, TempHBQ, Pos),
+									NNrString = util:to_String(NNr),
+									util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
+									From ! {reply, ok},
+									checkHBQ(NewHBQ, NewDLQ, Datei, Pos)
 							end
 					end
 			end;
 		% deliverMsg
-		{From, {request, deliverMSG, NNr, ToClient}} ->
+		{From, {request, deliverMsg, NNr, ToClient}} ->
 			SendeNr = dlq:deliverMSG(NNr, ToClient, DLQ, Datei),
 			From ! {reply, SendeNr},
-			loop(HBQ, DLQ, Datei, Pos, DLQLimit);
+			loop(HBQ, DLQ, Datei, Pos);
 		% listDLQ
 		{From, {request, listDLQ}}	->	
 			List = dlq:listDLQ(DLQ),
-			ListSize = dlq:lengthDLQ(DLQ),
+			ListSize = getListSize(List, 0),
 			util:logging(Datei, "dlq>>> Content("++util:to_String(ListSize)++"): "++util:to_String(List)++"\n"),	
 			From ! {reply, ok},
-			loop(HBQ, DLQ, Datei, Pos, DLQLimit);
+			loop(HBQ, DLQ, Datei, Pos);
 		% listHBQ
 		{From, {request, listHBQ}} ->
 			List = listHBQHelp(HBQ, []),
 			ListSize = getListSize(List, 0),
 			util:logging(Datei, "HBQ>>> Content("++util:to_String(ListSize)++"): "++util:to_String(List)++"\n"),	
 			From ! {reply, ok},
-			loop(HBQ, DLQ, Datei, Pos, DLQLimit);
+			loop(HBQ, DLQ, Datei, Pos);
 		% delHBQ
-		{From, {request, dellHBQ}} -> 
+		{From, {setHBQ, NewHBQ, NewPos}} ->
+			From ! {reply, ok},
+			loop(NewHBQ, DLQ, Datei, NewPos);
+		{From, getHBQPos} ->
+			From ! {reply, HBQ, Pos},
+			loop(HBQ, DLQ, Datei, Pos);
+		{From, {setDLQ, NewDLQ}} ->
+			From ! {reply, ok},
+			loop(HBQ, NewDLQ, Datei, Pos);
+		{From, getDLQ} ->
+			From ! {reply, DLQ},
+			loop(HBQ, DLQ, Datei, Pos);
+		{From, {dellHBQ}} -> 
 			From ! {reply, ok}
+		after 5000 ->
+			if 
+				Pos >= 2 -> removeAll(HBQ, DLQ, Datei, Pos);
+				true -> loop(HBQ, DLQ, Datei, Pos)
+			end
 	end.
+
+%HILFSFUNKTIONEN
+
+% wird nur aufgerufen, wenn die Elemente nicht der expNr der DLQ entsprechen, also nur zwei verschiedene Fälle prüfen:
+% 1): SmallestElem > expNr DLQ -> Fehlermeldung und einfügen
+% 2): SmallestElem == expNr DLQ -> einfügen (nachdem Fehlermeldung erstellt wurde)
+removeAll(HBQ, DLQ, Datei, Pos) ->
+	if
+		Pos-1 /= 0 ->
+			{[SNNr, SMsg, STSClientout, STShbqin], NewHBQ} = removeFirst(HBQ),
+			ExpNr = dlq:expectedNr(DLQ),
+			if 
+				SNNr > ExpNr ->
+					MSGNr = SNNr-1,
+					TSError = erlang:timestamp(),
+					ErrorLog = "**Fehlernachricht fuer Nachrichtennummern "++util:to_String(ExpNr)++" bis "++util:to_String(MSGNr)++" um "++util:to_String(TSError),
+					% erst die Fehlermeldung loggen, da in push2DLQ(ErrorMessage) die MSGNr geloggt wird 
+					util:logging(Datei, "HBQ>>>Fehlernachricht fuer Nachrichten "++util:to_String(ExpNr)++" bis "++util:to_String(MSGNr)++" generiert.\n"),
+					ErrorMessage = [MSGNr, ErrorLog, unkn, TSError],
+					TempDLQ = dlq:push2DLQ(ErrorMessage, DLQ, Datei),
+					NewDLQ = dlq:push2DLQ([SNNr, SMsg, STSClientout, STShbqin], TempDLQ, Datei),
+					removeAll(NewHBQ, NewDLQ, Datei, Pos-1);
+				true ->
+					NewDLQ = dlq:push2DLQ([SNNr, SMsg, STSClientout, STShbqin], DLQ, Datei),
+					removeAll(NewHBQ, NewDLQ, Datei, Pos-1)	
+			end;
+		true -> ok
+	end.
+
 
 listHBQHelp({}, List) -> List;
 listHBQHelp(TempHBQ, List) -> 

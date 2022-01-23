@@ -3,7 +3,8 @@
 -export([initDLQ/2,expectedNr/1,push2DLQ/3, deliverMSG/4, listDLQ/1, lengthDLQ/1, delDLQ/1]).
 
 % Initialisieren der DLQ
-initDLQ(Size, _Datei) -> 
+initDLQ(Size, Datei) -> 
+    util:logging(Datei, "dlq>>> initialisiert mit Kapazitaet "++util:to_String(Size)++".\n"),         
     {Size, 0, []}.
 
 % Beim erfolgreichen Löschen der übergebenen Queue wird ok zurückgegeben.
@@ -76,4 +77,4 @@ listDLQHelp([[NNr, _Msg, _TSclientout, _TShbqin, _TSdlqin]|Tail], List) ->
     end.
 
 % Gibt die Größe der übergebenen Queue zurück
-lengthDLQ({MaxSize, _ActSize, _DLQ}) -> MaxSize. 
+lengthDLQ({_MaxSize, ActSize, _DLQ}) -> ActSize. 

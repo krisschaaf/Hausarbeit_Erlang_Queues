@@ -49,7 +49,6 @@ loop(HBQ, DLQ, Datei, Size) ->
 				true ->
 					{MaxSize, _ActSize, _Q} = DLQ,
 					if
-						% Sizeition ist die aktuelle Größe der Queue + 1
 						Size < (MaxSize*2/3) ->
 							NewHBQ = insertToHBQ(HBQMsg, HBQ),
 							NNrString = util:to_String(NNr),
@@ -57,35 +56,42 @@ loop(HBQ, DLQ, Datei, Size) ->
 							From ! {reply, ok},
 							checkHBQ(NewHBQ, DLQ, Datei, Size+1);
 						true -> 
-							[[SNNr, SMsg, STSClientout, STShbqin]| TempHBQ] = HBQ,
-							DLQMsg = [SNNr, SMsg, STSClientout, STShbqin],
-							if
-								SNNr == ExpNr ->
-									NewDLQ = dlq:push2DLQ(DLQMsg, DLQ, Datei),
-									NewHBQ = insertToHBQ(HBQMsg, TempHBQ),
-									NNrString = util:to_String(NNr),
-									util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
+							case HBQ of 
+								{} -> 
+									NewDLQ = dlq:push2DLQ([NNr, Msg, TSclientout, erlang:timestamp()], DLQ, Datei),
 									From ! {reply, ok},
-									checkHBQ(NewHBQ, NewDLQ, Datei, Size);
-								true ->									
-									MSGNr = SNNr-1,
-									TSError = erlang:timestamp(),
-									ErrorLog = "**Fehlernachricht fuer Nachrichtennummern "++util:to_String(ExpNr)++" bis "++util:to_String(MSGNr)++" um "++util:to_String(TSError),
-									% erst die Fehlermeldung loggen, da in push2DLQ(ErrorMessage) die MSGNr geloggt wird 
-									util:logging(Datei, "HBQ>>>Fehlernachricht fuer Nachrichten "++util:to_String(ExpNr)++" bis "++util:to_String(MSGNr)++" generiert.\n"),
-									ErrorMessage = [MSGNr, ErrorLog, unkn, TSError],
-									TempDLQ = dlq:push2DLQ(ErrorMessage, DLQ, Datei),
-									NewDLQ = dlq:push2DLQ(DLQMsg, TempDLQ, Datei),
-									NewHBQ = insertToHBQ(HBQMsg, TempHBQ),
-									NNrString = util:to_String(NNr),
-									util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
-									From ! {reply, ok},
-									checkHBQ(NewHBQ, NewDLQ, Datei, Size)
+									checkHBQ(HBQ, NewDLQ, Datei, Size);
+								_Default -> 
+									[[SNNr, SMsg, STSClientout, STShbqin]| TempHBQ] = HBQ,
+									DLQMsg = [SNNr, SMsg, STSClientout, STShbqin],
+									if
+										SNNr == ExpNr ->
+											NewDLQ = dlq:push2DLQ(DLQMsg, DLQ, Datei),
+											NewHBQ = insertToHBQ(HBQMsg, TempHBQ),
+											NNrString = util:to_String(NNr),
+											util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
+											From ! {reply, ok},
+											checkHBQ(NewHBQ, NewDLQ, Datei, Size);
+										true ->									
+											MSGNr = SNNr-1,
+											TSError = erlang:timestamp(),
+											ErrorLog = "**Fehlernachricht fuer Nachrichtennummern "++util:to_String(ExpNr)++" bis "++util:to_String(MSGNr)++" um "++util:to_String(TSError),
+											% erst die Fehlermeldung loggen, da in push2DLQ(ErrorMessage) die MSGNr geloggt wird 
+											util:logging(Datei, "HBQ>>>Fehlernachricht fuer Nachrichten "++util:to_String(ExpNr)++" bis "++util:to_String(MSGNr)++" generiert.\n"),
+											ErrorMessage = [MSGNr, ErrorLog, unkn, TSError],
+											TempDLQ = dlq:push2DLQ(ErrorMessage, DLQ, Datei),
+											NewDLQ = dlq:push2DLQ(DLQMsg, TempDLQ, Datei),
+											NewHBQ = insertToHBQ(HBQMsg, TempHBQ),
+											NNrString = util:to_String(NNr),
+											util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
+											From ! {reply, ok},
+											checkHBQ(NewHBQ, NewDLQ, Datei, Size)
+									end
 							end
 					end
 			end;
 		% deliverMsg
-		{From, {request, deliverMsg, NNr, ToClient}} ->
+		{From, {request, deliverMSG, NNr, ToClient}} ->
 			SendeNr = dlq:deliverMSG(NNr, ToClient, DLQ, Datei),
 			From ! {reply, SendeNr},
 			loop(HBQ, DLQ, Datei, Size);
@@ -116,7 +122,7 @@ loop(HBQ, DLQ, Datei, Size) ->
 		{From, getDLQ} ->
 			From ! {reply, DLQ},
 			loop(HBQ, DLQ, Datei, Size);
-		{From, {dellHBQ}} -> 
+		{From, {request, dellHBQ}} -> 
 			From ! {reply, ok}
 	end.
 
