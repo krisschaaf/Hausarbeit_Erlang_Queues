@@ -2,6 +2,8 @@
 
 -export([initDLQ/2,expectedNr/1,push2DLQ/3, deliverMSG/4, listDLQ/1, lengthDLQ/1, delDLQ/1]).
 
+% @author: Kristoffer Schaaf
+
 % Initialisieren der DLQ
 initDLQ(Size, Datei) -> 
     util:logging(Datei, "dlq>>> initialisiert mit Kapazitaet "++util:to_String(Size)++".\n"),         

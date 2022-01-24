@@ -1,0 +1,56 @@
+dlq>>> initialisiert mit Kapazitaet 17.
+HBQ>>> Nachricht 3 in HBQ eingefuegt.
+HBQ>>> Nachricht 4 in HBQ eingefuegt.
+HBQ>>> Nachricht 9 in HBQ eingefuegt.
+HBQ>>> Nachricht 5 in HBQ eingefuegt.
+HBQ>>> Nachricht 1 in HBQ eingefuegt.
+dlq>>> Nachricht 1 in DLQ eingefuegt.
+HBQ>>> Nachricht 6 in HBQ eingefuegt.
+HBQ>>> Nachricht 10 in HBQ eingefuegt.
+HBQ>>> Nachricht 11 in HBQ eingefuegt.
+HBQ>>> Nachricht 12 in HBQ eingefuegt.
+HBQ>>> Nachricht 13 in HBQ eingefuegt.
+HBQ>>> Nachricht 2 in HBQ eingefuegt.
+dlq>>> Nachricht 2 in DLQ eingefuegt.
+dlq>>> Nachricht 3 in DLQ eingefuegt.
+dlq>>> Nachricht 4 in DLQ eingefuegt.
+dlq>>> Nachricht 5 in DLQ eingefuegt.
+dlq>>> Nachricht 6 in DLQ eingefuegt.
+HBQ>>> Nachricht 7 in HBQ eingefuegt.
+dlq>>> Nachricht 7 in DLQ eingefuegt.
+HBQ>>> Nachricht 8 in HBQ eingefuegt.
+dlq>>> Nachricht 8 in DLQ eingefuegt.
+dlq>>> Nachricht 9 in DLQ eingefuegt.
+dlq>>> Nachricht 10 in DLQ eingefuegt.
+dlq>>> Nachricht 11 in DLQ eingefuegt.
+dlq>>> Nachricht 12 in DLQ eingefuegt.
+dlq>>> Nachricht 13 in DLQ eingefuegt.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 16 in HBQ eingefuegt.
+HBQ>>> Nachricht 17 in HBQ eingefuegt.
+HBQ>>> Nachricht 18 in HBQ eingefuegt.
+HBQ>>> Nachricht 14 in HBQ eingefuegt.
+dlq>>> Nachricht 14 in DLQ eingefuegt.
+HBQ>>> Nachricht 19 in HBQ eingefuegt.
+HBQ>>> Nachricht 15 in HBQ eingefuegt.
+dlq>>> Nachricht 15 in DLQ eingefuegt.
+dlq>>> Nachricht 16 in DLQ eingefuegt.
+dlq>>> Nachricht 17 in DLQ eingefuegt.
+dlq>>> Nachricht 1 aus DLQ geloescht.
+dlq>>> Nachricht 18 in DLQ eingefuegt.
+dlq>>> Nachricht 2 aus DLQ geloescht.
+dlq>>> Nachricht 19 in DLQ eingefuegt.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 23 in HBQ eingefuegt.
+HBQ>>> Nachricht 24 in HBQ eingefuegt.
+HBQ>>> Nachricht 25 in HBQ eingefuegt.
+HBQ>>> Nachricht 29 in HBQ eingefuegt.
+dlq>>> Content(17): [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+HBQ>>> Content(4): [23,24,25,29]
+HBQ>>> Nachricht 30 in HBQ eingefuegt.
+dlq>>> Content(17): [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+HBQ>>> Content(5): [23,24,25,29,30]
+HBQ>>> Nachricht 31 in HBQ eingefuegt.
+dlq>>> Content(17): [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+HBQ>>> Content(6): [23,24,25,29,30,31]
+dlq>>> Nachricht 3 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 3 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 3 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 4 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 4 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 4 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 5 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 5 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 5 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 6 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 6 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 6 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 7 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 7 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 7 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 8 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 8 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 8 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 9 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 9 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 9 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 10 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 10 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 10 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 11 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 11 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 11 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 12 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 12 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 12 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 13 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 13 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 13 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 14 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 14 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 14 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 15 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 15 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 15 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 16 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 16 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 16 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 17 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 17 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 17 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 18 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 18 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 18 an Client <9178.210.0> ausgeliefert.dlq>>> Nachricht 19 an Client <9178.203.0> ausgeliefert.dlq>>> Nachricht 19 an Client <9178.205.0> ausgeliefert.dlq>>> Nachricht 19 an Client <9178.210.0> ausgeliefert.

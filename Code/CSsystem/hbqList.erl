@@ -2,6 +2,8 @@
 
 -export([initHBQ/2]).
 
+% @author: Kristoffer Schaaf
+
 % Starten der HBQ auf der Node der HBQ (oder entfernt starten)
 initHBQ(DLQLimit, HBQName) ->
 	{ok, NodeString} = inet:gethostname(),
@@ -11,15 +13,15 @@ initHBQ(DLQLimit, HBQName) ->
 		undefined -> dlqPIDnotdefined;
 		_Undef -> ok
 	end, 
-    HBQPid = spawn(fun() -> loop([], DLQ, Datei, 1) end),	%1, da dies der derzeitige Index ist 
+    HBQPid = spawn(fun() -> loop([], DLQ, Datei, 0, DLQLimit) end),	
 	register(HBQName, HBQPid),
     HBQPid.	%ProzessID wird zurückgegeben 
 
-checkHBQ(HBQ, DLQ, Datei, Size)	->
+checkHBQ(HBQ, DLQ, Datei, Size, DLQLimit)	->
 	case HBQ of
 		[] -> 
 			util:logging(Datei, "HBQ>>> HBQ wurde komplett in DLQ uebertragen.\n"),
-			loop(HBQ, DLQ, Datei, Size);
+			loop(HBQ, DLQ, Datei, Size, DLQLimit);
 		_Default ->
 			[[NNr, _Msg, _TSclientout, _TShbqin]| _Tail] = HBQ,
 			ExpNr = dlq:expectedNr(DLQ),
@@ -27,16 +29,16 @@ checkHBQ(HBQ, DLQ, Datei, Size)	->
 				NNr == ExpNr ->
 					[DLQMsg|NewHBQ] = HBQ,
 					NewDLQ = dlq:push2DLQ(DLQMsg, DLQ, Datei),
-					checkHBQ(NewHBQ, NewDLQ, Datei, Size-1); 
+					checkHBQ(NewHBQ, NewDLQ, Datei, Size-1, DLQLimit); 
 				NNr < ExpNr ->
 					[_SmallestElement|NewHBQ] = HBQ,
-					checkHBQ(NewHBQ, DLQ, Datei, Size-1);
+					checkHBQ(NewHBQ, DLQ, Datei, Size-1, DLQLimit);
 				true ->
-					loop(HBQ, DLQ, Datei, Size)
+					loop(HBQ, DLQ, Datei, Size, DLQLimit)
 			end
 	end.
 
-loop(HBQ, DLQ, Datei, Size) ->
+loop(HBQ, DLQ, Datei, Size, DLQLimit) ->
 	receive
 		{From, {request, pushHBQ, [NNr, Msg, TSclientout]}} ->
 			TShbqin = erlang:timestamp(),
@@ -45,22 +47,21 @@ loop(HBQ, DLQ, Datei, Size) ->
 			if 
 				NNr < ExpNr ->
 					From ! {reply, nnr<expNrDLQ},
-					checkHBQ(HBQ, DLQ, Datei, Size);
+					checkHBQ(HBQ, DLQ, Datei, Size, DLQLimit);
 				true ->
-					{MaxSize, _ActSize, _Q} = DLQ,
 					if
-						Size < (MaxSize*2/3) ->
+						Size < (DLQLimit*2/3) ->
 							NewHBQ = insertToHBQ(HBQMsg, HBQ),
 							NNrString = util:to_String(NNr),
 							util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
 							From ! {reply, ok},
-							checkHBQ(NewHBQ, DLQ, Datei, Size+1);
+							checkHBQ(NewHBQ, DLQ, Datei, Size+1, DLQLimit);
 						true -> 
 							case HBQ of 
-								{} -> 
+								[] -> 
 									NewDLQ = dlq:push2DLQ([NNr, Msg, TSclientout, erlang:timestamp()], DLQ, Datei),
 									From ! {reply, ok},
-									checkHBQ(HBQ, NewDLQ, Datei, Size);
+									checkHBQ(HBQ, NewDLQ, Datei, Size, DLQLimit);
 								_Default -> 
 									[[SNNr, SMsg, STSClientout, STShbqin]| TempHBQ] = HBQ,
 									DLQMsg = [SNNr, SMsg, STSClientout, STShbqin],
@@ -71,7 +72,7 @@ loop(HBQ, DLQ, Datei, Size) ->
 											NNrString = util:to_String(NNr),
 											util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
 											From ! {reply, ok},
-											checkHBQ(NewHBQ, NewDLQ, Datei, Size);
+											checkHBQ(NewHBQ, NewDLQ, Datei, Size, DLQLimit);
 										true ->									
 											MSGNr = SNNr-1,
 											TSError = erlang:timestamp(),
@@ -85,7 +86,7 @@ loop(HBQ, DLQ, Datei, Size) ->
 											NNrString = util:to_String(NNr),
 											util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
 											From ! {reply, ok},
-											checkHBQ(NewHBQ, NewDLQ, Datei, Size)
+											checkHBQ(NewHBQ, NewDLQ, Datei, Size, DLQLimit)
 									end
 							end
 					end
@@ -94,34 +95,22 @@ loop(HBQ, DLQ, Datei, Size) ->
 		{From, {request, deliverMSG, NNr, ToClient}} ->
 			SendeNr = dlq:deliverMSG(NNr, ToClient, DLQ, Datei),
 			From ! {reply, SendeNr},
-			loop(HBQ, DLQ, Datei, Size);
+			loop(HBQ, DLQ, Datei, Size, DLQLimit);
 		% listDLQ
 		{From, {request, listDLQ}}	->	
 			List = dlq:listDLQ(DLQ),
 			ListSize = getListSize(List, 0),
 			util:logging(Datei, "dlq>>> Content("++util:to_String(ListSize)++"): "++util:to_String(List)++"\n"),	
 			From ! {reply, ok},
-			loop(HBQ, DLQ, Datei, Size);
+			loop(HBQ, DLQ, Datei, Size, DLQLimit);
 		% listHBQ
 		{From, {request, listHBQ}} ->
 			List = listHBQHelp(HBQ, []),
 			ListSize = getListSize(List, 0),
 			util:logging(Datei, "HBQ>>> Content("++util:to_String(ListSize)++"): "++util:to_String(List)++"\n"),	
 			From ! {reply, ok},
-			loop(HBQ, DLQ, Datei, Size);
+			loop(HBQ, DLQ, Datei, Size, DLQLimit);
 		% delHBQ
-		{From, {setHBQ, NewHBQ, NewSize}} ->
-			From ! {reply, ok},
-			loop(NewHBQ, DLQ, Datei, NewSize);
-		{From, getHBQSize} ->
-			From ! {reply, HBQ, Size},
-			loop(HBQ, DLQ, Datei, Size);
-		{From, {setDLQ, NewDLQ}} ->
-			From ! {reply, ok},
-			loop(HBQ, NewDLQ, Datei, Size);
-		{From, getDLQ} ->
-			From ! {reply, DLQ},
-			loop(HBQ, DLQ, Datei, Size);
 		{From, {request, dellHBQ}} -> 
 			From ! {reply, ok}
 	end.

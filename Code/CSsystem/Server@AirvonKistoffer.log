@@ -1001,3 +1001,1735 @@ Server: Nachrichtennummer 40 an <9458.219.0> gesendet
 Server: Nachricht 31 wurde in HBQ eingefügt.
 Server: Nachrichtennummer 41 an <9458.216.0> gesendet
 Server: Downtime 22.01 12:49:43,687| vom Nachrichtenserver <0.222.0>.
+Server: server.cfg geöffnet...
+Server: Startzeit: 24.01 23:19:12,536| mit PID <0.98.0>
+CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
+Server: Nachrichtennummer 1 an <9008.133.0> gesendet
+Server: Nachrichtennummer 2 an <9008.138.0> gesendet
+Server: Nachrichtennummer 3 an <9008.134.0> gesendet
+Server: Nachrichtennummer 4 an <9008.140.0> gesendet
+Server: Nachrichtennummer 5 an <9008.135.0> gesendet
+Server: Nachrichtennummer 6 an <9008.136.0> gesendet
+Server: Nachrichtennummer 7 an <9008.137.0> gesendet
+Server: Nachrichtennummer 8 an <9008.139.0> gesendet
+Server: Nachrichtennummer 9 an <9008.141.0> gesendet
+Server: Nachricht 1 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 10 an <9008.133.0> gesendet
+Server: Nachricht 8 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 11 an <9008.139.0> gesendet
+Server: Nachricht 5 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 12 an <9008.135.0> gesendet
+Server: Nachricht 2 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 13 an <9008.138.0> gesendet
+Server: Nachricht 3 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 14 an <9008.134.0> gesendet
+Server: Nachricht 10 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 15 an <9008.133.0> gesendet
+Server: Nachricht 11 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 16 an <9008.139.0> gesendet
+Server: Nachricht 4 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 17 an <9008.140.0> gesendet
+Server: Nachricht 6 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 18 an <9008.136.0> gesendet
+Server: Nachricht 9 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 19 an <9008.141.0> gesendet
+Server: Nachricht 12 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 20 an <9008.135.0> gesendet
+Server: Nachricht 7 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 21 an <9008.137.0> gesendet
+Server: Nachricht 15 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 22 an <9008.133.0> gesendet
+Server: Nachricht 16 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 23 an <9008.139.0> gesendet
+Server: Nachricht 13 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 24 an <9008.138.0> gesendet
+Server: Nachricht 14 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 25 an <9008.134.0> gesendet
+Server: Nachricht 20 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 26 an <9008.135.0> gesendet
+Server: Nachricht 22 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 27 an <9008.133.0> gesendet
+Server: Nachricht 23 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 28 an <9008.139.0> gesendet
+Server: Nachricht 17 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 29 an <9008.140.0> gesendet
+Server: Nachricht 24 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 30 an <9008.138.0> gesendet
+Server: Nachricht 25 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 31 an <9008.134.0> gesendet
+Server: Nachricht 27 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 32 an <9008.133.0> gesendet
+Server: Nachricht 28 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 33 an <9008.139.0> gesendet
+Server: Nachrichtennummer 34 an <9008.133.0> gesendet
+Server: Nachrichtennummer 35 an <9008.139.0> gesendet
+Server: Nachrichtennummer 36 an <9008.133.0> gesendet
+Server: Nachrichtennummer 37 an <9008.139.0> gesendet
+Server: Nachrichtennummer 38 an <9008.133.0> gesendet
+Server: Nachrichtennummer 39 an <9008.139.0> gesendet
+Server: Nachrichtennummer 40 an <9008.133.0> gesendet
+Server: Nachrichtennummer 41 an <9008.139.0> gesendet
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (1/1643062795597).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (1/1643062795597).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (2/1643062795598).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (2/1643062795599).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (3/1643062795600).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (3/1643062795602).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (4/1643062795603).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (4/1643062795603).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (5/1643062795604).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (5/1643062795605).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (6/1643062795605).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (6/1643062795606).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (7/1643062795607).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (7/1643062795607).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (8/1643062795608).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (8/1643062795608).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (9/1643062795609).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (9/1643062795609).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (10/1643062795610).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (10/1643062795610).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (11/1643062795611).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (11/1643062795611).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (12/1643062795612).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (12/1643062795612).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (13/1643062795612).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (13/1643062795613).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (14/1643062795613).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (14/1643062795614).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (15/1643062795614).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (15/1643062795614).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (16/1643062795615).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (16/1643062795616).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (17/1643062795616).
+Server: Nachricht 42 wurde zugestellt.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (17/1643062795616).
+Server: Nachricht 42 konnte nicht zugestellt werden.
+CMEM>>> Client <9008.133.0> wird aktualisiert:
+CMEM>>> Client <9008.133.0> im CMEM gelöscht.
+CMEM>>> Client <9008.133.0> in CMEM eingefügt (17/1643062796617).
+Server: Nachricht 42 konnte nicht zugestellt werden.
+CMEM>>> Client <9008.139.0> wird aktualisiert:
+CMEM>>> Client <9008.139.0> im CMEM gelöscht.
+CMEM>>> Client <9008.139.0> in CMEM eingefügt (17/1643062797618).
+Server: Nachricht 18 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 42 an <9008.136.0> gesendet
+Server: Nachricht 19 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 43 an <9008.141.0> gesendet
+Server: Nachricht 26 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 44 an <9008.135.0> gesendet
+Server: Nachricht 21 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 45 an <9008.137.0> gesendet
+Server: Nachricht 30 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 46 an <9008.138.0> gesendet
+Server: Nachricht 31 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 47 an <9008.134.0> gesendet
+Server: Nachricht 29 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 48 an <9008.140.0> gesendet
+Server: Nachricht 42 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 49 an <9008.136.0> gesendet
+Server: Nachricht 43 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 50 an <9008.141.0> gesendet
+Server: HBQ konnte nicht terminiert werden.
+Server: Downtime 24.01 23:19:58,625| vom Nachrichtenserver <0.98.0>.
+Server: server.cfg geöffnet...
+Server: Startzeit: 24.01 23:20:13,292| mit PID <0.340.0>
+CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
+Server: Nachrichtennummer 1 an <9008.270.0> gesendet
+Server: Nachrichtennummer 2 an <9008.271.0> gesendet
+Server: Nachrichtennummer 3 an <9008.274.0> gesendet
+Server: Nachrichtennummer 4 an <9008.276.0> gesendet
+Server: Nachrichtennummer 5 an <9008.278.0> gesendet
+Server: Nachrichtennummer 6 an <9008.272.0> gesendet
+Server: Nachrichtennummer 7 an <9008.273.0> gesendet
+Server: Nachrichtennummer 8 an <9008.277.0> gesendet
+Server: Nachrichtennummer 9 an <9008.275.0> gesendet
+Server: Nachricht 5 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 10 an <9008.278.0> gesendet
+Server: Nachricht 8 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 11 an <9008.277.0> gesendet
+Server: Nachricht 1 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 12 an <9008.270.0> gesendet
+Server: Nachricht 3 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 13 an <9008.274.0> gesendet
+Server: Nachricht 4 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 14 an <9008.276.0> gesendet
+Server: Nachricht 7 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 15 an <9008.273.0> gesendet
+Server: Nachricht 6 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 16 an <9008.272.0> gesendet
+Server: Nachricht 10 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 17 an <9008.278.0> gesendet
+Server: Nachricht 11 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 18 an <9008.277.0> gesendet
+Server: Nachricht 2 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 19 an <9008.271.0> gesendet
+Server: Nachricht 9 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 20 an <9008.275.0> gesendet
+Server: Nachricht 12 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 21 an <9008.270.0> gesendet
+Server: Nachricht 13 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 22 an <9008.274.0> gesendet
+Server: Nachricht 14 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 23 an <9008.276.0> gesendet
+Server: Nachricht 15 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 24 an <9008.273.0> gesendet
+Server: Nachricht 17 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 25 an <9008.278.0> gesendet
+Server: Nachricht 18 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 26 an <9008.277.0> gesendet
+Server: Nachricht 16 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 27 an <9008.272.0> gesendet
+Server: Nachricht 21 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 28 an <9008.270.0> gesendet
+Server: Nachricht 22 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 29 an <9008.274.0> gesendet
+Server: Nachricht 23 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 30 an <9008.276.0> gesendet
+Server: Nachricht 24 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 31 an <9008.273.0> gesendet
+Server: Nachricht 25 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 32 an <9008.278.0> gesendet
+Server: Nachricht 26 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 33 an <9008.277.0> gesendet
+Server: Nachricht 19 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 34 an <9008.271.0> gesendet
+Server: Nachricht 20 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 35 an <9008.275.0> gesendet
+Server: Nachricht 27 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 36 an <9008.272.0> gesendet
+Server: Nachricht 32 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 37 an <9008.278.0> gesendet
+Server: Nachricht 33 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 38 an <9008.277.0> gesendet
+Server: Nachrichtennummer 39 an <9008.278.0> gesendet
+Server: Nachrichtennummer 40 an <9008.277.0> gesendet
+Server: Nachrichtennummer 41 an <9008.278.0> gesendet
+Server: Nachrichtennummer 42 an <9008.277.0> gesendet
+Server: Nachrichtennummer 43 an <9008.278.0> gesendet
+Server: Nachrichtennummer 44 an <9008.277.0> gesendet
+Server: Nachrichtennummer 45 an <9008.278.0> gesendet
+Server: Nachrichtennummer 46 an <9008.277.0> gesendet
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (11/1643062849273).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (11/1643062849273).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (12/1643062849274).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (12/1643062849275).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (13/1643062849275).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (13/1643062849276).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (14/1643062849276).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (14/1643062849276).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (15/1643062849277).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (15/1643062849277).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (16/1643062849278).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (16/1643062849278).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (17/1643062849279).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (17/1643062849279).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (18/1643062849280).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (18/1643062849280).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (19/1643062849281).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (19/1643062849281).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (20/1643062849281).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (20/1643062849282).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (21/1643062849282).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (21/1643062849283).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (22/1643062849283).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (22/1643062849284).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (23/1643062849284).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (23/1643062849285).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (24/1643062849285).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (24/1643062849286).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (25/1643062849286).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (25/1643062849287).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (26/1643062849287).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (26/1643062849287).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (27/1643062849288).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (27/1643062849288).
+Server: Nachricht 47 konnte nicht zugestellt werden.
+CMEM>>> Client <9008.278.0> wird aktualisiert:
+CMEM>>> Client <9008.278.0> im CMEM gelöscht.
+CMEM>>> Client <9008.278.0> in CMEM eingefügt (27/1643062850289).
+Server: Nachricht 47 konnte nicht zugestellt werden.
+CMEM>>> Client <9008.277.0> wird aktualisiert:
+CMEM>>> Client <9008.277.0> im CMEM gelöscht.
+CMEM>>> Client <9008.277.0> in CMEM eingefügt (27/1643062851290).
+Server: Nachricht 28 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 47 an <9008.270.0> gesendet
+Server: Nachricht 29 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 48 an <9008.274.0> gesendet
+Server: Nachricht 30 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 49 an <9008.276.0> gesendet
+Server: Nachricht 31 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 50 an <9008.273.0> gesendet
+Server: Nachricht 36 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 51 an <9008.272.0> gesendet
+Server: Nachricht 34 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 52 an <9008.271.0> gesendet
+Server: Nachricht 35 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 53 an <9008.275.0> gesendet
+Server: Nachricht 47 konnte nicht in HBQ eingefügt werden.
+Server: DLQ konnte nicht gelistet werden.
+Server: HBQ konnte nicht gelistet werden.
+Server: Nachrichtennummer 54 an <9008.270.0> gesendet
+Server: Nachricht 48 konnte nicht in HBQ eingefügt werden.
+Server: DLQ konnte nicht gelistet werden.
+Server: HBQ konnte nicht gelistet werden.
+Server: Nachrichtennummer 55 an <9008.274.0> gesendet
+Server: HBQ konnte nicht terminiert werden.
+Server: Downtime 24.01 23:20:54,304| vom Nachrichtenserver <0.340.0>.
+Server: server.cfg geöffnet...
+Server: Startzeit: 24.01 23:21:10,957| mit PID <0.598.0>
+CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
+Server: Nachrichtennummer 1 an <9008.408.0> gesendet
+Server: Nachrichtennummer 2 an <9008.409.0> gesendet
+Server: Nachrichtennummer 3 an <9008.410.0> gesendet
+Server: Nachrichtennummer 4 an <9008.411.0> gesendet
+Server: Nachrichtennummer 5 an <9008.412.0> gesendet
+Server: Nachrichtennummer 6 an <9008.413.0> gesendet
+Server: Nachrichtennummer 7 an <9008.415.0> gesendet
+Server: Nachrichtennummer 8 an <9008.416.0> gesendet
+Server: Nachrichtennummer 9 an <9008.414.0> gesendet
+Server: Nachricht 7 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 10 an <9008.415.0> gesendet
+Server: Nachricht 5 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 11 an <9008.412.0> gesendet
+Server: Nachricht 8 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 12 an <9008.416.0> gesendet
+Server: Nachricht 2 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 13 an <9008.409.0> gesendet
+Server: Nachricht 4 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 14 an <9008.411.0> gesendet
+Server: Nachricht 1 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 15 an <9008.408.0> gesendet
+Server: Nachricht 6 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 16 an <9008.413.0> gesendet
+Server: Nachricht 9 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 17 an <9008.414.0> gesendet
+Server: Nachricht 10 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 18 an <9008.415.0> gesendet
+Server: Nachricht 3 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 19 an <9008.410.0> gesendet
+Server: Nachricht 11 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 20 an <9008.412.0> gesendet
+Server: Nachricht 12 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 21 an <9008.416.0> gesendet
+Server: Nachricht 18 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 22 an <9008.415.0> gesendet
+Server: Nachricht 13 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 23 an <9008.409.0> gesendet
+Server: Nachricht 14 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 24 an <9008.411.0> gesendet
+Server: Nachricht 15 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 25 an <9008.408.0> gesendet
+Server: Nachricht 16 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 26 an <9008.413.0> gesendet
+Server: Nachricht 17 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 27 an <9008.414.0> gesendet
+Server: Nachricht 22 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 28 an <9008.415.0> gesendet
+Server: Nachricht 19 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 29 an <9008.410.0> gesendet
+Server: Nachricht 20 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 30 an <9008.412.0> gesendet
+Server: Nachricht 21 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 31 an <9008.416.0> gesendet
+Server: Nachricht 28 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 32 an <9008.415.0> gesendet
+Server: Nachricht 23 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 33 an <9008.409.0> gesendet
+Server: Nachricht 24 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 34 an <9008.411.0> gesendet
+Server: Nachricht 25 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 35 an <9008.408.0> gesendet
+Server: Nachricht 26 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 36 an <9008.413.0> gesendet
+Server: Nachricht 27 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 37 an <9008.414.0> gesendet
+Server: Nachricht 30 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 38 an <9008.412.0> gesendet
+Server: Nachricht 31 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 39 an <9008.416.0> gesendet
+Server: Nachricht 29 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 40 an <9008.410.0> gesendet
+Server: Downtime 24.01 23:21:48,096| vom Nachrichtenserver <0.598.0>.
+Server: server.cfg geöffnet...
+Server: Startzeit: 24.01 23:22:11,420| mit PID <0.680.0>
+CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
+Server: Nachrichtennummer 1 an <9008.481.0> gesendet
+Server: Nachrichtennummer 2 an <9008.480.0> gesendet
+Server: Nachrichtennummer 3 an <9008.487.0> gesendet
+Server: Nachrichtennummer 4 an <9008.482.0> gesendet
+Server: Nachrichtennummer 5 an <9008.483.0> gesendet
+Server: Nachrichtennummer 6 an <9008.484.0> gesendet
+Server: Nachrichtennummer 7 an <9008.485.0> gesendet
+Server: Nachrichtennummer 8 an <9008.486.0> gesendet
+Server: Nachrichtennummer 9 an <9008.488.0> gesendet
+Server: Nachricht 2 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 10 an <9008.480.0> gesendet
+Server: Nachricht 3 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 11 an <9008.487.0> gesendet
+Server: Nachricht 5 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 12 an <9008.483.0> gesendet
+Server: Nachricht 4 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 13 an <9008.482.0> gesendet
+Server: Nachricht 6 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 14 an <9008.484.0> gesendet
+Server: Nachricht 7 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 15 an <9008.485.0> gesendet
+Server: Nachricht 1 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 16 an <9008.481.0> gesendet
+Server: Nachricht 9 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 17 an <9008.488.0> gesendet
+Server: Nachricht 8 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 18 an <9008.486.0> gesendet
+Server: Nachricht 10 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 19 an <9008.480.0> gesendet
+Server: Nachricht 11 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 20 an <9008.487.0> gesendet
+Server: Nachricht 12 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 21 an <9008.483.0> gesendet
+Server: Nachricht 13 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 22 an <9008.482.0> gesendet
+Server: Nachricht 14 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 23 an <9008.484.0> gesendet
+Server: Nachricht 15 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 24 an <9008.485.0> gesendet
+Server: Nachricht 19 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 25 an <9008.480.0> gesendet
+Server: Nachricht 20 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 26 an <9008.487.0> gesendet
+Server: Nachricht 21 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 27 an <9008.483.0> gesendet
+Server: Nachricht 16 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 28 an <9008.481.0> gesendet
+Server: Nachricht 17 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 29 an <9008.488.0> gesendet
+Server: Nachricht 18 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 30 an <9008.486.0> gesendet
+Server: Nachricht 22 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 31 an <9008.482.0> gesendet
+Server: Nachricht 23 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 32 an <9008.484.0> gesendet
+Server: Nachricht 25 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 33 an <9008.480.0> gesendet
+Server: Nachricht 26 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 34 an <9008.487.0> gesendet
+Server: Nachricht 27 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 35 an <9008.483.0> gesendet
+Server: Nachricht 24 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 36 an <9008.485.0> gesendet
+Server: Nachricht 31 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 37 an <9008.482.0> gesendet
+Server: Nachricht 28 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 38 an <9008.481.0> gesendet
+Server: Nachricht 29 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 39 an <9008.488.0> gesendet
+Server: Nachricht 32 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 40 an <9008.484.0> gesendet
+Server: Nachricht 30 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 41 an <9008.486.0> gesendet
+Server: Downtime 24.01 23:22:48,581| vom Nachrichtenserver <0.680.0>.
+Server: server.cfg geöffnet...
+Server: Startzeit: 24.01 23:23:05,531| mit PID <0.765.0>
+CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
+Server: Nachrichtennummer 1 an <9008.560.0> gesendet
+Server: Nachrichtennummer 2 an <9008.558.0> gesendet
+Server: Nachrichtennummer 3 an <9008.559.0> gesendet
+Server: Nachrichtennummer 4 an <9008.561.0> gesendet
+Server: Nachrichtennummer 5 an <9008.562.0> gesendet
+Server: Nachrichtennummer 6 an <9008.565.0> gesendet
+Server: Nachrichtennummer 7 an <9008.563.0> gesendet
+Server: Nachrichtennummer 8 an <9008.564.0> gesendet
+Server: Nachrichtennummer 9 an <9008.566.0> gesendet
+Server: Nachricht 7 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 10 an <9008.563.0> gesendet
+Server: Nachricht 1 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 11 an <9008.560.0> gesendet
+Server: Nachricht 3 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 12 an <9008.559.0> gesendet
+Server: Nachricht 4 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 13 an <9008.561.0> gesendet
+Server: Nachricht 5 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 14 an <9008.562.0> gesendet
+Server: Nachricht 8 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 15 an <9008.564.0> gesendet
+Server: Nachricht 6 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 16 an <9008.565.0> gesendet
+Server: Nachricht 9 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 17 an <9008.566.0> gesendet
+Server: Nachricht 10 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 18 an <9008.563.0> gesendet
+Server: Nachricht 2 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 19 an <9008.558.0> gesendet
+Server: Nachricht 11 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 20 an <9008.560.0> gesendet
+Server: Nachricht 12 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 21 an <9008.559.0> gesendet
+Server: Nachricht 18 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 22 an <9008.563.0> gesendet
+Server: Nachricht 13 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 23 an <9008.561.0> gesendet
+Server: Nachricht 14 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 24 an <9008.562.0> gesendet
+Server: Nachricht 15 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 25 an <9008.564.0> gesendet
+Server: Nachricht 16 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 26 an <9008.565.0> gesendet
+Server: Nachricht 17 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 27 an <9008.566.0> gesendet
+Server: Nachricht 22 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 28 an <9008.563.0> gesendet
+Server: Nachricht 19 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 29 an <9008.558.0> gesendet
+Server: Nachricht 20 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 30 an <9008.560.0> gesendet
+Server: Nachricht 21 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 31 an <9008.559.0> gesendet
+Server: Nachricht 28 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 32 an <9008.563.0> gesendet
+Server: Nachricht 23 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 33 an <9008.561.0> gesendet
+Server: Nachricht 24 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 34 an <9008.562.0> gesendet
+Server: Nachricht 25 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 35 an <9008.564.0> gesendet
+Server: Nachricht 26 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 36 an <9008.565.0> gesendet
+Server: Nachricht 27 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 37 an <9008.566.0> gesendet
+Server: Nachricht 30 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 38 an <9008.560.0> gesendet
+Server: Nachricht 31 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 39 an <9008.559.0> gesendet
+Server: Nachricht 29 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 40 an <9008.558.0> gesendet
+Server: Downtime 24.01 23:23:43,930| vom Nachrichtenserver <0.765.0>.
+Server: server.cfg geöffnet...
+Server: Startzeit: 24.01 23:26:32,609| mit PID <0.850.0>
+CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
+Server: Nachrichtennummer 1 an <9008.635.0> gesendet
+Server: Nachrichtennummer 2 an <9008.636.0> gesendet
+Server: Nachrichtennummer 3 an <9008.637.0> gesendet
+Server: Nachrichtennummer 4 an <9008.638.0> gesendet
+Server: Nachrichtennummer 5 an <9008.639.0> gesendet
+Server: Nachrichtennummer 6 an <9008.640.0> gesendet
+Server: Nachrichtennummer 7 an <9008.641.0> gesendet
+Server: Nachrichtennummer 8 an <9008.642.0> gesendet
+Server: Nachrichtennummer 9 an <9008.643.0> gesendet
+Server: Nachricht 1 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 10 an <9008.635.0> gesendet
+Server: Nachricht 7 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 11 an <9008.641.0> gesendet
+Server: Nachricht 2 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 12 an <9008.636.0> gesendet
+Server: Nachricht 6 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 13 an <9008.640.0> gesendet
+Server: Nachricht 8 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 14 an <9008.642.0> gesendet
+Server: Nachricht 3 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 15 an <9008.637.0> gesendet
+Server: Nachricht 5 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 16 an <9008.639.0> gesendet
+Server: Nachricht 10 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 17 an <9008.635.0> gesendet
+Server: Nachricht 4 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 18 an <9008.638.0> gesendet
+Server: Nachricht 9 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 19 an <9008.643.0> gesendet
+Server: Nachricht 11 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 20 an <9008.641.0> gesendet
+Server: Nachricht 12 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 21 an <9008.636.0> gesendet
+Server: Nachricht 13 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 22 an <9008.640.0> gesendet
+Server: Nachricht 17 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 23 an <9008.635.0> gesendet
+Server: Nachricht 14 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 24 an <9008.642.0> gesendet
+Server: Nachricht 20 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 25 an <9008.641.0> gesendet
+Server: Nachricht 15 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 26 an <9008.637.0> gesendet
+Server: Nachricht 16 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 27 an <9008.639.0> gesendet
+Server: Nachricht 23 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 28 an <9008.635.0> gesendet
+Server: Nachricht 18 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 29 an <9008.638.0> gesendet
+Server: Nachricht 19 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 30 an <9008.643.0> gesendet
+Server: Nachricht 21 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 31 an <9008.636.0> gesendet
+Server: Nachricht 22 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 32 an <9008.640.0> gesendet
+Server: Nachricht 25 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 33 an <9008.641.0> gesendet
+Server: Nachricht 28 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 34 an <9008.635.0> gesendet
+Server: Nachricht 24 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 35 an <9008.642.0> gesendet
+Server: Nachricht 26 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 36 an <9008.637.0> gesendet
+Server: Nachricht 27 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 37 an <9008.639.0> gesendet
+Server: Nachricht 31 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 38 an <9008.636.0> gesendet
+Server: Nachricht 32 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 39 an <9008.640.0> gesendet
+Server: Nachricht 29 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 40 an <9008.638.0> gesendet
+Server: Nachricht 30 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 41 an <9008.643.0> gesendet
+Server: HBQ konnte nicht terminiert werden.
+Server: Downtime 24.01 23:27:09,696| vom Nachrichtenserver <0.850.0>.
+Server: server.cfg geöffnet...
+Server: Startzeit: 24.01 23:27:15,921| mit PID <0.938.0>
+CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
+Server: Nachrichtennummer 1 an <9008.716.0> gesendet
+Server: Nachrichtennummer 2 an <9008.715.0> gesendet
+Server: Nachrichtennummer 3 an <9008.713.0> gesendet
+Server: Nachrichtennummer 4 an <9008.714.0> gesendet
+Server: Nachrichtennummer 5 an <9008.717.0> gesendet
+Server: Nachrichtennummer 6 an <9008.718.0> gesendet
+Server: Nachrichtennummer 7 an <9008.719.0> gesendet
+Server: Nachrichtennummer 8 an <9008.720.0> gesendet
+Server: Nachrichtennummer 9 an <9008.721.0> gesendet
+Server: Nachricht 1 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 10 an <9008.716.0> gesendet
+Server: Nachricht 3 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 11 an <9008.713.0> gesendet
+Server: Nachricht 4 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 12 an <9008.714.0> gesendet
+Server: Nachricht 7 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 13 an <9008.719.0> gesendet
+Server: Nachricht 9 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 14 an <9008.721.0> gesendet
+Server: Nachricht 2 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 15 an <9008.715.0> gesendet
+Server: Nachricht 6 wurde in HBQ eingefügt.
+Server: Nachricht 8 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 16 an <9008.718.0> gesendet
+Server: Nachrichtennummer 17 an <9008.720.0> gesendet
+Server: Nachricht 5 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 18 an <9008.717.0> gesendet
+Server: Nachricht 10 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 19 an <9008.716.0> gesendet
+Server: Nachricht 11 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 20 an <9008.713.0> gesendet
+Server: Nachricht 12 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 21 an <9008.714.0> gesendet
+Server: Nachricht 13 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 22 an <9008.719.0> gesendet
+Server: Nachricht 14 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 23 an <9008.721.0> gesendet
+Server: Nachricht 15 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 24 an <9008.715.0> gesendet
+Server: Nachricht 17 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 25 an <9008.720.0> gesendet
+Server: Nachricht 16 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 26 an <9008.718.0> gesendet
+Server: Nachricht 19 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 27 an <9008.716.0> gesendet
+Server: Nachricht 20 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 28 an <9008.713.0> gesendet
+Server: Nachricht 21 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 29 an <9008.714.0> gesendet
+Server: Nachricht 22 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 30 an <9008.719.0> gesendet
+Server: Nachricht 23 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 31 an <9008.721.0> gesendet
+Server: Nachricht 18 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 32 an <9008.717.0> gesendet
+Server: Nachricht 24 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 33 an <9008.715.0> gesendet
+Server: Nachricht 27 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 34 an <9008.716.0> gesendet
+Server: Nachricht 28 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 35 an <9008.713.0> gesendet
+Server: Nachricht 29 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 36 an <9008.714.0> gesendet
+Server: Nachricht 30 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 37 an <9008.719.0> gesendet
+Server: Nachricht 31 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 38 an <9008.721.0> gesendet
+Server: Nachricht 25 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 39 an <9008.720.0> gesendet
+Server: Nachricht 26 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 40 an <9008.718.0> gesendet
+Server: Nachricht 32 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 41 an <9008.717.0> gesendet
+Server: Nachricht 33 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 42 an <9008.715.0> gesendet
+Server: Downtime 24.01 23:27:50,332| vom Nachrichtenserver <0.938.0>.
+Server: server.cfg geöffnet...
+Server: Startzeit: 24.01 23:28:10,992| mit PID <0.1025.0>
+CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
+Server: Nachrichtennummer 1 an <9008.793.0> gesendet
+Server: Nachrichtennummer 2 an <9008.794.0> gesendet
+Server: Nachrichtennummer 3 an <9008.795.0> gesendet
+Server: Nachrichtennummer 4 an <9008.797.0> gesendet
+Server: Nachrichtennummer 5 an <9008.792.0> gesendet
+Server: Nachrichtennummer 6 an <9008.796.0> gesendet
+Server: Nachrichtennummer 7 an <9008.798.0> gesendet
+Server: Nachrichtennummer 8 an <9008.800.0> gesendet
+Server: Nachrichtennummer 9 an <9008.799.0> gesendet
+Server: Nachricht 1 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 10 an <9008.793.0> gesendet
+Server: Nachricht 5 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 11 an <9008.792.0> gesendet
+Server: Nachricht 8 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 12 an <9008.800.0> gesendet
+Server: Nachricht 2 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 13 an <9008.794.0> gesendet
+Server: Nachricht 9 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 14 an <9008.799.0> gesendet
+Server: Nachricht 3 wurde in HBQ eingefügt.
+Server: Nachricht 6 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 15 an <9008.796.0> gesendet
+Server: Nachrichtennummer 16 an <9008.795.0> gesendet
+Server: Nachricht 7 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 17 an <9008.798.0> gesendet
+Server: Nachricht 10 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 18 an <9008.793.0> gesendet
+Server: Nachricht 11 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 19 an <9008.792.0> gesendet
+Server: Nachricht 12 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 20 an <9008.800.0> gesendet
+Server: Nachricht 4 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 21 an <9008.797.0> gesendet
+Server: Nachricht 13 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 22 an <9008.794.0> gesendet
+Server: Nachricht 14 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 23 an <9008.799.0> gesendet
+Server: Nachricht 18 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 24 an <9008.793.0> gesendet
+Server: Nachricht 19 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 25 an <9008.792.0> gesendet
+Server: Nachricht 20 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 26 an <9008.800.0> gesendet
+Server: Nachricht 15 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 27 an <9008.796.0> gesendet
+Server: Nachricht 16 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 28 an <9008.795.0> gesendet
+Server: Nachricht 17 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 29 an <9008.798.0> gesendet
+Server: Nachricht 24 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 30 an <9008.793.0> gesendet
+Server: Nachricht 25 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 31 an <9008.792.0> gesendet
+Server: Nachricht 26 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 32 an <9008.800.0> gesendet
+Server: Nachricht 21 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 33 an <9008.797.0> gesendet
+Server: Nachricht 22 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 34 an <9008.794.0> gesendet
+Server: Nachricht 23 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 35 an <9008.799.0> gesendet
+Server: Nachricht 30 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 36 an <9008.793.0> gesendet
+Server: Nachricht 31 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 37 an <9008.792.0> gesendet
+Server: Nachricht 32 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 38 an <9008.800.0> gesendet
+Server: Nachricht 27 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 39 an <9008.796.0> gesendet
+Server: Nachricht 28 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 40 an <9008.795.0> gesendet
+Server: Nachricht 29 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 41 an <9008.798.0> gesendet
+Server: Nachricht 34 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 42 an <9008.794.0> gesendet
+Server: Nachricht 35 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 43 an <9008.799.0> gesendet
+Server: Nachricht 33 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 44 an <9008.797.0> gesendet
+Server: Downtime 24.01 23:28:48,335| vom Nachrichtenserver <0.1025.0>.
+Server: server.cfg geöffnet...
+Server: Startzeit: 24.01 23:29:11,894| mit PID <0.1122.0>
+CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
+Server: Nachrichtennummer 1 an <9008.873.0> gesendet
+Server: Nachrichtennummer 2 an <9008.875.0> gesendet
+Server: Nachrichtennummer 3 an <9008.877.0> gesendet
+Server: Nachrichtennummer 4 an <9008.879.0> gesendet
+Server: Nachrichtennummer 5 an <9008.880.0> gesendet
+Server: Nachrichtennummer 6 an <9008.874.0> gesendet
+Server: Nachrichtennummer 7 an <9008.876.0> gesendet
+Server: Nachrichtennummer 8 an <9008.878.0> gesendet
+Server: Nachrichtennummer 9 an <9008.881.0> gesendet
+Server: Nachricht 5 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 10 an <9008.880.0> gesendet
+Server: Nachricht 8 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 11 an <9008.878.0> gesendet
+Server: Nachricht 9 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 12 an <9008.881.0> gesendet
+Server: Nachricht 7 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 13 an <9008.876.0> gesendet
+Server: Nachricht 10 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 14 an <9008.880.0> gesendet
+Server: Nachricht 11 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 15 an <9008.878.0> gesendet
+Server: Nachricht 1 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 16 an <9008.873.0> gesendet
+Server: Nachricht 6 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 17 an <9008.874.0> gesendet
+Server: Nachricht 3 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 18 an <9008.877.0> gesendet
+Server: Nachricht 2 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 19 an <9008.875.0> gesendet
+Server: Nachricht 4 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 20 an <9008.879.0> gesendet
+Server: Nachricht 14 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 21 an <9008.880.0> gesendet
+Server: Nachricht 15 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 22 an <9008.878.0> gesendet
+Server: Nachricht 12 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 23 an <9008.881.0> gesendet
+Server: Nachricht 13 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 24 an <9008.876.0> gesendet
+Server: Nachricht 21 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 25 an <9008.880.0> gesendet
+Server: Nachricht 22 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 26 an <9008.878.0> gesendet
+Server: Nachricht 16 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 27 an <9008.873.0> gesendet
+Server: Nachricht 17 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 28 an <9008.874.0> gesendet
+Server: Nachricht 23 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 29 an <9008.881.0> gesendet
+Server: Nachricht 25 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 30 an <9008.880.0> gesendet
+Server: Nachricht 26 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 31 an <9008.878.0> gesendet
+Server: Nachrichtennummer 32 an <9008.880.0> gesendet
+Server: Nachrichtennummer 33 an <9008.878.0> gesendet
+Server: Nachrichtennummer 34 an <9008.880.0> gesendet
+Server: Nachrichtennummer 35 an <9008.878.0> gesendet
+Server: Nachrichtennummer 36 an <9008.880.0> gesendet
+Server: Nachrichtennummer 37 an <9008.878.0> gesendet
+Server: Nachrichtennummer 38 an <9008.880.0> gesendet
+Server: Nachrichtennummer 39 an <9008.878.0> gesendet
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (1/1643063387395).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (1/1643063387396).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (2/1643063387396).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (2/1643063387397).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (3/1643063387398).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (3/1643063387398).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (4/1643063387398).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (4/1643063387399).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (5/1643063387399).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (5/1643063387400).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (6/1643063387400).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (6/1643063387400).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (7/1643063387401).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (7/1643063387401).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (8/1643063387401).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (8/1643063387402).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (9/1643063387402).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (9/1643063387403).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (10/1643063387403).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (10/1643063387403).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (11/1643063387404).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (11/1643063387404).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (12/1643063387405).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (12/1643063387406).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (13/1643063387410).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (13/1643063387411).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (14/1643063387411).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (14/1643063387412).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (15/1643063387412).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (15/1643063387412).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (16/1643063387413).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (16/1643063387413).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (17/1643063387413).
+Server: Nachricht 40 wurde zugestellt.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (17/1643063387414).
+Server: Nachricht 40 konnte nicht zugestellt werden.
+CMEM>>> Client <9008.880.0> wird aktualisiert:
+CMEM>>> Client <9008.880.0> im CMEM gelöscht.
+CMEM>>> Client <9008.880.0> in CMEM eingefügt (17/1643063388414).
+Server: Nachricht 40 konnte nicht zugestellt werden.
+CMEM>>> Client <9008.878.0> wird aktualisiert:
+CMEM>>> Client <9008.878.0> im CMEM gelöscht.
+CMEM>>> Client <9008.878.0> in CMEM eingefügt (17/1643063389415).
+Server: Nachricht 18 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 40 an <9008.877.0> gesendet
+Server: Nachricht 20 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 41 an <9008.879.0> gesendet
+Server: Nachricht 19 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 42 an <9008.875.0> gesendet
+Server: Nachricht 24 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 43 an <9008.876.0> gesendet
+Server: Nachricht 29 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 44 an <9008.881.0> gesendet
+Server: Nachricht 27 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 45 an <9008.873.0> gesendet
+Server: Nachricht 28 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 46 an <9008.874.0> gesendet
+Server: Nachricht 40 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 47 an <9008.877.0> gesendet
+Server: Nachricht 41 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 48 an <9008.879.0> gesendet
+Server: HBQ konnte nicht terminiert werden.
+Server: Downtime 24.01 23:29:51,422| vom Nachrichtenserver <0.1122.0>.
+Server: server.cfg geöffnet...
+Server: Startzeit: 24.01 23:53:07,336| mit PID <0.95.0>
+CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
+Server: Nachrichtennummer 1 an <9458.96.0> gesendet
+Server: Nachrichtennummer 2 an <9458.97.0> gesendet
+Server: Nachrichtennummer 3 an <9458.98.0> gesendet
+Server: Nachrichtennummer 4 an <9458.100.0> gesendet
+Server: Nachrichtennummer 5 an <9458.99.0> gesendet
+Server: Nachrichtennummer 6 an <9458.101.0> gesendet
+Server: Nachrichtennummer 7 an <9458.102.0> gesendet
+Server: Nachrichtennummer 8 an <9458.103.0> gesendet
+Server: Nachrichtennummer 9 an <9458.104.0> gesendet
+Server: Nachricht 9 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 10 an <9458.104.0> gesendet
+Server: Nachricht 1 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 11 an <9458.96.0> gesendet
+Server: Nachricht 3 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 12 an <9458.98.0> gesendet
+Server: Nachricht 2 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 13 an <9458.97.0> gesendet
+Server: Nachricht 5 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 14 an <9458.99.0> gesendet
+Server: Nachricht 4 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 15 an <9458.100.0> gesendet
+Server: Nachricht 7 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 16 an <9458.102.0> gesendet
+Server: Nachricht 6 wurde in HBQ eingefügt.
+Server: Nachricht 8 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 17 an <9458.101.0> gesendet
+Server: Nachrichtennummer 18 an <9458.103.0> gesendet
+Server: Nachricht 10 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 19 an <9458.104.0> gesendet
+Server: Nachricht 11 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 20 an <9458.96.0> gesendet
+Server: Nachricht 12 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 21 an <9458.98.0> gesendet
+Server: Nachricht 19 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 22 an <9458.104.0> gesendet
+Server: Nachricht 14 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 23 an <9458.99.0> gesendet
+Server: Nachricht 15 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 24 an <9458.100.0> gesendet
+Server: Nachricht 16 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 25 an <9458.102.0> gesendet
+Server: Nachricht 13 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 26 an <9458.97.0> gesendet
+Server: Nachricht 20 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 27 an <9458.96.0> gesendet
+Server: Nachricht 18 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 28 an <9458.103.0> gesendet
+Server: Nachricht 17 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 29 an <9458.101.0> gesendet
+Server: Nachricht 22 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 30 an <9458.104.0> gesendet
+Server: Nachricht 21 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 31 an <9458.98.0> gesendet
+Server: Nachricht 27 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 32 an <9458.96.0> gesendet
+Server: Nachricht 30 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 33 an <9458.104.0> gesendet
+Server: Nachricht 23 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 34 an <9458.99.0> gesendet
+Server: Nachricht 24 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 35 an <9458.100.0> gesendet
+Server: Nachricht 25 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 36 an <9458.102.0> gesendet
+Server: Nachricht 26 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 37 an <9458.97.0> gesendet
+Server: Nachricht 28 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 38 an <9458.103.0> gesendet
+Server: Nachricht 29 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 39 an <9458.101.0> gesendet
+Server: Nachricht 31 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 40 an <9458.98.0> gesendet
+Server: Downtime 24.01 23:53:45,511| vom Nachrichtenserver <0.95.0>.
+Server: server.cfg geöffnet...
+Server: Startzeit: 24.01 23:54:46,831| mit PID <0.95.0>
+CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
+Server: Nachrichtennummer 1 an <9458.102.0> gesendet
+Server: Nachrichtennummer 2 an <9458.103.0> gesendet
+Server: Nachrichtennummer 3 an <9458.104.0> gesendet
+Server: Nachrichtennummer 4 an <9458.106.0> gesendet
+Server: Nachrichtennummer 5 an <9458.107.0> gesendet
+Server: Nachrichtennummer 6 an <9458.105.0> gesendet
+Server: Nachrichtennummer 7 an <9458.108.0> gesendet
+Server: Nachrichtennummer 8 an <9458.109.0> gesendet
+Server: Nachrichtennummer 9 an <9458.110.0> gesendet
+Server: Nachricht 9 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 10 an <9458.110.0> gesendet
+Server: Nachricht 7 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 11 an <9458.108.0> gesendet
+Server: Nachricht 2 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 12 an <9458.103.0> gesendet
+Server: Nachricht 5 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 13 an <9458.107.0> gesendet
+Server: Nachricht 10 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 14 an <9458.110.0> gesendet
+Server: Nachricht 8 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 15 an <9458.109.0> gesendet
+Server: Nachricht 6 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 16 an <9458.105.0> gesendet
+Server: Nachricht 1 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 17 an <9458.102.0> gesendet
+Server: Nachricht 3 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 18 an <9458.104.0> gesendet
+Server: Nachricht 4 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 19 an <9458.106.0> gesendet
+Server: Nachricht 11 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 20 an <9458.108.0> gesendet
+Server: Nachricht 14 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 21 an <9458.110.0> gesendet
+Server: Nachricht 12 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 22 an <9458.103.0> gesendet
+Server: Nachricht 13 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 23 an <9458.107.0> gesendet
+Server: Nachricht 21 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 24 an <9458.110.0> gesendet
+Server: Nachricht 20 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 25 an <9458.108.0> gesendet
+Server: Nachricht 15 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 26 an <9458.109.0> gesendet
+Server: Nachricht 22 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 27 an <9458.103.0> gesendet
+Server: Nachricht 24 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 28 an <9458.110.0> gesendet
+Server: Nachrichtennummer 29 an <9458.110.0> gesendet
+Server: Nachrichtennummer 30 an <9458.110.0> gesendet
+Server: Nachrichtennummer 31 an <9458.110.0> gesendet
+Server: Nachrichtennummer 32 an <9458.110.0> gesendet
+Server: Nachricht 33 wurde zugestellt.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (1/1643064922303).
+Server: Nachricht 33 wurde zugestellt.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (2/1643064922304).
+Server: Nachricht 33 wurde zugestellt.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (3/1643064922305).
+Server: Nachricht 33 wurde zugestellt.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (4/1643064922308).
+Server: Nachricht 33 wurde zugestellt.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (5/1643064922308).
+Server: Nachricht 33 wurde zugestellt.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (6/1643064922309).
+Server: Nachricht 33 wurde zugestellt.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (7/1643064922309).
+Server: Nachricht 33 wurde zugestellt.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (8/1643064922310).
+Server: Nachricht 33 wurde zugestellt.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (9/1643064922310).
+Server: Nachricht 33 wurde zugestellt.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (10/1643064922311).
+Server: Nachricht 33 wurde zugestellt.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (11/1643064922312).
+Server: Nachricht 33 wurde zugestellt.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (12/1643064922312).
+Server: Nachricht 33 wurde zugestellt.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (13/1643064922313).
+Server: Nachricht 33 wurde zugestellt.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (14/1643064922314).
+Server: Nachricht 33 wurde zugestellt.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (15/1643064922314).
+Server: Nachricht 33 konnte nicht zugestellt werden.
+CMEM>>> Client <9458.110.0> wird aktualisiert:
+CMEM>>> Client <9458.110.0> im CMEM gelöscht.
+CMEM>>> Client <9458.110.0> in CMEM eingefügt (15/1643064923314).
+Server: Nachricht 16 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 33 an <9458.105.0> gesendet
+Server: Nachricht 17 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 34 an <9458.102.0> gesendet
+Server: Nachricht 18 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 35 an <9458.104.0> gesendet
+Server: Nachricht 19 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 36 an <9458.106.0> gesendet
+Server: Nachricht 25 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 37 an <9458.108.0> gesendet
+Server: Nachricht 23 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 38 an <9458.107.0> gesendet
+Server: Nachricht 27 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 39 an <9458.103.0> gesendet
+Server: Nachricht 26 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 40 an <9458.109.0> gesendet
+Server: Nachricht 33 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 41 an <9458.105.0> gesendet
+Server: Nachricht 34 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 42 an <9458.102.0> gesendet
+Server: Nachricht 35 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 43 an <9458.104.0> gesendet
+Server: HBQ konnte nicht terminiert werden.
+Server: Downtime 24.01 23:55:25,320| vom Nachrichtenserver <0.95.0>.
+Server: server.cfg geöffnet...
+Server: Startzeit: 24.01 23:55:26,937| mit PID <0.248.0>
+CMEM>>> initialisiert mit Lebenszeit 20 Sekunden.
+Server: Nachrichtennummer 1 an <9458.206.0> gesendet
+Server: Nachrichtennummer 2 an <9458.204.0> gesendet
+Server: Nachrichtennummer 3 an <9458.203.0> gesendet
+Server: Nachrichtennummer 4 an <9458.205.0> gesendet
+Server: Nachrichtennummer 5 an <9458.207.0> gesendet
+Server: Nachrichtennummer 6 an <9458.208.0> gesendet
+Server: Nachrichtennummer 7 an <9458.209.0> gesendet
+Server: Nachrichtennummer 8 an <9458.211.0> gesendet
+Server: Nachrichtennummer 9 an <9458.210.0> gesendet
+Server: Nachricht 3 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 10 an <9458.203.0> gesendet
+Server: Nachricht 4 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 11 an <9458.205.0> gesendet
+Server: Nachricht 9 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 12 an <9458.210.0> gesendet
+Server: Nachricht 5 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 13 an <9458.207.0> gesendet
+Server: Nachricht 1 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 14 an <9458.206.0> gesendet
+Server: Nachricht 6 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 15 an <9458.208.0> gesendet
+Server: Nachricht 10 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 16 an <9458.203.0> gesendet
+Server: Nachricht 11 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 17 an <9458.205.0> gesendet
+Server: Nachricht 12 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 18 an <9458.210.0> gesendet
+Server: Nachricht 13 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 19 an <9458.207.0> gesendet
+Server: Nachricht 2 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 20 an <9458.204.0> gesendet
+Server: Nachricht 7 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 21 an <9458.209.0> gesendet
+Server: Nachricht 8 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 22 an <9458.211.0> gesendet
+Server: Nachricht 16 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 23 an <9458.203.0> gesendet
+Server: Nachricht 17 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 24 an <9458.205.0> gesendet
+Server: Nachricht 18 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 25 an <9458.210.0> gesendet
+Server: Nachricht 14 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 26 an <9458.206.0> gesendet
+Server: Nachricht 19 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 27 an <9458.207.0> gesendet
+Server: Nachricht 15 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 28 an <9458.208.0> gesendet
+Server: Nachricht 23 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 29 an <9458.203.0> gesendet
+Server: Nachricht 24 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 30 an <9458.205.0> gesendet
+Server: Nachricht 25 wurde in HBQ eingefügt.
+Server: Nachrichtennummer 31 an <9458.210.0> gesendet
+Server: Nachricht 29 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 32 an <9458.203.0> gesendet
+Server: Nachricht 30 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 33 an <9458.205.0> gesendet
+Server: Nachricht 31 wurde in HBQ eingefügt.
+Server: DLQ gelistet.
+Server: HBQ gelistet.
+Server: Nachrichtennummer 34 an <9458.210.0> gesendet
+Server: Nachrichtennummer 35 an <9458.203.0> gesendet
+Server: Nachrichtennummer 36 an <9458.205.0> gesendet
+Server: Nachrichtennummer 37 an <9458.210.0> gesendet
+Server: Nachrichtennummer 38 an <9458.203.0> gesendet
+Server: Nachrichtennummer 39 an <9458.205.0> gesendet
+Server: Nachrichtennummer 40 an <9458.210.0> gesendet
+Server: Nachrichtennummer 41 an <9458.203.0> gesendet
+Server: Nachrichtennummer 42 an <9458.205.0> gesendet
+Server: Nachrichtennummer 43 an <9458.210.0> gesendet
+Server: Nachrichtennummer 44 an <9458.203.0> gesendet
+Server: Nachrichtennummer 45 an <9458.205.0> gesendet
+Server: Nachrichtennummer 46 an <9458.210.0> gesendet
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (3/1643064962326).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (3/1643064962326).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (3/1643064962326).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (4/1643064962327).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (4/1643064962327).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (4/1643064962328).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (5/1643064962328).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (5/1643064962328).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (5/1643064962329).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (6/1643064962329).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (6/1643064962330).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (6/1643064962330).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (7/1643064962331).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (7/1643064962331).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (7/1643064962331).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (8/1643064962332).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (8/1643064962332).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (8/1643064962333).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (9/1643064962333).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (9/1643064962333).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (9/1643064962334).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (10/1643064962334).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (10/1643064962334).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (10/1643064962335).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (11/1643064962335).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (11/1643064962335).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (11/1643064962336).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (12/1643064962336).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (12/1643064962336).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (12/1643064962337).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (13/1643064962337).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (13/1643064962337).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (13/1643064962338).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (14/1643064962338).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (14/1643064962338).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (14/1643064962339).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (15/1643064962340).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (15/1643064962340).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (15/1643064962340).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (16/1643064962341).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (16/1643064962341).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (16/1643064962342).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (17/1643064962342).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (17/1643064962342).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (17/1643064962343).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (18/1643064962343).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (18/1643064962343).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (18/1643064962344).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (19/1643064962344).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (19/1643064962345).
+Server: Nachricht 47 wurde zugestellt.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (19/1643064962345).
+Server: Nachricht 47 konnte nicht zugestellt werden.
+CMEM>>> Client <9458.203.0> wird aktualisiert:
+CMEM>>> Client <9458.203.0> im CMEM gelöscht.
+CMEM>>> Client <9458.203.0> in CMEM eingefügt (19/1643064963345).
+Server: Nachricht 47 konnte nicht zugestellt werden.
+CMEM>>> Client <9458.205.0> wird aktualisiert:
+CMEM>>> Client <9458.205.0> im CMEM gelöscht.
+CMEM>>> Client <9458.205.0> in CMEM eingefügt (19/1643064964346).
+Server: Nachricht 47 konnte nicht zugestellt werden.
+CMEM>>> Client <9458.210.0> wird aktualisiert:
+CMEM>>> Client <9458.210.0> im CMEM gelöscht.
+CMEM>>> Client <9458.210.0> in CMEM eingefügt (19/1643064965348).
+Server: Nachricht 27 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 47 an <9458.207.0> gesendet
+Server: Nachricht 20 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 48 an <9458.204.0> gesendet
+Server: Nachricht 21 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 49 an <9458.209.0> gesendet
+Server: Nachricht 22 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 50 an <9458.211.0> gesendet
+Server: Nachricht 26 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 51 an <9458.206.0> gesendet
+Server: Nachricht 28 konnte nicht in HBQ eingefügt werden.
+Server: Nachrichtennummer 52 an <9458.208.0> gesendet
+Server: Nachricht 47 konnte nicht in HBQ eingefügt werden.
+Server: DLQ konnte nicht gelistet werden.
+Server: HBQ konnte nicht gelistet werden.
+Server: Nachrichtennummer 53 an <9458.207.0> gesendet
+Server: HBQ konnte nicht terminiert werden.
+Server: Downtime 24.01 23:56:04,358| vom Nachrichtenserver <0.248.0>.

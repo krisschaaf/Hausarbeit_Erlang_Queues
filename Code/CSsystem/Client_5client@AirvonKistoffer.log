@@ -76,3 +76,69 @@ Downtime: 22.01 12:20:21,371| vom Client 5-client@AirvonKistoffer-<0.100.0>-KLC
 5-client@AirvonKistoffer-<0.217.0>-KLC: 21te_Nachricht. C Out: 22.01 12:49:21,679| gesendet
 5-client@AirvonKistoffer-<0.217.0>-KLC: 26te_Nachricht. C Out: 22.01 12:49:26,682| gesendet
 Downtime: 22.01 12:49:26,682| vom Client 5-client@AirvonKistoffer-<0.217.0>-KLC
+5-client@AirvonKistoffer-<0.100.0>-KLC Start: 24.01 23:19:06,435|.
+5-client@AirvonKistoffer-<0.137.0>-KLC Start: 24.01 23:19:20,575|.
+Downtime: 24.01 23:19:26,437| vom Client 5-client@AirvonKistoffer-<0.100.0>-KLC
+5-client@AirvonKistoffer-<0.137.0>-KLC: 7te_Nachricht. C Out: 24.01 23:19:29,577| gesendet
+5-client@AirvonKistoffer-<0.137.0>-KLC: 21te_Nachricht. C Out: 24.01 23:19:38,580| gesendet
+Downtime: 24.01 23:19:40,577| vom Client 5-client@AirvonKistoffer-<0.137.0>-KLC
+5-client@AirvonKistoffer-<0.274.0>-KLC Start: 24.01 23:20:14,253|.
+5-client@AirvonKistoffer-<0.274.0>-KLC: 3te_Nachricht. C Out: 24.01 23:20:18,255| gesendet
+5-client@AirvonKistoffer-<0.274.0>-KLC: 13te_Nachricht. C Out: 24.01 23:20:22,258| gesendet
+5-client@AirvonKistoffer-<0.274.0>-KLC: 22te_Nachricht. C Out: 24.01 23:20:26,260| gesendet
+5-client@AirvonKistoffer-<0.274.0>-KLC: 29te_Nachricht. C Out: 24.01 23:20:30,265| gesendet
+5-client@AirvonKistoffer-<0.274.0>-KLC: 48te_Nachricht. C Out: 24.01 23:20:37,294| gesendet
+Downtime: 24.01 23:20:37,294| vom Client 5-client@AirvonKistoffer-<0.274.0>-KLC
+5-client@AirvonKistoffer-<0.412.0>-KLC Start: 24.01 23:21:11,086|.
+5-client@AirvonKistoffer-<0.412.0>-KLC: 5te_Nachricht. C Out: 24.01 23:21:17,088| gesendet
+5-client@AirvonKistoffer-<0.412.0>-KLC: 11te_Nachricht. C Out: 24.01 23:21:23,090| gesendet
+5-client@AirvonKistoffer-<0.412.0>-KLC: 20te_Nachricht. C Out: 24.01 23:21:29,094| gesendet
+5-client@AirvonKistoffer-<0.412.0>-KLC: 30te_Nachricht. C Out: 24.01 23:21:35,100| gesendet
+Downtime: 24.01 23:21:35,100| vom Client 5-client@AirvonKistoffer-<0.412.0>-KLC
+5-client@AirvonKistoffer-<0.484.0>-KLC Start: 24.01 23:22:11,568|.
+5-client@AirvonKistoffer-<0.484.0>-KLC: 6te_Nachricht. C Out: 24.01 23:22:17,570| gesendet
+5-client@AirvonKistoffer-<0.484.0>-KLC: 14te_Nachricht. C Out: 24.01 23:22:23,573| gesendet
+5-client@AirvonKistoffer-<0.484.0>-KLC: 23te_Nachricht. C Out: 24.01 23:22:29,577| gesendet
+5-client@AirvonKistoffer-<0.484.0>-KLC: 32te_Nachricht. C Out: 24.01 23:22:35,581| gesendet
+Downtime: 24.01 23:22:35,581| vom Client 5-client@AirvonKistoffer-<0.484.0>-KLC
+5-client@AirvonKistoffer-<0.562.0>-KLC Start: 24.01 23:23:06,920|.
+5-client@AirvonKistoffer-<0.562.0>-KLC: 5te_Nachricht. C Out: 24.01 23:23:13,921| gesendet
+5-client@AirvonKistoffer-<0.562.0>-KLC: 14te_Nachricht. C Out: 24.01 23:23:20,928| gesendet
+5-client@AirvonKistoffer-<0.562.0>-KLC: 24te_Nachricht. C Out: 24.01 23:23:27,932| gesendet
+Downtime: 24.01 23:23:27,932| vom Client 5-client@AirvonKistoffer-<0.562.0>-KLC
+5-client@AirvonKistoffer-<0.639.0>-KLC Start: 24.01 23:26:32,683|.
+5-client@AirvonKistoffer-<0.639.0>-KLC: 5te_Nachricht. C Out: 24.01 23:26:40,685| gesendet
+5-client@AirvonKistoffer-<0.639.0>-KLC: 16te_Nachricht. C Out: 24.01 23:26:48,690| gesendet
+5-client@AirvonKistoffer-<0.639.0>-KLC: 27te_Nachricht. C Out: 24.01 23:26:56,693| gesendet
+Downtime: 24.01 23:26:56,693| vom Client 5-client@AirvonKistoffer-<0.639.0>-KLC
+5-client@AirvonKistoffer-<0.717.0>-KLC Start: 24.01 23:27:16,314|.
+5-client@AirvonKistoffer-<0.717.0>-KLC: 5te_Nachricht. C Out: 24.01 23:27:24,316| gesendet
+5-client@AirvonKistoffer-<0.717.0>-KLC: 18te_Nachricht. C Out: 24.01 23:27:32,320| gesendet
+5-client@AirvonKistoffer-<0.717.0>-KLC: 32te_Nachricht. C Out: 24.01 23:27:40,324| gesendet
+Downtime: 24.01 23:27:40,324| vom Client 5-client@AirvonKistoffer-<0.717.0>-KLC
+5-client@AirvonKistoffer-<0.796.0>-KLC Start: 24.01 23:28:11,322|.
+5-client@AirvonKistoffer-<0.796.0>-KLC: 6te_Nachricht. C Out: 24.01 23:28:18,324| gesendet
+5-client@AirvonKistoffer-<0.796.0>-KLC: 15te_Nachricht. C Out: 24.01 23:28:25,327| gesendet
+5-client@AirvonKistoffer-<0.796.0>-KLC: 27te_Nachricht. C Out: 24.01 23:28:32,336| gesendet
+Downtime: 24.01 23:28:32,336| vom Client 5-client@AirvonKistoffer-<0.796.0>-KLC
+5-client@AirvonKistoffer-<0.877.0>-KLC Start: 24.01 23:29:12,376|.
+5-client@AirvonKistoffer-<0.877.0>-KLC: 3te_Nachricht. C Out: 24.01 23:29:20,377| gesendet
+5-client@AirvonKistoffer-<0.877.0>-KLC: 18te_Nachricht. C Out: 24.01 23:29:28,380| gesendet
+5-client@AirvonKistoffer-<0.877.0>-KLC: 40te_Nachricht. C Out: 24.01 23:29:38,418| gesendet
+Downtime: 24.01 23:29:38,418| vom Client 5-client@AirvonKistoffer-<0.877.0>-KLC
+5-client@AirvonKistoffer-<0.100.0>-KLC Start: 24.01 23:53:11,493|.
+5-client@AirvonKistoffer-<0.100.0>-KLC: 4te_Nachricht. C Out: 24.01 23:53:18,495| gesendet
+5-client@AirvonKistoffer-<0.100.0>-KLC: 15te_Nachricht. C Out: 24.01 23:53:25,502| gesendet
+5-client@AirvonKistoffer-<0.100.0>-KLC: 24te_Nachricht. C Out: 24.01 23:53:32,513| gesendet
+Downtime: 24.01 23:53:32,513| vom Client 5-client@AirvonKistoffer-<0.100.0>-KLC
+5-client@AirvonKistoffer-<0.106.0>-KLC Start: 24.01 23:54:47,286|.
+5-client@AirvonKistoffer-<0.106.0>-KLC: 4te_Nachricht. C Out: 24.01 23:54:55,288| gesendet
+5-client@AirvonKistoffer-<0.106.0>-KLC: 19te_Nachricht. C Out: 24.01 23:55:03,295| gesendet
+Downtime: 24.01 23:55:07,287| vom Client 5-client@AirvonKistoffer-<0.106.0>-KLC
+5-client@AirvonKistoffer-<0.207.0>-KLC Start: 24.01 23:55:27,305|.
+5-client@AirvonKistoffer-<0.207.0>-KLC: 5te_Nachricht. C Out: 24.01 23:55:31,307| gesendet
+5-client@AirvonKistoffer-<0.207.0>-KLC: 13te_Nachricht. C Out: 24.01 23:55:35,309| gesendet
+5-client@AirvonKistoffer-<0.207.0>-KLC: 19te_Nachricht. C Out: 24.01 23:55:39,311| gesendet
+5-client@AirvonKistoffer-<0.207.0>-KLC: 27te_Nachricht. C Out: 24.01 23:55:43,317| gesendet
+5-client@AirvonKistoffer-<0.207.0>-KLC: 47te_Nachricht. C Out: 24.01 23:55:50,350| gesendet
+Downtime: 24.01 23:55:50,350| vom Client 5-client@AirvonKistoffer-<0.207.0>-KLC
