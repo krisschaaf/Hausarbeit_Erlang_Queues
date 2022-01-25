@@ -56,3 +56,26 @@ dlq>>> Nachricht 18 in DLQ eingefuegt.
 dlq>>> Nachricht 12 aus DLQ geloescht.
 dlq>>> Nachricht 19 in DLQ eingefuegt.
 HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+dlq>>> initialisiert mit Kapazitaet 10.
+HBQ>>> Nachricht 1 in HBQ eingefuegt.
+dlq>>> Nachricht 1 in DLQ eingefuegt.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 3 in HBQ eingefuegt.
+HBQ>>> Nachricht 4 in HBQ eingefuegt.
+HBQ>>> Nachricht 5 in HBQ eingefuegt.
+HBQ>>> Nachricht 6 in HBQ eingefuegt.
+HBQ>>> Nachricht 7 in HBQ eingefuegt.
+dlq>>> Content(1): [1]
+HBQ>>> Content(5): [3,4,5,6,7]
+HBQ>>> Nachricht 9 in HBQ eingefuegt.
+HBQ>>>Fehlernachricht fuer Nachrichten 2 bis 2 generiert.
+dlq>>> Nachricht 2 in DLQ eingefuegt.
+dlq>>> Nachricht 3 in DLQ eingefuegt.
+HBQ>>> Nachricht 8 in HBQ eingefuegt.
+dlq>>> Nachricht 4 in DLQ eingefuegt.
+dlq>>> Nachricht 5 in DLQ eingefuegt.
+dlq>>> Nachricht 6 in DLQ eingefuegt.
+dlq>>> Nachricht 7 in DLQ eingefuegt.
+dlq>>> Nachricht 8 in DLQ eingefuegt.
+dlq>>> Nachricht 9 in DLQ eingefuegt.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.

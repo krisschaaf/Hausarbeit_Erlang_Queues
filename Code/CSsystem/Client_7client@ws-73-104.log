@@ -49,3 +49,106 @@ Downtime: 20.01 09:36:44,052| vom Client 7-client@ws-73-104-<0.205.0>-KLC
 7-client@ws-73-104-<0.98.0>-KLC: 16te_Nachricht. C Out: 20.01 11:31:08,190| gesendet
 7-client@ws-73-104-<0.98.0>-KLC: 28te_Nachricht. C Out: 20.01 11:31:15,196| gesendet
 Downtime: 20.01 11:31:15,196| vom Client 7-client@ws-73-104-<0.98.0>-KLC
+7-client@ws-73-104-<0.102.0>-KLC Start: 25.01 12:30:49,114|.
+Downtime: 25.01 12:31:09,116| vom Client 7-client@ws-73-104-<0.102.0>-KLC
+7-client@ws-73-104-<0.148.0>-KLC Start: 25.01 12:31:59,999|.
+7-client@ws-73-104-<0.180.0>-KLC Start: 25.01 12:32:08,414|.
+7-client@ws-73-104-<0.180.0>-KLC: 3te_Nachricht. C Out: 25.01 12:32:11,416| gesendet
+7-client@ws-73-104-<0.180.0>-KLC: 10te_Nachricht. C Out: 25.01 12:32:14,428| gesendet
+7-client@ws-73-104-<0.180.0>-KLC: 16te_Nachricht. C Out: 25.01 12:32:17,430| gesendet
+Downtime: 25.01 12:32:20,000| vom Client 7-client@ws-73-104-<0.148.0>-KLC
+7-client@ws-73-104-<0.180.0>-KLC: 23te_Nachricht. C Out: 25.01 12:32:20,431| gesendet
+7-client@ws-73-104-<0.180.0>-KLC: 29te_Nachricht. C Out: 25.01 12:32:29,429| gesendet
+Downtime: 25.01 12:32:29,429| vom Client 7-client@ws-73-104-<0.180.0>-KLC
+7-client@ws-73-104-<0.260.0>-KLC Start: 25.01 12:34:53,067|.
+7-client@ws-73-104-<0.297.0>-KLC Start: 25.01 12:35:08,980|.
+Downtime: 25.01 12:35:13,068| vom Client 7-client@ws-73-104-<0.260.0>-KLC
+7-client@ws-73-104-<0.297.0>-KLC: 2te_Nachricht. C Out: 25.01 12:35:17,982| gesendet
+7-client@ws-73-104-<0.297.0>-KLC: 19te_Nachricht. C Out: 25.01 12:35:26,986| gesendet
+7-client@ws-73-104-<0.297.0>-KLC: 36te_Nachricht. C Out: 25.01 12:35:37,015| gesendet
+Downtime: 25.01 12:35:37,015| vom Client 7-client@ws-73-104-<0.297.0>-KLC
+7-client@ws-73-104-<0.409.0>-KLC Start: 25.01 12:38:01,080|.
+7-client@ws-73-104-<0.409.0>-KLC: 4te_Nachricht. C Out: 25.01 12:38:06,082| gesendet
+7-client@ws-73-104-<0.409.0>-KLC: 12te_Nachricht. C Out: 25.01 12:38:11,092| gesendet
+7-client@ws-73-104-<0.409.0>-KLC: 21te_Nachricht. C Out: 25.01 12:38:16,096| gesendet
+7-client@ws-73-104-<0.409.0>-KLC: 27te_Nachricht. C Out: 25.01 12:38:21,098| gesendet
+Downtime: 25.01 12:38:21,098| vom Client 7-client@ws-73-104-<0.409.0>-KLC
+7-client@ws-73-104-<0.486.0>-KLC Start: 25.01 13:22:38,146|.
+7-client@ws-73-104-<0.486.0>-KLC: 4te_Nachricht. C Out: 25.01 13:22:46,148| gesendet
+7-client@ws-73-104-<0.486.0>-KLC: 18te_Nachricht. C Out: 25.01 13:22:54,152| gesendet
+7-client@ws-73-104-<0.486.0>-KLC: 36te_Nachricht. C Out: 25.01 13:23:03,177| gesendet
+Downtime: 25.01 13:23:03,177| vom Client 7-client@ws-73-104-<0.486.0>-KLC
+7-client@ws-73-104-<0.597.0>-KLC Start: 25.01 13:32:34,123|.
+7-client@ws-73-104-<0.597.0>-KLC: 4te_Nachricht. C Out: 25.01 13:32:42,125| gesendet
+7-client@ws-73-104-<0.597.0>-KLC: 19te_Nachricht. C Out: 25.01 13:32:50,131| gesendet
+7-client@ws-73-104-<0.597.0>-KLC: 43te_Nachricht. C Out: 25.01 13:33:01,163| gesendet
+Downtime: 25.01 13:33:01,163| vom Client 7-client@ws-73-104-<0.597.0>-KLC
+7-client@ws-73-104-<0.726.0>-KLC Start: 25.01 13:40:54,211|.
+7-client@ws-73-104-<0.726.0>-KLC: 4te_Nachricht. C Out: 25.01 13:40:58,212| gesendet
+7-client@ws-73-104-<0.726.0>-KLC: 13te_Nachricht. C Out: 25.01 13:41:02,217| gesendet
+7-client@ws-73-104-<0.726.0>-KLC: 21te_Nachricht. C Out: 25.01 13:41:06,220| gesendet
+7-client@ws-73-104-<0.726.0>-KLC: 28te_Nachricht. C Out: 25.01 13:41:10,221| gesendet
+7-client@ws-73-104-<0.726.0>-KLC: 57te_Nachricht. C Out: 25.01 13:41:14,229| gesendet
+Downtime: 25.01 13:41:14,229| vom Client 7-client@ws-73-104-<0.726.0>-KLC
+7-client@ws-73-104-<0.98.0>-KLC Start: 25.01 13:45:44,682|.
+7-client@ws-73-104-<0.98.0>-KLC: 3te_Nachricht. C Out: 25.01 13:45:53,683| gesendet
+7-client@ws-73-104-<0.98.0>-KLC: 23te_Nachricht. C Out: 25.01 13:46:02,686| gesendet
+7-client@ws-73-104-<0.98.0>-KLC: 73te_Nachricht. C Out: 25.01 13:46:11,690| gesendet
+Downtime: 25.01 13:46:11,690| vom Client 7-client@ws-73-104-<0.98.0>-KLC
+7-client@ws-73-104-<0.304.0>-KLC Start: 25.01 13:48:17,846|.
+7-client@ws-73-104-<0.304.0>-KLC: 2te_Nachricht. C Out: 25.01 13:48:21,846| gesendet
+7-client@ws-73-104-<0.304.0>-KLC: 10te_Nachricht. C Out: 25.01 13:48:25,853| gesendet
+7-client@ws-73-104-<0.304.0>-KLC: 16te_Nachricht. C Out: 25.01 13:48:29,855| gesendet
+7-client@ws-73-104-<0.304.0>-KLC: 22te_Nachricht. C Out: 25.01 13:48:33,859| gesendet
+7-client@ws-73-104-<0.304.0>-KLC: 28te_Nachricht. C Out: 25.01 13:48:37,860| gesendet
+Downtime: 25.01 13:48:37,860| vom Client 7-client@ws-73-104-<0.304.0>-KLC
+7-client@ws-73-104-<0.383.0>-KLC Start: 25.01 14:03:11,632|.
+7-client@ws-73-104-<0.383.0>-KLC: 3te_Nachricht. C Out: 25.01 14:03:15,633| gesendet
+7-client@ws-73-104-<0.383.0>-KLC: 12te_Nachricht. C Out: 25.01 14:03:19,640| gesendet
+7-client@ws-73-104-<0.383.0>-KLC: 20te_Nachricht. C Out: 25.01 14:03:23,644| gesendet
+7-client@ws-73-104-<0.383.0>-KLC: 28te_Nachricht. C Out: 25.01 14:03:27,646| gesendet
+7-client@ws-73-104-<0.383.0>-KLC: 55te_Nachricht. C Out: 25.01 14:03:31,648| gesendet
+Downtime: 25.01 14:03:31,648| vom Client 7-client@ws-73-104-<0.383.0>-KLC
+7-client@ws-73-104-<0.546.0>-KLC Start: 25.01 14:58:57,795|.
+7-client@ws-73-104-<0.546.0>-KLC: 3te_Nachricht. C Out: 25.01 14:59:00,796| gesendet
+7-client@ws-73-104-<0.546.0>-KLC: 10te_Nachricht. C Out: 25.01 14:59:04,800| gesendet
+7-client@ws-73-104-<0.546.0>-KLC: 19te_Nachricht. C Out: 25.01 14:59:13,808| gesendet
+Downtime: 25.01 14:59:17,796| vom Client 7-client@ws-73-104-<0.546.0>-KLC
+7-client@ws-73-104-<0.611.0>-KLC Start: 25.01 14:59:56,979|.
+7-client@ws-73-104-<0.611.0>-KLC: 2te_Nachricht. C Out: 25.01 14:59:59,980| gesendet
+7-client@ws-73-104-<0.611.0>-KLC: 10te_Nachricht. C Out: 25.01 15:00:02,988| gesendet
+7-client@ws-73-104-<0.611.0>-KLC: 17te_Nachricht. C Out: 25.01 15:00:05,990| gesendet
+7-client@ws-73-104-<0.611.0>-KLC: 22te_Nachricht. C Out: 25.01 15:00:08,993| gesendet
+7-client@ws-73-104-<0.611.0>-KLC: 29te_Nachricht. C Out: 25.01 15:00:11,995| gesendet
+34te_Nachricht um 25.01 15:00:11,997| vergessen zu senden ******
+35te_Nachricht um 25.01 15:00:11,997| vergessen zu senden ******
+36te_Nachricht um 25.01 15:00:11,997| vergessen zu senden ******
+37te_Nachricht um 25.01 15:00:11,997| vergessen zu senden ******
+38te_Nachricht um 25.01 15:00:11,998| vergessen zu senden ******
+7-client@ws-73-104-<0.611.0>-KLC: 2te_Nachricht. C Out: 25.01 14:59:59,980| DLQ Out: 25.01 15:00:11,998| *******; C In: 25.01 15:00:12,007|#1#3#2#4
+9-client@ws-73-104-<0.609.0>-KLC: 3te_Nachricht. C Out: 25.01 15:00:01,980| DLQ Out: 25.01 15:00:12,008|  ; C In: 25.01 15:00:12,008|#1#3#2#4
+4-client@ws-73-104-<0.614.0>-KLC: 4te_Nachricht. C Out: 25.01 15:00:02,980| DLQ Out: 25.01 15:00:12,008|  ; C In: 25.01 15:00:12,008|#1#3#2#4
+6-client@ws-73-104-<0.612.0>-KLC: 5te_Nachricht. C Out: 25.01 15:00:01,980| DLQ Out: 25.01 15:00:12,009|  ; C In: 25.01 15:00:12,009|#1#3#2#4
+5-client@ws-73-104-<0.613.0>-KLC: 6te_Nachricht. C Out: 25.01 15:00:04,980| DLQ Out: 25.01 15:00:12,010|  ; C In: 25.01 15:00:12,011|#1#3#2#4
+3-client@ws-73-104-<0.615.0>-KLC: 7te_Nachricht. C Out: 25.01 15:00:01,980| DLQ Out: 25.01 15:00:12,011|  ; C In: 25.01 15:00:12,012|#1#3#2#4
+2-client@ws-73-104-<0.616.0>-KLC: 8te_Nachricht. C Out: 25.01 15:00:03,980| DLQ Out: 25.01 15:00:12,012|  ; C In: 25.01 15:00:12,012|#1#3#2#4
+1-client@ws-73-104-<0.617.0>-KLC: 9te_Nachricht. C Out: 25.01 15:00:00,980| DLQ Out: 25.01 15:00:12,013|  ; C In: 25.01 15:00:12,013|#1#3#2#4
+7-client@ws-73-104-<0.611.0>-KLC: 10te_Nachricht. C Out: 25.01 15:00:02,988| DLQ Out: 25.01 15:00:12,013| *******; C In: 25.01 15:00:12,013|#1#3#2#4
+8-client@ws-73-104-<0.610.0>-KLC: 11te_Nachricht. C Out: 25.01 15:00:04,984| DLQ Out: 25.01 15:00:12,014|  ; C In: 25.01 15:00:12,014|#1#3#2#4
+1-client@ws-73-104-<0.617.0>-KLC: 12te_Nachricht. C Out: 25.01 15:00:04,985| DLQ Out: 25.01 15:00:12,014|  ; C In: 25.01 15:00:12,014|#1#3#2#4
+9-client@ws-73-104-<0.609.0>-KLC: 13te_Nachricht. C Out: 25.01 15:00:06,982| DLQ Out: 25.01 15:00:12,015|  ; C In: 25.01 15:00:12,015|#1#3#2#4
+6-client@ws-73-104-<0.612.0>-KLC: 14te_Nachricht. C Out: 25.01 15:00:06,983| DLQ Out: 25.01 15:00:12,015|  ; C In: 25.01 15:00:12,015|#1#3#2#4
+3-client@ws-73-104-<0.615.0>-KLC: 15te_Nachricht. C Out: 25.01 15:00:06,984| DLQ Out: 25.01 15:00:12,015|  ; C In: 25.01 15:00:12,016|#1#3#2#4
+4-client@ws-73-104-<0.614.0>-KLC: 16te_Nachricht. C Out: 25.01 15:00:08,982| DLQ Out: 25.01 15:00:12,016|  ; C In: 25.01 15:00:12,016|#1#3#2#4
+7-client@ws-73-104-<0.611.0>-KLC: 17te_Nachricht. C Out: 25.01 15:00:05,990| DLQ Out: 25.01 15:00:12,016| *******; C In: 25.01 15:00:12,016|#1#3#2#4
+2-client@ws-73-104-<0.616.0>-KLC: 18te_Nachricht. C Out: 25.01 15:00:10,984| DLQ Out: 25.01 15:00:12,017|  ; C In: 25.01 15:00:12,017|#1#3#2#4..getmessages..Done...
+39te_Nachricht um 25.01 15:00:12,017| vergessen zu senden ******
+40te_Nachricht um 25.01 15:00:12,018| vergessen zu senden ******
+41te_Nachricht um 25.01 15:00:12,018| vergessen zu senden ******
+42te_Nachricht um 25.01 15:00:12,018| vergessen zu senden ******
+Neues Sendeintervall: 2 Sekunden (3).
+43te_Nachricht um 25.01 15:00:12,018| vergessen zu senden ******
+7-client@ws-73-104-<0.611.0>-KLC: 44te_Nachricht. C Out: 25.01 15:00:14,019| gesendet
+7-client@ws-73-104-<0.611.0>-KLC: 48te_Nachricht. C Out: 25.01 15:00:16,023| gesendet
+7-client@ws-73-104-<0.611.0>-KLC: 50te_Nachricht. C Out: 25.01 15:00:18,027| gesendet
+Downtime: 25.01 15:00:18,027| vom Client 7-client@ws-73-104-<0.611.0>-KLC

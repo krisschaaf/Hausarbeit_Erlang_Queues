@@ -1,34 +1,33 @@
-HBQ>>> Nachricht 1 in HBQ eingefuegt.
-dlq>>> Nachricht 1 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 4 in HBQ eingefuegt.
-HBQ>>> Nachricht 1 in HBQ eingefuegt.
-dlq>>> Nachricht 1 in DLQ eingefuegt.
-HBQ>>> Nachricht 5 in HBQ eingefuegt.
-HBQ>>> Nachricht 6 in HBQ eingefuegt.
-HBQ>>> Nachricht 9 in HBQ eingefuegt.
+dlq>>> initialisiert mit Kapazitaet 17.
 HBQ>>> Nachricht 2 in HBQ eingefuegt.
-dlq>>> Nachricht 2 in DLQ eingefuegt.
+HBQ>>> Nachricht 5 in HBQ eingefuegt.
 HBQ>>> Nachricht 3 in HBQ eingefuegt.
+HBQ>>> Nachricht 4 in HBQ eingefuegt.
+HBQ>>> Nachricht 7 in HBQ eingefuegt.
+HBQ>>> Nachricht 8 in HBQ eingefuegt.
+HBQ>>> Nachricht 9 in HBQ eingefuegt.
+HBQ>>> Nachricht 10 in HBQ eingefuegt.
+HBQ>>> Nachricht 11 in HBQ eingefuegt.
+HBQ>>> Nachricht 6 in HBQ eingefuegt.
+HBQ>>> Nachricht 12 in HBQ eingefuegt.
+HBQ>>> Nachricht 1 in HBQ eingefuegt.
+dlq>>> Nachricht 1 in DLQ eingefuegt.
+dlq>>> Nachricht 2 in DLQ eingefuegt.
 dlq>>> Nachricht 3 in DLQ eingefuegt.
 dlq>>> Nachricht 4 in DLQ eingefuegt.
 dlq>>> Nachricht 5 in DLQ eingefuegt.
 dlq>>> Nachricht 6 in DLQ eingefuegt.
-HBQ>>> Nachricht 10 in HBQ eingefuegt.
-HBQ>>> Nachricht 7 in HBQ eingefuegt.
 dlq>>> Nachricht 7 in DLQ eingefuegt.
-HBQ>>> Nachricht 11 in HBQ eingefuegt.
-HBQ>>> Nachricht 12 in HBQ eingefuegt.
-HBQ>>> Nachricht 13 in HBQ eingefuegt.
-HBQ>>> Nachricht 8 in HBQ eingefuegt.
 dlq>>> Nachricht 8 in DLQ eingefuegt.
 dlq>>> Nachricht 9 in DLQ eingefuegt.
 dlq>>> Nachricht 10 in DLQ eingefuegt.
 dlq>>> Nachricht 11 in DLQ eingefuegt.
 dlq>>> Nachricht 12 in DLQ eingefuegt.
-dlq>>> Nachricht 13 in DLQ eingefuegt.
 HBQ>>> HBQ wurde komplett in DLQ uebertragen.
 HBQ>>> Nachricht 17 in HBQ eingefuegt.
+HBQ>>> Nachricht 18 in HBQ eingefuegt.
+HBQ>>> Nachricht 13 in HBQ eingefuegt.
+dlq>>> Nachricht 13 in DLQ eingefuegt.
 HBQ>>> Nachricht 14 in HBQ eingefuegt.
 dlq>>> Nachricht 14 in DLQ eingefuegt.
 HBQ>>> Nachricht 15 in HBQ eingefuegt.
@@ -36,40 +35,41 @@ dlq>>> Nachricht 15 in DLQ eingefuegt.
 HBQ>>> Nachricht 16 in HBQ eingefuegt.
 dlq>>> Nachricht 16 in DLQ eingefuegt.
 dlq>>> Nachricht 17 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 19 in HBQ eingefuegt.
-HBQ>>> Nachricht 20 in HBQ eingefuegt.
-HBQ>>> Nachricht 21 in HBQ eingefuegt.
-HBQ>>> Nachricht 23 in HBQ eingefuegt.
-HBQ>>> Nachricht 24 in HBQ eingefuegt.
-HBQ>>> Nachricht 30 in HBQ eingefuegt.
-dlq>>> Content(17): [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
-HBQ>>> Content(6): [19,20,21,23,24,30]
-HBQ>>> Nachricht 18 in HBQ eingefuegt.
 dlq>>> Nachricht 1 aus DLQ geloescht.
 dlq>>> Nachricht 18 in DLQ eingefuegt.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 20 in HBQ eingefuegt.
+HBQ>>> Nachricht 22 in HBQ eingefuegt.
+HBQ>>> Nachricht 23 in HBQ eingefuegt.
+HBQ>>> Nachricht 19 in HBQ eingefuegt.
 dlq>>> Nachricht 2 aus DLQ geloescht.
 dlq>>> Nachricht 19 in DLQ eingefuegt.
 dlq>>> Nachricht 3 aus DLQ geloescht.
 dlq>>> Nachricht 20 in DLQ eingefuegt.
+HBQ>>> Nachricht 24 in HBQ eingefuegt.
+HBQ>>> Nachricht 29 in HBQ eingefuegt.
+dlq>>> Content(17): [4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+HBQ>>> Content(4): [22,23,24,29]
+HBQ>>> Nachricht 30 in HBQ eingefuegt.
+dlq>>> Content(17): [4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+HBQ>>> Content(5): [22,23,24,29,30]
+dlq>>> Nachricht 4 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 4 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 5 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 5 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 6 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 6 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 7 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 7 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 8 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 8 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 9 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 9 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 10 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 10 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 11 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 11 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 12 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 12 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 13 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 13 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 14 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 14 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 15 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 15 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 16 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 16 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 17 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 17 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 18 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 18 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 19 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 19 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht 20 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht 20 an Client <9010.385.0> ausgeliefert.dlq>>> Nachricht -1 an Client <9010.382.0> ausgeliefert.dlq>>> Nachricht -1 an Client <9010.385.0> ausgeliefert.HBQ>>> Nachricht 28 in HBQ eingefuegt.
+HBQ>>> Nachricht 25 in HBQ eingefuegt.
+HBQ>>> Nachricht 21 in HBQ eingefuegt.
 dlq>>> Nachricht 4 aus DLQ geloescht.
 dlq>>> Nachricht 21 in DLQ eingefuegt.
-HBQ>>> Nachricht 27 in HBQ eingefuegt.
-HBQ>>> Nachricht 28 in HBQ eingefuegt.
-HBQ>>> Nachricht 29 in HBQ eingefuegt.
-HBQ>>> Nachricht 22 in HBQ eingefuegt.
 dlq>>> Nachricht 5 aus DLQ geloescht.
 dlq>>> Nachricht 22 in DLQ eingefuegt.
 dlq>>> Nachricht 6 aus DLQ geloescht.
 dlq>>> Nachricht 23 in DLQ eingefuegt.
 dlq>>> Nachricht 7 aus DLQ geloescht.
 dlq>>> Nachricht 24 in DLQ eingefuegt.
-HBQ>>> Nachricht 25 in HBQ eingefuegt.
 dlq>>> Nachricht 8 aus DLQ geloescht.
 dlq>>> Nachricht 25 in DLQ eingefuegt.
 HBQ>>> Nachricht 26 in HBQ eingefuegt.
 dlq>>> Nachricht 9 aus DLQ geloescht.
 dlq>>> Nachricht 26 in DLQ eingefuegt.
+HBQ>>> Nachricht 27 in HBQ eingefuegt.
 dlq>>> Nachricht 10 aus DLQ geloescht.
 dlq>>> Nachricht 27 in DLQ eingefuegt.
 dlq>>> Nachricht 11 aus DLQ geloescht.
@@ -79,346 +79,138 @@ dlq>>> Nachricht 29 in DLQ eingefuegt.
 dlq>>> Nachricht 13 aus DLQ geloescht.
 dlq>>> Nachricht 30 in DLQ eingefuegt.
 HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 31 in HBQ eingefuegt.
-dlq>>> Nachricht 14 aus DLQ geloescht.
-dlq>>> Nachricht 31 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 38 in HBQ eingefuegt.
-dlq>>> Content(17): [15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
-HBQ>>> Content(1): "&"
-HBQ>>> Nachricht 39 in HBQ eingefuegt.
-dlq>>> Content(17): [15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
-HBQ>>> Content(2): "&'"
-HBQ>>> Nachricht 40 in HBQ eingefuegt.
-dlq>>> Content(17): [15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
-HBQ>>> Content(3): "&'("
-HBQ>>> Nachricht 42 in HBQ eingefuegt.
-HBQ>>> Nachricht 43 in HBQ eingefuegt.
-HBQ>>> Nachricht 37 in HBQ eingefuegt.
-HBQ>>> Nachricht 41 in HBQ eingefuegt.
-HBQ>>> Nachricht 1 in HBQ eingefuegt.
-dlq>>> Nachricht 1 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 6 in HBQ eingefuegt.
-HBQ>>> Nachricht 5 in HBQ eingefuegt.
-HBQ>>> Nachricht 9 in HBQ eingefuegt.
-HBQ>>> Nachricht 3 in HBQ eingefuegt.
-HBQ>>> Nachricht 11 in HBQ eingefuegt.
-HBQ>>> Nachricht 10 in HBQ eingefuegt.
-HBQ>>> Nachricht 12 in HBQ eingefuegt.
-HBQ>>> Nachricht 13 in HBQ eingefuegt.
-HBQ>>> Nachricht 4 in HBQ eingefuegt.
-HBQ>>> Nachricht 14 in HBQ eingefuegt.
-HBQ>>> Nachricht 2 in HBQ eingefuegt.
-dlq>>> Nachricht 2 in DLQ eingefuegt.
-dlq>>> Nachricht 3 in DLQ eingefuegt.
-dlq>>> Nachricht 4 in DLQ eingefuegt.
-dlq>>> Nachricht 5 in DLQ eingefuegt.
-dlq>>> Nachricht 6 in DLQ eingefuegt.
-HBQ>>> Nachricht 7 in HBQ eingefuegt.
-dlq>>> Nachricht 7 in DLQ eingefuegt.
-HBQ>>> Nachricht 8 in HBQ eingefuegt.
-dlq>>> Nachricht 8 in DLQ eingefuegt.
-dlq>>> Nachricht 9 in DLQ eingefuegt.
-dlq>>> Nachricht 10 in DLQ eingefuegt.
-dlq>>> Nachricht 11 in DLQ eingefuegt.
-dlq>>> Nachricht 12 in DLQ eingefuegt.
-dlq>>> Nachricht 13 in DLQ eingefuegt.
-dlq>>> Nachricht 14 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 15 in HBQ eingefuegt.
-dlq>>> Nachricht 15 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 16 in HBQ eingefuegt.
-dlq>>> Nachricht 16 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 17 in HBQ eingefuegt.
-dlq>>> Nachricht 17 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 18 in HBQ eingefuegt.
-dlq>>> Nachricht 1 aus DLQ geloescht.
-dlq>>> Nachricht 18 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 9 in HBQ eingefuegt.
-HBQ>>> Nachricht 2 in HBQ eingefuegt.
-HBQ>>> Nachricht 7 in HBQ eingefuegt.
-HBQ>>> Nachricht 4 in HBQ eingefuegt.
-HBQ>>> Nachricht 1 in HBQ eingefuegt.
-dlq>>> Nachricht 1 in DLQ eingefuegt.
-dlq>>> Nachricht 2 in DLQ eingefuegt.
-HBQ>>> Nachricht 6 in HBQ eingefuegt.
-HBQ>>> Nachricht 10 in HBQ eingefuegt.
-HBQ>>> Nachricht 11 in HBQ eingefuegt.
-HBQ>>> Nachricht 5 in HBQ eingefuegt.
-HBQ>>> Nachricht 8 in HBQ eingefuegt.
-HBQ>>> Nachricht 3 in HBQ eingefuegt.
-dlq>>> Nachricht 3 in DLQ eingefuegt.
-dlq>>> Nachricht 4 in DLQ eingefuegt.
-dlq>>> Nachricht 5 in DLQ eingefuegt.
-dlq>>> Nachricht 6 in DLQ eingefuegt.
-dlq>>> Nachricht 7 in DLQ eingefuegt.
-dlq>>> Nachricht 8 in DLQ eingefuegt.
-dlq>>> Nachricht 9 in DLQ eingefuegt.
-dlq>>> Nachricht 10 in DLQ eingefuegt.
-dlq>>> Nachricht 11 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 12 in HBQ eingefuegt.
-dlq>>> Nachricht 12 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 16 in HBQ eingefuegt.
-HBQ>>> Nachricht 17 in HBQ eingefuegt.
-HBQ>>> Nachricht 14 in HBQ eingefuegt.
-HBQ>>> Nachricht 13 in HBQ eingefuegt.
-dlq>>> Nachricht 13 in DLQ eingefuegt.
-dlq>>> Nachricht 14 in DLQ eingefuegt.
-HBQ>>> Nachricht 15 in HBQ eingefuegt.
-dlq>>> Nachricht 15 in DLQ eingefuegt.
-dlq>>> Nachricht 16 in DLQ eingefuegt.
-dlq>>> Nachricht 17 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 21 in HBQ eingefuegt.
-HBQ>>> Nachricht 22 in HBQ eingefuegt.
-HBQ>>> Nachricht 23 in HBQ eingefuegt.
-HBQ>>> Nachricht 18 in HBQ eingefuegt.
-dlq>>> Nachricht 1 aus DLQ geloescht.
-dlq>>> Nachricht 18 in DLQ eingefuegt.
-HBQ>>> Nachricht 19 in HBQ eingefuegt.
-dlq>>> Nachricht 2 aus DLQ geloescht.
-dlq>>> Nachricht 19 in DLQ eingefuegt.
-HBQ>>> Nachricht 24 in HBQ eingefuegt.
-HBQ>>> Nachricht 25 in HBQ eingefuegt.
-HBQ>>> Nachricht 28 in HBQ eingefuegt.
-dlq>>> Content(17): [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
-HBQ>>> Content(6): [21,22,23,24,25,28]
-HBQ>>> Nachricht 29 in HBQ eingefuegt.
-dlq>>> Content(17): [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
-HBQ>>> Content(7): [21,22,23,24,25,28,29]
-HBQ>>> Nachricht 20 in HBQ eingefuegt.
-dlq>>> Nachricht 3 aus DLQ geloescht.
-dlq>>> Nachricht 20 in DLQ eingefuegt.
-dlq>>> Nachricht 4 aus DLQ geloescht.
-dlq>>> Nachricht 21 in DLQ eingefuegt.
-dlq>>> Nachricht 5 aus DLQ geloescht.
-dlq>>> Nachricht 22 in DLQ eingefuegt.
-dlq>>> Nachricht 6 aus DLQ geloescht.
-dlq>>> Nachricht 23 in DLQ eingefuegt.
-dlq>>> Nachricht 7 aus DLQ geloescht.
-dlq>>> Nachricht 24 in DLQ eingefuegt.
-dlq>>> Nachricht 8 aus DLQ geloescht.
-dlq>>> Nachricht 25 in DLQ eingefuegt.
-HBQ>>> Nachricht 27 in HBQ eingefuegt.
-HBQ>>> Nachricht 26 in HBQ eingefuegt.
-dlq>>> Nachricht 9 aus DLQ geloescht.
-dlq>>> Nachricht 26 in DLQ eingefuegt.
-dlq>>> Nachricht 10 aus DLQ geloescht.
-dlq>>> Nachricht 27 in DLQ eingefuegt.
-dlq>>> Nachricht 11 aus DLQ geloescht.
-dlq>>> Nachricht 28 in DLQ eingefuegt.
-dlq>>> Nachricht 12 aus DLQ geloescht.
-dlq>>> Nachricht 29 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 53 in HBQ eingefuegt.
+HBQ>>> Nachricht 54 in HBQ eingefuegt.
 HBQ>>> Nachricht 32 in HBQ eingefuegt.
-HBQ>>> Nachricht 33 in HBQ eingefuegt.
-HBQ>>> Nachricht 41 in HBQ eingefuegt.
-dlq>>> Content(17): [13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29]
-HBQ>>> Content(3): " !)"
-HBQ>>> Nachricht 30 in HBQ eingefuegt.
-dlq>>> Nachricht 13 aus DLQ geloescht.
-dlq>>> Nachricht 30 in DLQ eingefuegt.
+HBQ>>> Nachricht 55 in HBQ eingefuegt.
+dlq>>> Content(17): [14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+HBQ>>> Content(4): " 567"
 HBQ>>> Nachricht 31 in HBQ eingefuegt.
 dlq>>> Nachricht 14 aus DLQ geloescht.
 dlq>>> Nachricht 31 in DLQ eingefuegt.
 dlq>>> Nachricht 15 aus DLQ geloescht.
 dlq>>> Nachricht 32 in DLQ eingefuegt.
-dlq>>> Nachricht 16 aus DLQ geloescht.
-dlq>>> Nachricht 33 in DLQ eingefuegt.
-HBQ>>> Nachricht 46 in HBQ eingefuegt.
-HBQ>>> Nachricht 40 in HBQ eingefuegt.
-HBQ>>>Fehlernachricht fuer Nachrichten 34 bis 39 generiert.
-dlq>>> Nachricht 17 aus DLQ geloescht.
-dlq>>> Nachricht 39 in DLQ eingefuegt.
-dlq>>> Nachricht 18 aus DLQ geloescht.
-dlq>>> Nachricht 40 in DLQ eingefuegt.
-dlq>>> Nachricht 19 aus DLQ geloescht.
-dlq>>> Nachricht 41 in DLQ eingefuegt.
-HBQ>>>Fehlernachricht fuer Nachrichten 42 bis 45 generiert.
-dlq>>> Nachricht 20 aus DLQ geloescht.
-dlq>>> Nachricht 45 in DLQ eingefuegt.
-dlq>>> Nachricht 21 aus DLQ geloescht.
-dlq>>> Nachricht 46 in DLQ eingefuegt.
-HBQ>>> Nachricht 9 in HBQ eingefuegt.
-HBQ>>> Nachricht 1 in HBQ eingefuegt.
-dlq>>> Nachricht 1 in DLQ eingefuegt.
-HBQ>>> Nachricht 4 in HBQ eingefuegt.
-HBQ>>> Nachricht 6 in HBQ eingefuegt.
-HBQ>>> Nachricht 5 in HBQ eingefuegt.
+HBQ>>> Nachricht 60 in HBQ eingefuegt.
+HBQ>>> Nachricht 61 in HBQ eingefuegt.
+HBQ>>> Nachricht 56 in HBQ eingefuegt.
+HBQ>>> Nachricht 58 in HBQ eingefuegt.
+HBQ>>> Nachricht 59 in HBQ eingefuegt.
+HBQ>>> Nachricht 57 in HBQ eingefuegt.
+dlq>>> initialisiert mit Kapazität 17.
 HBQ>>> Nachricht 2 in HBQ eingefuegt.
-dlq>>> Nachricht 2 in DLQ eingefuegt.
-HBQ>>> Nachricht 8 in HBQ eingefuegt.
+HBQ>>> Nachricht 1 in HBQ eingefuegt.
+dlq>>> Nachricht 1 in DLQ eingefügt.
+dlq>>> Nachricht 2 in DLQ eingefügt.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 9 in HBQ eingefuegt.
 HBQ>>> Nachricht 3 in HBQ eingefuegt.
-dlq>>> Nachricht 3 in DLQ eingefuegt.
-dlq>>> Nachricht 4 in DLQ eingefuegt.
-dlq>>> Nachricht 5 in DLQ eingefuegt.
-dlq>>> Nachricht 6 in DLQ eingefuegt.
-HBQ>>> Nachricht 10 in HBQ eingefuegt.
+dlq>>> Nachricht 3 in DLQ eingefügt.
+HBQ>>> Nachricht 5 in HBQ eingefuegt.
 HBQ>>> Nachricht 7 in HBQ eingefuegt.
-dlq>>> Nachricht 7 in DLQ eingefuegt.
-dlq>>> Nachricht 8 in DLQ eingefuegt.
-dlq>>> Nachricht 9 in DLQ eingefuegt.
-dlq>>> Nachricht 10 in DLQ eingefuegt.
+HBQ>>> Nachricht 4 in HBQ eingefuegt.
+dlq>>> Nachricht 4 in DLQ eingefügt.
+dlq>>> Nachricht 5 in DLQ eingefügt.
+HBQ>>> Nachricht 10 in HBQ eingefuegt.
+HBQ>>> Nachricht 8 in HBQ eingefuegt.
+HBQ>>> Nachricht 6 in HBQ eingefuegt.
+dlq>>> Nachricht 6 in DLQ eingefügt.
+dlq>>> Nachricht 7 in DLQ eingefügt.
+dlq>>> Nachricht 8 in DLQ eingefügt.
+dlq>>> Nachricht 9 in DLQ eingefügt.
+dlq>>> Nachricht 10 in DLQ eingefügt.
 HBQ>>> HBQ wurde komplett in DLQ uebertragen.
 HBQ>>> Nachricht 11 in HBQ eingefuegt.
-dlq>>> Nachricht 11 in DLQ eingefuegt.
+dlq>>> Nachricht 11 in DLQ eingefügt.
 HBQ>>> HBQ wurde komplett in DLQ uebertragen.
 HBQ>>> Nachricht 12 in HBQ eingefuegt.
-dlq>>> Nachricht 12 in DLQ eingefuegt.
+dlq>>> Nachricht 12 in DLQ eingefügt.
 HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 17 in HBQ eingefuegt.
 HBQ>>> Nachricht 13 in HBQ eingefuegt.
-dlq>>> Nachricht 13 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+dlq>>> Nachricht 13 in DLQ eingefügt.
 HBQ>>> Nachricht 14 in HBQ eingefuegt.
-dlq>>> Nachricht 14 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 18 in HBQ eingefuegt.
+dlq>>> Nachricht 14 in DLQ eingefügt.
 HBQ>>> Nachricht 15 in HBQ eingefuegt.
-dlq>>> Nachricht 15 in DLQ eingefuegt.
+dlq>>> Nachricht 15 in DLQ eingefügt.
+HBQ>>> Nachricht 16 in HBQ eingefuegt.
+dlq>>> Nachricht 16 in DLQ eingefügt.
+dlq>>> Nachricht 17 in DLQ eingefügt.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
 HBQ>>> Nachricht 20 in HBQ eingefuegt.
 HBQ>>> Nachricht 21 in HBQ eingefuegt.
 HBQ>>> Nachricht 22 in HBQ eingefuegt.
-HBQ>>> Nachricht 17 in HBQ eingefuegt.
-HBQ>>> Nachricht 16 in HBQ eingefuegt.
-dlq>>> Nachricht 16 in DLQ eingefuegt.
-dlq>>> Nachricht 17 in DLQ eingefuegt.
-dlq>>> Nachricht 1 aus DLQ geloescht.
-dlq>>> Nachricht 18 in DLQ eingefuegt.
-HBQ>>> Nachricht 24 in HBQ eingefuegt.
-HBQ>>> Nachricht 19 in HBQ eingefuegt.
-dlq>>> Nachricht 2 aus DLQ geloescht.
-dlq>>> Nachricht 19 in DLQ eingefuegt.
-dlq>>> Nachricht 3 aus DLQ geloescht.
-dlq>>> Nachricht 20 in DLQ eingefuegt.
-dlq>>> Nachricht 4 aus DLQ geloescht.
-dlq>>> Nachricht 21 in DLQ eingefuegt.
-dlq>>> Nachricht 5 aus DLQ geloescht.
-dlq>>> Nachricht 22 in DLQ eingefuegt.
-HBQ>>> Nachricht 23 in HBQ eingefuegt.
-dlq>>> Nachricht 6 aus DLQ geloescht.
-dlq>>> Nachricht 23 in DLQ eingefuegt.
-dlq>>> Nachricht 7 aus DLQ geloescht.
-dlq>>> Nachricht 24 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 26 in HBQ eingefuegt.
-HBQ>>> Nachricht 31 in HBQ eingefuegt.
-dlq>>> Content(17): [8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]
-HBQ>>> Content(2): [26,31]
-HBQ>>> Nachricht 27 in HBQ eingefuegt.
-HBQ>>> Nachricht 28 in HBQ eingefuegt.
-HBQ>>> Nachricht 25 in HBQ eingefuegt.
-dlq>>> Nachricht 8 aus DLQ geloescht.
-dlq>>> Nachricht 25 in DLQ eingefuegt.
-dlq>>> Nachricht 9 aus DLQ geloescht.
-dlq>>> Nachricht 26 in DLQ eingefuegt.
-dlq>>> Nachricht 10 aus DLQ geloescht.
-dlq>>> Nachricht 27 in DLQ eingefuegt.
-dlq>>> Nachricht 11 aus DLQ geloescht.
-dlq>>> Nachricht 28 in DLQ eingefuegt.
-HBQ>>>Fehlernachricht fuer Nachrichten 29 bis 30 generiert.
-dlq>>> Nachricht 12 aus DLQ geloescht.
-dlq>>> Nachricht 30 in DLQ eingefuegt.
-dlq>>> Nachricht 13 aus DLQ geloescht.
-dlq>>> Nachricht 31 in DLQ eingefuegt.
-HBQ>>> Nachricht 5 in HBQ eingefuegt.
-HBQ>>> Nachricht 4 in HBQ eingefuegt.
-HBQ>>> Nachricht 7 in HBQ eingefuegt.
-HBQ>>> Nachricht 3 in HBQ eingefuegt.
-HBQ>>> Nachricht 9 in HBQ eingefuegt.
-HBQ>>> Nachricht 10 in HBQ eingefuegt.
-HBQ>>> Nachricht 6 in HBQ eingefuegt.
-HBQ>>> Nachricht 8 in HBQ eingefuegt.
-HBQ>>> Nachricht 1 in HBQ eingefuegt.
-dlq>>> Nachricht 1 in DLQ eingefuegt.
-HBQ>>> Nachricht 11 in HBQ eingefuegt.
-HBQ>>> Nachricht 2 in HBQ eingefuegt.
-dlq>>> Nachricht 2 in DLQ eingefuegt.
-dlq>>> Nachricht 3 in DLQ eingefuegt.
-dlq>>> Nachricht 4 in DLQ eingefuegt.
-dlq>>> Nachricht 5 in DLQ eingefuegt.
-dlq>>> Nachricht 6 in DLQ eingefuegt.
-dlq>>> Nachricht 7 in DLQ eingefuegt.
-dlq>>> Nachricht 8 in DLQ eingefuegt.
-dlq>>> Nachricht 9 in DLQ eingefuegt.
-dlq>>> Nachricht 10 in DLQ eingefuegt.
-dlq>>> Nachricht 11 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 15 in HBQ eingefuegt.
-HBQ>>> Nachricht 12 in HBQ eingefuegt.
-dlq>>> Nachricht 12 in DLQ eingefuegt.
-HBQ>>> Nachricht 13 in HBQ eingefuegt.
-dlq>>> Nachricht 13 in DLQ eingefuegt.
-HBQ>>> Nachricht 14 in HBQ eingefuegt.
-dlq>>> Nachricht 14 in DLQ eingefuegt.
-dlq>>> Nachricht 15 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
-HBQ>>> Nachricht 19 in HBQ eingefuegt.
-HBQ>>> Nachricht 21 in HBQ eingefuegt.
-HBQ>>> Nachricht 16 in HBQ eingefuegt.
-dlq>>> Nachricht 16 in DLQ eingefuegt.
-HBQ>>> Nachricht 17 in HBQ eingefuegt.
-dlq>>> Nachricht 17 in DLQ eingefuegt.
-HBQ>>> Nachricht 22 in HBQ eingefuegt.
-HBQ>>> Nachricht 23 in HBQ eingefuegt.
-HBQ>>> Nachricht 24 in HBQ eingefuegt.
-HBQ>>> Nachricht 26 in HBQ eingefuegt.
-dlq>>> Content(17): [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
-HBQ>>> Content(6): [19,21,22,23,24,26]
 HBQ>>> Nachricht 18 in HBQ eingefuegt.
-dlq>>> Nachricht 1 aus DLQ geloescht.
-dlq>>> Nachricht 18 in DLQ eingefuegt.
-dlq>>> Nachricht 2 aus DLQ geloescht.
-dlq>>> Nachricht 19 in DLQ eingefuegt.
+dlq>>> Nachricht 18 in DLQ eingefügt.
+dlq>>> Nachricht 1 aus DLQ gelöscht.
+HBQ>>> Nachricht 23 in HBQ eingefuegt.
+HBQ>>> Nachricht 24 in HBQ eingefuegt.
 HBQ>>> Nachricht 25 in HBQ eingefuegt.
-HBQ>>> Nachricht 20 in HBQ eingefuegt.
-dlq>>> Nachricht 3 aus DLQ geloescht.
-dlq>>> Nachricht 20 in DLQ eingefuegt.
-dlq>>> Nachricht 4 aus DLQ geloescht.
-dlq>>> Nachricht 21 in DLQ eingefuegt.
-dlq>>> Nachricht 5 aus DLQ geloescht.
-dlq>>> Nachricht 22 in DLQ eingefuegt.
-dlq>>> Nachricht 6 aus DLQ geloescht.
-dlq>>> Nachricht 23 in DLQ eingefuegt.
-dlq>>> Nachricht 7 aus DLQ geloescht.
-dlq>>> Nachricht 24 in DLQ eingefuegt.
-dlq>>> Nachricht 8 aus DLQ geloescht.
-dlq>>> Nachricht 25 in DLQ eingefuegt.
-dlq>>> Nachricht 9 aus DLQ geloescht.
-dlq>>> Nachricht 26 in DLQ eingefuegt.
-HBQ>>> HBQ wurde komplett in DLQ uebertragen.
 HBQ>>> Nachricht 29 in HBQ eingefuegt.
-HBQ>>> Nachricht 30 in HBQ eingefuegt.
-HBQ>>> Nachricht 31 in HBQ eingefuegt.
-HBQ>>> Nachricht 38 in HBQ eingefuegt.
-dlq>>> Content(17): [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]
-HBQ>>> Content(4): [29,30,31,38]
+dlq>>> Content(17): [18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2]
+HBQ>>> Content(7): [20,21,22,23,24,25,29]
+dlq>>> Nachricht 2 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 3 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 4 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 5 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 6 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 7 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 8 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 9 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 10 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 11 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 12 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 13 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 14 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 15 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 16 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 17 an Client<9010.611.0> ausgeliefert.
+dlq>>> Nachricht 18 an Client<9010.611.0> ausgeliefert.
+HBQ>>> Nachricht 19 in HBQ eingefuegt.
+dlq>>> Nachricht 19 in DLQ eingefügt.
+dlq>>> Nachricht 2 aus DLQ gelöscht.
+dlq>>> Nachricht 20 in DLQ eingefügt.
+dlq>>> Nachricht 3 aus DLQ gelöscht.
+dlq>>> Nachricht 21 in DLQ eingefügt.
+dlq>>> Nachricht 4 aus DLQ gelöscht.
+dlq>>> Nachricht 22 in DLQ eingefügt.
+dlq>>> Nachricht 5 aus DLQ gelöscht.
+dlq>>> Nachricht 23 in DLQ eingefügt.
+dlq>>> Nachricht 6 aus DLQ gelöscht.
+dlq>>> Nachricht 24 in DLQ eingefügt.
+dlq>>> Nachricht 7 aus DLQ gelöscht.
+dlq>>> Nachricht 25 in DLQ eingefügt.
+dlq>>> Nachricht 8 aus DLQ gelöscht.
 HBQ>>> Nachricht 27 in HBQ eingefuegt.
-dlq>>> Nachricht 10 aus DLQ geloescht.
-dlq>>> Nachricht 27 in DLQ eingefuegt.
 HBQ>>> Nachricht 28 in HBQ eingefuegt.
-dlq>>> Nachricht 11 aus DLQ geloescht.
-dlq>>> Nachricht 28 in DLQ eingefuegt.
-dlq>>> Nachricht 12 aus DLQ geloescht.
-dlq>>> Nachricht 29 in DLQ eingefuegt.
-dlq>>> Nachricht 13 aus DLQ geloescht.
-dlq>>> Nachricht 30 in DLQ eingefuegt.
-dlq>>> Nachricht 14 aus DLQ geloescht.
-dlq>>> Nachricht 31 in DLQ eingefuegt.
-HBQ>>> Nachricht 37 in HBQ eingefuegt.
-HBQ>>> Nachricht 39 in HBQ eingefuegt.
-HBQ>>>Fehlernachricht fuer Nachrichten 32 bis 36 generiert.
-dlq>>> Nachricht 15 aus DLQ geloescht.
-dlq>>> Nachricht 36 in DLQ eingefuegt.
-dlq>>> Nachricht 16 aus DLQ geloescht.
-dlq>>> Nachricht 37 in DLQ eingefuegt.
-dlq>>> Nachricht 17 aus DLQ geloescht.
-dlq>>> Nachricht 38 in DLQ eingefuegt.
-dlq>>> Nachricht 18 aus DLQ geloescht.
-dlq>>> Nachricht 39 in DLQ eingefuegt.
+HBQ>>> Nachricht 44 in HBQ eingefuegt.
+HBQ>>> Nachricht 26 in HBQ eingefuegt.
+dlq>>> Nachricht 26 in DLQ eingefügt.
+dlq>>> Nachricht 9 aus DLQ gelöscht.
+dlq>>> Nachricht 27 in DLQ eingefügt.
+dlq>>> Nachricht 10 aus DLQ gelöscht.
+dlq>>> Nachricht 28 in DLQ eingefügt.
+dlq>>> Nachricht 11 aus DLQ gelöscht.
+dlq>>> Nachricht 29 in DLQ eingefügt.
+dlq>>> Nachricht 12 aus DLQ gelöscht.
+HBQ>>> Nachricht 48 in HBQ eingefuegt.
+HBQ>>> Nachricht 31 in HBQ eingefuegt.
+HBQ>>> Nachricht 32 in HBQ eingefuegt.
+HBQ>>> Nachricht 33 in HBQ eingefuegt.
+HBQ>>> Nachricht 46 in HBQ eingefuegt.
+dlq>>> Content(17): [29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13]
+HBQ>>> Content(6): [31,32,33,44,46,48]
+HBQ>>> Nachricht 47 in HBQ eingefuegt.
+dlq>>> Content(17): [29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13]
+HBQ>>> Content(7): [31,32,33,44,46,47,48]
+HBQ>>> Nachricht 30 in HBQ eingefuegt.
+dlq>>> Nachricht 30 in DLQ eingefügt.
+dlq>>> Nachricht 13 aus DLQ gelöscht.
+dlq>>> Nachricht 31 in DLQ eingefügt.
+dlq>>> Nachricht 14 aus DLQ gelöscht.
+dlq>>> Nachricht 32 in DLQ eingefügt.
+dlq>>> Nachricht 15 aus DLQ gelöscht.
+dlq>>> Nachricht 33 in DLQ eingefügt.
+dlq>>> Nachricht 16 aus DLQ gelöscht.
+HBQ>>> Nachricht 50 in HBQ eingefuegt.
+HBQ>>> Nachricht 45 in HBQ eingefuegt.
+HBQ>>> Nachricht 49 in HBQ eingefuegt.

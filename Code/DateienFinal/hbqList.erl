@@ -9,10 +9,6 @@ initHBQ(DLQLimit, HBQName) ->
 	{ok, NodeString} = inet:gethostname(),
 	Datei = "HBQ-DLQ@"++NodeString++".log",
 	DLQ = dlq:initDLQ(DLQLimit, Datei),
-	case erlang:whereis(dlqPID) of
-		undefined -> dlqPIDnotdefined;
-		_Undef -> ok
-	end, 
     HBQPid = spawn(fun() -> loop([], DLQ, Datei, 0, DLQLimit) end),	
 	register(HBQName, HBQPid),
     HBQPid.	%ProzessID wird zurückgegeben 
@@ -51,7 +47,6 @@ loop(HBQ, DLQ, Datei, Size, DLQLimit) ->
 checkHBQ([], DLQ, Datei, Size, DLQLimit) -> 
 	util:logging(Datei, "HBQ>>> HBQ wurde komplett in DLQ uebertragen.\n"),
 			loop([], DLQ, Datei, Size, DLQLimit);
-
 checkHBQ(HBQ, DLQ, Datei, Size, DLQLimit)	->
 	checkHBQTm(HBQ, DLQ, Datei, Size, DLQLimit, dlq:expectedNr(DLQ)).
 checkHBQTm([[NNr, Msg, TSclientout, TShbqin]|Tail], DLQ, Datei, Size, DLQLimit, ExpNr) when NNr == ExpNr ->
@@ -92,8 +87,7 @@ pushHBQHelp([NNr, Msg, TSclientout, TShbqin], ExpNr, DLQ, Datei, Size, DLQLimit,
 
 % HBQ Aufbau: [[NNr, Msg, TSclientout, TShbqin]| Tail]
 listHBQHelp([], List) -> List;
-listHBQHelp([[NNr, _Msg, _TSclientout, _TShbqin]|NewHBQ], List) -> 
-	listHBQHelp(NewHBQ, List++[NNr]).
+listHBQHelp([[NNr, _Msg, _TSclientout, _TShbqin]|NewHBQ], List) -> listHBQHelp(NewHBQ, List++[NNr]).
 
 getListSize([], Size) -> Size;
 getListSize([_Head|Tail], Size) -> getListSize(Tail, Size+1).
@@ -102,11 +96,7 @@ getListSize([_Head|Tail], Size) -> getListSize(Tail, Size+1).
 % Beim Einfügen hat die Nachricht die Struktur eines Tupels mit [NNr, Msg, TSclientout, TShbqin]
 % Element wandert so lange durch die Liste bis es größer als Vorgaenger und kleiner als der Nachfolger ist
 insertToHBQ([NNrN, MsgN, TSclientoutN, TShbqinN], []) -> [[NNrN, MsgN, TSclientoutN, TShbqinN]];
+insertToHBQ([NNrN, MsgN, TSclientoutN, TShbqinN], [[NNr, Msg, TSclientout, TShbqin] | Tail]) when NNrN < NNr ->
+	[ [NNrN, MsgN, TSclientoutN, TShbqinN] |[ [NNr, Msg, TSclientout, TShbqin] | Tail]];
 insertToHBQ([NNrN, MsgN, TSclientoutN, TShbqinN], [[NNr, Msg, TSclientout, TShbqin] | Tail]) ->
-	% erstes Element wird vorne eingefügt 
-	if 
-		NNrN < NNr ->
-			[ [NNrN, MsgN, TSclientoutN, TShbqinN] |[ [NNr, Msg, TSclientout, TShbqin] | Tail]];
-		true -> 
-			[[NNr, Msg, TSclientout, TShbqin]|insertToHBQ([NNrN, MsgN, TSclientoutN, TShbqinN], Tail)]
-	end.
+	[[NNr, Msg, TSclientout, TShbqin]|insertToHBQ([NNrN, MsgN, TSclientoutN, TShbqinN], Tail)].
