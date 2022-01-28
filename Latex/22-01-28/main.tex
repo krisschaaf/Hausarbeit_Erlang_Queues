@@ -1,0 +1,98 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[a4paper,lmargin={4cm},rmargin={2cm},
+tmargin={4cm},bmargin = {2cm}]{geometry}
+\usepackage{fancyhdr}
+\usepackage{pdfpages}
+\usepackage{parskip}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage[onehalfspacing]{setspace}
+\usepackage[backend=biber,style=alphabetic]{biblatex}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{float}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Erlang,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\addbibresource{library.bib}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Algorithmen und Datenstrukturen}
+\lhead{Kristoffer Schaaf}
+\rfoot{Page \thepage}
+
+\begin{document}
+
+\include{Latex/txtFiles/titlepage}
+
+\tableofcontents
+
+\newpage
+\begingroup
+\let\clearpage\relax
+\include{txtFiles/Einleitung}
+\include{txtFiles/HoldbackQueue}
+\include{txtFiles/DeliveryQueue}
+\endgroup
+
+\include{Latex/txtFiles/Ergebnisse}
+\include{Latex/txtFiles/Fazit}
+
+\newpage
+\addcontentsline{toc}{section}{Literaturverzeichnis}
+\printbibliography[title={Literaturverzeichnis}]
+
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}
+\listoffigures
+
+\newpage
+\appendix
+    \section{Anhang} \label{anhang}
+    
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=0.8]{Latex/Bilder/2.1. insertHBQ.pdf}
+\caption{\label{fig:insertHBQ} insertHeap of Holdback Queue} 
+\end{center}
+\end{figure}
+
+ \begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=0.7]{Latex/Bilder/2.2. removeFirstLastHBQ.pdf}
+\caption{\label{fig:removeFirstLastHBQ} removeFirst/Last Heap of Holdback Queue} 
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale = 0.7]{Latex/Bilder/2.3. andereHBQFuntionen.pdf}
+\caption{\label{fig:andereHBQFun} weitere Heap Funktionen} 
+\end{center}
+\end{figure}
+    
+\end{document}
