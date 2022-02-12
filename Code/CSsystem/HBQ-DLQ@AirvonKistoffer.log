@@ -1,0 +1,110 @@
+dlq>>> initialisiert mit Kapazität 17.
+HBQ>>> Nachricht 2 in HBQ eingefuegt.
+HBQ>>> Nachricht 8 in HBQ eingefuegt.
+HBQ>>> Nachricht 9 in HBQ eingefuegt.
+HBQ>>> Nachricht 7 in HBQ eingefuegt.
+HBQ>>> Nachricht 3 in HBQ eingefuegt.
+HBQ>>> Nachricht 6 in HBQ eingefuegt.
+HBQ>>> Nachricht 4 in HBQ eingefuegt.
+HBQ>>> Nachricht 1 in HBQ eingefuegt.
+dlq>>> Nachricht 1 in DLQ eingefügt.
+dlq>>> Nachricht 2 in DLQ eingefügt.
+dlq>>> Nachricht 3 in DLQ eingefügt.
+dlq>>> Nachricht 4 in DLQ eingefügt.
+HBQ>>> Nachricht 5 in HBQ eingefuegt.
+dlq>>> Nachricht 5 in DLQ eingefügt.
+dlq>>> Nachricht 6 in DLQ eingefügt.
+dlq>>> Nachricht 7 in DLQ eingefügt.
+dlq>>> Nachricht 8 in DLQ eingefügt.
+dlq>>> Nachricht 9 in DLQ eingefügt.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 10 in HBQ eingefuegt.
+dlq>>> Nachricht 10 in DLQ eingefügt.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 11 in HBQ eingefuegt.
+dlq>>> Nachricht 11 in DLQ eingefügt.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 12 in HBQ eingefuegt.
+dlq>>> Nachricht 12 in DLQ eingefügt.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 13 in HBQ eingefuegt.
+dlq>>> Nachricht 13 in DLQ eingefügt.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 14 in HBQ eingefuegt.
+dlq>>> Nachricht 14 in DLQ eingefügt.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 15 in HBQ eingefuegt.
+dlq>>> Nachricht 15 in DLQ eingefügt.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 19 in HBQ eingefuegt.
+HBQ>>> Nachricht 20 in HBQ eingefuegt.
+HBQ>>> Nachricht 21 in HBQ eingefuegt.
+HBQ>>> Nachricht 16 in HBQ eingefuegt.
+dlq>>> Nachricht 16 in DLQ eingefügt.
+HBQ>>> Nachricht 22 in HBQ eingefuegt.
+HBQ>>> Nachricht 17 in HBQ eingefuegt.
+dlq>>> Nachricht 17 in DLQ eingefügt.
+HBQ>>> Nachricht 18 in HBQ eingefuegt.
+dlq>>> Nachricht 18 in DLQ eingefügt.
+dlq>>> Nachricht 1 aus DLQ gelöscht.
+dlq>>> Nachricht 19 in DLQ eingefügt.
+dlq>>> Nachricht 2 aus DLQ gelöscht.
+dlq>>> Nachricht 20 in DLQ eingefügt.
+dlq>>> Nachricht 3 aus DLQ gelöscht.
+dlq>>> Nachricht 21 in DLQ eingefügt.
+dlq>>> Nachricht 4 aus DLQ gelöscht.
+dlq>>> Nachricht 22 in DLQ eingefügt.
+dlq>>> Nachricht 5 aus DLQ gelöscht.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 25 in HBQ eingefuegt.
+HBQ>>> Nachricht 26 in HBQ eingefuegt.
+HBQ>>> Nachricht 27 in HBQ eingefuegt.
+HBQ>>> Nachricht 23 in HBQ eingefuegt.
+dlq>>> Nachricht 23 in DLQ eingefügt.
+dlq>>> Nachricht 6 aus DLQ gelöscht.
+HBQ>>> Nachricht 24 in HBQ eingefuegt.
+dlq>>> Nachricht 24 in DLQ eingefügt.
+dlq>>> Nachricht 7 aus DLQ gelöscht.
+dlq>>> Nachricht 25 in DLQ eingefügt.
+dlq>>> Nachricht 8 aus DLQ gelöscht.
+dlq>>> Nachricht 26 in DLQ eingefügt.
+dlq>>> Nachricht 9 aus DLQ gelöscht.
+dlq>>> Nachricht 27 in DLQ eingefügt.
+dlq>>> Nachricht 10 aus DLQ gelöscht.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 29 in HBQ eingefuegt.
+HBQ>>> Nachricht 32 in HBQ eingefuegt.
+dlq>>> Content(17): [27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11]
+HBQ>>> Content(2): [29,32]
+HBQ>>> Nachricht 33 in HBQ eingefuegt.
+dlq>>> Content(17): [27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11]
+HBQ>>> Content(3): [29,32,33]
+HBQ>>> Nachricht 34 in HBQ eingefuegt.
+dlq>>> Content(17): [27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11]
+HBQ>>> Content(4): [29,32,33,34]
+HBQ>>> Nachricht 28 in HBQ eingefuegt.
+dlq>>> Nachricht 28 in DLQ eingefügt.
+dlq>>> Nachricht 11 aus DLQ gelöscht.
+dlq>>> Nachricht 29 in DLQ eingefügt.
+dlq>>> Nachricht 12 aus DLQ gelöscht.
+HBQ>>> Nachricht 30 in HBQ eingefuegt.
+dlq>>> Nachricht 30 in DLQ eingefügt.
+dlq>>> Nachricht 13 aus DLQ gelöscht.
+HBQ>>> Nachricht 31 in HBQ eingefuegt.
+dlq>>> Nachricht 31 in DLQ eingefügt.
+dlq>>> Nachricht 14 aus DLQ gelöscht.
+dlq>>> Nachricht 32 in DLQ eingefügt.
+dlq>>> Nachricht 15 aus DLQ gelöscht.
+dlq>>> Nachricht 33 in DLQ eingefügt.
+dlq>>> Nachricht 16 aus DLQ gelöscht.
+dlq>>> Nachricht 34 in DLQ eingefügt.
+dlq>>> Nachricht 17 aus DLQ gelöscht.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 35 in HBQ eingefuegt.
+dlq>>> Nachricht 35 in DLQ eingefügt.
+dlq>>> Nachricht 18 aus DLQ gelöscht.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.
+HBQ>>> Nachricht 36 in HBQ eingefuegt.
+dlq>>> Nachricht 36 in DLQ eingefügt.
+dlq>>> Nachricht 19 aus DLQ gelöscht.
+HBQ>>> HBQ wurde komplett in DLQ uebertragen.

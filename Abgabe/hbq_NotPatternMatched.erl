@@ -1,4 +1,4 @@
--module(hbq_NotPatternMatched).
+-module(hbq).
 
 -export([initHBQ/2]).
 
@@ -27,30 +27,30 @@ loop(HBQ, DLQ, Datei, Pos, DLQLimit) ->
 			HBQMsg = [NNr, Msg, TSclientout, TShbqin],
 			ExpNr = dlq:expectedNr(DLQ),
 			if 
-				NNr < ExpNr ->
+				NNr < ExpNr ->	% Nachricht ist zu klein für HBQ und wird verworfen 
 					From ! {reply, nnr<expNrDLQ},
 					checkHBQ(HBQ, DLQ, Datei, Pos, DLQLimit);
 				true ->
 					if
 						% Position ist die aktuelle Größe der Queue + 1
 						Pos < (DLQLimit*2/3) ->
-							NewHBQ = insertToHBQ(HBQMsg, HBQ, Pos),
+							NewHBQ = insertToHBQ(HBQMsg, HBQ, Pos),	% Nachricht wird in HBQ eingefügt und keine Nachricht muss aus HBQ entfernt werden
 							NNrString = util:to_String(NNr),
 							util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
 							From ! {reply, ok},
 							checkHBQ(NewHBQ, DLQ, Datei, Pos+1, DLQLimit);
-						true -> 
+						true -> % Limit der HBQ erreicht und kleinste Nachricht wird entfernt
 							{[SNNr, _SMsg, _STSClientout, _STShbqin], TempHBQ} = removeFirst(HBQ),
 							DLQMsg = [SNNr, _SMsg, _STSClientout, _STShbqin],
 							if
-								SNNr == ExpNr ->
+								SNNr == ExpNr ->	% kleinste Nachricht wird an DLQ gesendet und neue Nachricht wird in HBQ eingefügt 
 									NewDLQ = dlq:push2DLQ(DLQMsg, DLQ, Datei),
 									NewHBQ = insertToHBQ(HBQMsg, TempHBQ, Pos),
 									NNrString = util:to_String(NNr),
 									util:logging(Datei, "HBQ>>> Nachricht "++NNrString++" in HBQ eingefuegt.\n"),
 									From ! {reply, ok},
 									checkHBQ(NewHBQ, NewDLQ, Datei, Pos, DLQLimit);
-								true ->									
+								true ->	% kleinste Nachricht der HBQ entspricht nicht der nächsten erwarteten Nummer der DLQ und Lücke wird aufgefüllt				
 									MSGNr = SNNr-1,
 									TSError = erlang:timestamp(),
 									ErrorLog = "**Fehlernachricht fuer Nachrichtennummern "++util:to_String(ExpNr)++" bis "++util:to_String(MSGNr)++" um "++util:to_String(TSError),
@@ -69,7 +69,7 @@ loop(HBQ, DLQ, Datei, Pos, DLQLimit) ->
 			end;
 		% deliverMsg
 		{From, {request, deliverMSG, NNr, ToClient}} ->
-			SendeNr = dlq:deliverMSG(NNr, ToClient, DLQ, Datei),
+			SendeNr = dlq:deliverMSG(NNr, ToClient, DLQ, Datei),	% eigentliches Senden wird über DLQ realisiert
 			From ! {reply, SendeNr},
 			loop(HBQ, DLQ, Datei, Pos, DLQLimit);
 		% listDLQ
@@ -96,18 +96,18 @@ loop(HBQ, DLQ, Datei, Pos, DLQLimit) ->
 % Nach Terminierung dieser Funktion wird wieder die loop/5 Funktion aufgerufen, um sicherzustellen, dass der Prozess nicht beendet wird
 checkHBQ(HBQ, DLQ, Datei, Pos, DLQLimit)	->
 	case HBQ of
-		{} -> 
+		{} -> %leere HBQ 
 			util:logging(Datei, "HBQ>>> HBQ wurde komplett in DLQ uebertragen.\n"),
 			loop(HBQ, DLQ, Datei, Pos, DLQLimit);
 		_Default ->
 			{[NNr, _Msg, _TSclientout, _TShbqin],_H,_LT,_RT} = HBQ,
 			ExpNr = dlq:expectedNr(DLQ),
-			if
-				NNr == ExpNr ->
+			if	
+				NNr == ExpNr ->	% Elemente der HBQ sind kompatibel für DLQ und werden ausgeliefert
 					{DLQMsg, NewHBQ} = removeFirst(HBQ),
 					NewDLQ = dlq:push2DLQ(DLQMsg, DLQ, Datei),
 					checkHBQ(NewHBQ, NewDLQ, Datei, Pos-1, DLQLimit); 
-				NNr < ExpNr ->
+				NNr < ExpNr ->		% Elemente sind zu klein für DLQ und werden aus HBQ gelöscht
 					{_SmallestElement, NewHBQ} = removeFirst(HBQ),
 					checkHBQ(NewHBQ, DLQ, Datei, Pos-1, DLQLimit);
 				true ->

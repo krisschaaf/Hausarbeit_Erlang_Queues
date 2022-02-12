@@ -95,7 +95,7 @@ def plotSingle2D(file='', type=1):
 
 def plotMulti2D(files=[], lastN=-1, type=1):
 	if files == []: files = getLastNZeitReihen(lastN)
-	figure_handle = plt.figure(figsize=(8,5))
+	figure_handle = plt.figure(figsize=(7,4))
 	fileInfos = []
 	paramList = ''
 	for file in files:	

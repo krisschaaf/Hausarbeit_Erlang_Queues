@@ -1,4 +1,4 @@
--module(hbq_Heap).
+-module(hbq).
 
 -export([initHBQ/2]).
 
@@ -23,7 +23,7 @@ loop(HBQ, DLQ, Datei, Pos, DLQLimit) ->
 			pushHBQ([NNr, Msg, TSclientout, erlang:timestamp()], ExpNr, HBQ, DLQ, Datei, Pos, DLQLimit, From);
 		% deliverMsg
 		{From, {request, deliverMSG, NNr, ToClient}} ->
-			SendeNr = dlq:deliverMSG(NNr, ToClient, DLQ, Datei),
+			SendeNr = dlq:deliverMSG(NNr, ToClient, DLQ, Datei),	% eigentliches Senden wird über DLQ realisiert
 			From ! {reply, SendeNr},
 			loop(HBQ, DLQ, Datei, Pos, DLQLimit);
 		% listDLQ
@@ -49,17 +49,17 @@ loop(HBQ, DLQ, Datei, Pos, DLQLimit) ->
 % Wenn Elemente für die Delivery Queue geeignet sind, werden diese ausgeliefert
 % Nach Terminierung dieser Funktion wird wieder die loop/5 Funktion aufgerufen, um sicherzustellen, dass der Prozess nicht beendet wird
 checkHBQ({}, DLQ, Datei, Pos, DLQLimit) -> 
-	util:logging(Datei, "HBQ>>> HBQ wurde komplett in DLQ uebertragen.\n"),
+	util:logging(Datei, "HBQ>>> HBQ wurde komplett in DLQ uebertragen.\n"),	% leere HBQ
 			loop({}, DLQ, Datei, Pos, DLQLimit);
 checkHBQ(HBQ, DLQ, Datei, Pos, DLQLimit)	->
 	checkHBQTm(HBQ, DLQ, Datei, Pos, DLQLimit, dlq:expectedNr(DLQ)).
 checkHBQTm({[NNr, _Msg, _TSclientout, _TShbqin],_H,_LT,_RT}, DLQ, Datei, Pos, DLQLimit, ExpNr) when NNr == ExpNr ->
 	{DLQMsg, NewHBQ} = removeFirst({[NNr, _Msg, _TSclientout, _TShbqin],_H,_LT,_RT}),
-	NewDLQ = dlq:push2DLQ(DLQMsg, DLQ, Datei),
+	NewDLQ = dlq:push2DLQ(DLQMsg, DLQ, Datei),	% Elemente der HBQ sind kompatibel für DLQ und werden ausgeliefert
 	checkHBQ(NewHBQ, NewDLQ, Datei, Pos-1, DLQLimit); 
 checkHBQTm({[NNr, _Msg, _TSclientout, _TShbqin],_H,_LT,_RT}, DLQ, Datei, Pos, DLQLimit, ExpNr) when NNr < ExpNr ->
 	{_SmallestElement, NewHBQ} = removeFirst({[NNr, _Msg, _TSclientout, _TShbqin],_H,_LT,_RT}),
-	checkHBQ(NewHBQ, DLQ, Datei, Pos-1, DLQLimit);
+	checkHBQ(NewHBQ, DLQ, Datei, Pos-1, DLQLimit);	% Elemente sind zu klein für DLQ und werden aus HBQ gelöscht
 checkHBQTm({[NNr, _Msg, _TSclientout, _TShbqin],_H,_LT,_RT}, DLQ, Datei, Pos, DLQLimit, _ExpNr) ->
 	loop({[NNr, _Msg, _TSclientout, _TShbqin],_H,_LT,_RT}, DLQ, Datei, Pos, DLQLimit).
 
@@ -68,25 +68,25 @@ checkHBQTm({[NNr, _Msg, _TSclientout, _TShbqin],_H,_LT,_RT}, DLQ, Datei, Pos, DL
 % Diese Funktion ist eine Hilfsfunktion für das Pushen einer Nachricht in die Holdback Queue 
 % Nach Terminierung wird die checkHBQ Funktion geöffnet um nach jeder Veränderung der HBQ die Auslieferbarkeit der Elemente zu prüfen
 pushHBQ([NNr, _Msg, _TSclientout, _TShbqin], ExpNr, HBQ, DLQ, Datei, Pos, DLQLimit, From) when NNr < ExpNr -> 
-	From ! {reply, nnr<expNrDLQ},
+	From ! {reply, nnr<expNrDLQ},		% Nachricht ist zu klein für HBQ und wird verworfen 
 	checkHBQ(HBQ, DLQ, Datei, Pos, DLQLimit);
-pushHBQ([NNr, Msg, TSclientout, TShbqin], _ExpNr, HBQ, DLQ, Datei, Pos, DLQLimit, From) when Pos < (DLQLimit*2/3) ->
-	NewHBQ = insertToHBQ([NNr, Msg, TSclientout, TShbqin], HBQ, Pos),
+pushHBQ([NNr, Msg, TSclientout, TShbqin], _ExpNr, HBQ, DLQ, Datei, Pos, DLQLimit, From) when Pos < (DLQLimit*2/3) ->	% Pos ist aktuelle Größe der HBQ + 1
+	NewHBQ = insertToHBQ([NNr, Msg, TSclientout, TShbqin], HBQ, Pos),	% Nachricht wird in HBQ eingefügt und keine Nachricht muss aus HBQ entfernt werden
 	util:logging(Datei, "HBQ>>> Nachricht "++util:to_String(NNr)++" in HBQ eingefuegt.\n"),
 	From ! {reply, ok},
 	checkHBQ(NewHBQ, DLQ, Datei, Pos+1, DLQLimit);
 pushHBQ([NNr, Msg, TSclientout, TShbqin], ExpNr, HBQ, DLQ, Datei, Pos, DLQLimit, From) ->
-	{[SNNr, _SMsg, _STSclientout, _STShbqin], TempHBQ} = removeFirst(HBQ),
+	{[SNNr, _SMsg, _STSclientout, _STShbqin], TempHBQ} = removeFirst(HBQ),	% Limit der HBQ erreicht und kleinste Nachricht wird entfernt
 	DLQMsg = [SNNr, _SMsg, _STSclientout, _STShbqin],
 	pushHBQHelp([NNr, Msg, TSclientout, TShbqin], ExpNr, DLQ, Datei, Pos, DLQLimit, DLQMsg, SNNr, TempHBQ, From).
 
 pushHBQHelp([NNr, Msg, TSclientout, TShbqin], ExpNr, DLQ, Datei, Pos, DLQLimit, DLQMsg, SNNr, TempHBQ, From) when SNNr == ExpNr ->
-	NewDLQ = dlq:push2DLQ(DLQMsg, DLQ, Datei),
+	NewDLQ = dlq:push2DLQ(DLQMsg, DLQ, Datei),	% kleinste Nachricht wird an DLQ gesendet und neue Nachricht wird in HBQ eingefügt 
 	NewHBQ = insertToHBQ([NNr, Msg, TSclientout, TShbqin], TempHBQ, Pos),
 	util:logging(Datei, "HBQ>>> Nachricht "++util:to_String(NNr)++" in HBQ eingefuegt.\n"),
 	From ! {reply, ok},
 	checkHBQ(NewHBQ, NewDLQ, Datei, Pos, DLQLimit);
-pushHBQHelp([NNr, Msg, TSclientout, TShbqin], ExpNr, DLQ, Datei, Pos, DLQLimit, DLQMsg, SNNr, TempHBQ, From) ->
+pushHBQHelp([NNr, Msg, TSclientout, TShbqin], ExpNr, DLQ, Datei, Pos, DLQLimit, DLQMsg, SNNr, TempHBQ, From) ->	% kleinste Nachricht der HBQ entspricht nicht der nächsten erwarteten Nummer der DLQ und Lücke wird aufgefüllt		
 	ErrorLog = "**Fehlernachricht fuer Nachrichtennummern "++util:to_String(ExpNr)++" bis "++util:to_String(SNNr-1)++" um "++util:to_String(erlang:timestamp()),
 	util:logging(Datei, "HBQ>>>Fehlernachricht fuer Nachrichten "++util:to_String(ExpNr)++" bis "++util:to_String(SNNr-1)++" generiert.\n"),
 	TempDLQ = dlq:push2DLQ([SNNr-1, ErrorLog, unkn, erlang:timestamp()], DLQ, Datei),

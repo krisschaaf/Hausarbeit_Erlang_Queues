@@ -8,7 +8,7 @@
 % Initialisieren der DLQ
 initDLQ(Size, Datei) -> 
     util:logging(Datei, "dlq>>> initialisiert mit Kapazitaet "++util:to_String(Size)++".\n"),         
-    {Size, 0, []}.
+    {Size, 0, []}. %Tupel mit maximaler Größe, aktueller Größe und leerer Liste für Queue 
 
 % Beim erfolgreichen Löschen der übergebenen Queue wird ok zurückgegeben.
 delDLQ(_Queue) -> ok. 
@@ -27,7 +27,7 @@ push2DLQ([NNr, Msg, TSclientout, TShbqin], {MaxSize, ActSize, DLQ}, Datei) when 
         TSdlqin = erlang:timestamp(),
         NewQueue = DLQ++[[NNr, Msg++util:to_String(TSdlqin), TSclientout, TShbqin, TSdlqin]],
         util:logging(Datei, "dlq>>> Nachricht "++util:to_String(NNr)++" in DLQ eingefuegt.\n"),
-        {MaxSize, ActSize+1, NewQueue};
+        {MaxSize, ActSize+1, NewQueue}; % Nachricht wurde hinzugefügt
 push2DLQ([NNr, Msg, TSclientout, TShbqin], {MaxSize, ActSize, DLQ}, Datei) -> 
         TSdlqin = erlang:timestamp(),
         [[NNrT, _MsgT, _TSclientoutT, _TShbqinT, _TSdlqinT] | Tail] = DLQ,
@@ -35,21 +35,21 @@ push2DLQ([NNr, Msg, TSclientout, TShbqin], {MaxSize, ActSize, DLQ}, Datei) ->
         NewQueue = Tail++[[NNr, Msg++util:to_String(TSdlqin), TSclientout, TShbqin, TSdlqin]],
         util:logging(Datei, "dlq>>> Nachricht "++DelNNrString++" aus DLQ geloescht.\n"),                  
         util:logging(Datei, "dlq>>> Nachricht "++util:to_String(NNr)++" in DLQ eingefuegt.\n"),
-        {MaxSize, ActSize, NewQueue}.
+        {MaxSize, ActSize, NewQueue}. % Nachricht würde hinzugefügt und erstes Element gelöscht 
 
 % Auslieferung einer Nachricht an einen Leser-Client
 deliverMSG(MSGNr, ClientPID, {_MaxSize, _ActSize, DLQ}, Datei)	-> 
     TSdlqout = erlang:timestamp(),
     [NNr, Msg, TSclientout, TShbqin, TSdlqin] = getMSGAtMSGNr(MSGNr, DLQ),
     case NNr of
-        -1 -> ClientPID ! {reply, [-1,nokb,0,0,0], true};
+        -1 -> ClientPID ! {reply, [-1,nokb,0,0,0], true};   % DLQ leer, Terminierungssignal
         _Default -> 
             ClientPID ! {reply, [NNr, Msg, TSclientout, TShbqin, TSdlqin, TSdlqout], false}
     end,
     util:logging(Datei,"dlq>>> Nachricht "++util:to_String(NNr)++" an Client "++util:to_String(ClientPID)++" ausgeliefert.\r"),
     NNr. 
 
-% Gibt die zu der MSGNr zugehörige Nachrichtenliste aus der übergebenen Queue aus 
+% Gibt die zu der MSGNr zugehörige Nachrichtenliste aus der übergebenen Queue zurück 
 getMSGAtMSGNr(_MSGNr, []) -> [-1,nokb,0,0,0];
 getMSGAtMSGNr(MSGNr, [[NNr, Msg, TSclientout, TShbqin, TSdlqin]|_Tail]) when MSGNr =< NNr-> 
     [NNr, Msg, TSclientout, TShbqin, TSdlqin];

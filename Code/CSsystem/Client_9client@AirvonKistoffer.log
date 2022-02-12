@@ -201,3 +201,8 @@ Downtime: 24.01 23:55:13,318| vom Client 9-client@AirvonKistoffer-<0.102.0>-KLC
 2-client@AirvonKistoffer-<0.210.0>-KLC: 18te_Nachricht. C Out: 24.01 23:55:36,314|{1643,64939,317178} ; C In: 24.01 23:55:42,343|#1#3#2#4
 5-client@AirvonKistoffer-<0.207.0>-KLC: 19te_Nachricht. C Out: 24.01 23:55:39,311|{1643,64939,317189} ; C In: 24.01 23:55:42,344|#1#3#2#4
 Downtime: 24.01 23:55:47,306| vom Client 9-client@AirvonKistoffer-<0.203.0>-KLC
+9-client@AirvonKistoffer-<0.102.0>-KLC Start: 02.02 11:03:59,092|.
+9-client@AirvonKistoffer-<0.102.0>-KLC: 1te_Nachricht. C Out: 02.02 11:04:07,094| gesendet
+9-client@AirvonKistoffer-<0.102.0>-KLC: 17te_Nachricht. C Out: 02.02 11:04:15,096| gesendet
+9-client@AirvonKistoffer-<0.102.0>-KLC: 30te_Nachricht. C Out: 02.02 11:04:23,099| gesendet
+Downtime: 02.02 11:04:23,099| vom Client 9-client@AirvonKistoffer-<0.102.0>-KLC

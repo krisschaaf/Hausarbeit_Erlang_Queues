@@ -1,0 +1,103 @@
+\section{Testing}
+
+\subsection{Delivery Queue}
+
+Nachrichten in der Delivery Queue enthalten nur zwei Timestamps 
+
+initDLQ/2,expectedNr/1,push2DLQ/3, deliverMSG/4, listDLQ/1, lengthDLQ/1, delDLQ/1
+
+1. initDLQ
+-> Prüfen, ob Prozess gestartet wurde indem geprüft wird ob dieser beendet werden kann
+
+2. expectedNr
+-> Liste erstellen mit mindestens einem Element N und prüfen, ob expNr N+1 ist
+-> leere Liste erstellen und prüfen, ob expNr = 1 ist
+
+3. push2DLQ
+-> Liste erstellen und prüfen, ob Element danach in Liste enthalten ist (auf richtige Position und Struktur achten)
+-> leere Liste erstellen und prüfen, ob Element eingefügt wurde und list.size = 1 ist 
+-> MaxSize und ActSize prüfen
+-> Prüfen ob erstes Element bei erreichen von MaxSize gelöscht wird 
+
+4. deliverMSG
+-> Wenn Nachricht nicht vorhanden, dann nächstgrößere nehmen
+-> was passiert bei leerer Liste 
+-> Stimmt die an den Clienten gesendete Nachrichtennummer mit der zurückgegebenen überein
+-> Prüfen ob Nachricht Timestamps enthaehlt (einer mehr als beim eingehen)
+-> MaxSize und ActSize prüfen
+
+5. listDLQ
+-> leere Liste prüfen 
+-> Rückgabewert mit einer erstellten Liste vergleichen 
+
+6. lengthDLQ
+-> leere Liste 
+-> mit erlang Funktion vergleichen 
+
+7. delDLQ
+-> Prüfen ob dlqPid nach Aufruf noch erreichbar ist 
+
+Reihenfolge:
+
+initDLQ
+expectedNr -> leere Liste 
+listDLQ -> leere Liste
+lengthDLQ -> leere Liste
+push2DLQ -> einige Elemente auffüllen und testen 
+listDLQ 
+lengthDLQ
+deliverMSG -> verdrehte Reihenfolge und mehr als vorhanden
+delDLQ
+
+\subsection{Holdback Queue}
+
+1. initHBQ
+-> Prüfen, ob übergebene ProzessID definiert ist 
+-> auch dlqPID prüfen
+-> Datei auf richtigen Namen prüfen
+Beide nach dem test beenden 
+
+2. checkHBQ
+-> Prüfen, ob Elemente gelöscht werden, wenn kleiner als expectedNr
+-> Prüfen, ob Funktion regelmäßig aufgerufen wird 
+-> Prüfen, ob Nachrichten an DLQ gesendet werden, wenn == expectedNr
+
+2. pushHBQ
+-> Prüfen, ob Nachricht an richtiger Stelle eingefügt wird 
+-> Prüfen, ob Nachricht 4 Elemente in Form eines Tupels enhält (TShbqin)
+-> Prüfen, ob Nachricht verworfen wird wenn kleiner als expNr 
+-> Prüfen, ob Size immer Pos-1 entspricht 
+-> Prüfen, ob MaxSize richtig empfangen wird 
+-> Prüfen, ob Nachricht eingefügt wird, wenn size < 2/3 MaxSize
+-> Prüfen, ob removeFirst das erste Element korrekt entfernt (auch Struktur der Nachricht prüfen)
+    -> dürfte in diesem Fall ein Tupel sein 
+-> Prüfen, ob kleinste Nachricht an DLQ gesendet wird und dann Nachricht in HBQ eingefügt wird 
+-> Error Fall prüfen
+
+Allgemeiner test: klappt das einfügen korrekt, danach nur die anzahl der elemente und reihenfolge testen 
+
+3. Heap Tests 
+-> insertHBQ mit verschiedenen Anzahl an Elementen
+-> removeFirst, was passiert, wenn leere HBQ übergeben wird 
+-> removeFirst, mehrfaches testen
+
+4. deliverMSG
+-> Prüfen, ob Rückgabewert >= NNr ist
+
+5. listDLQ
+-> Liste auf Inhalt, Größe und Struktur prüfen
+-> leere Liste 
+
+6. listHBQ
+-> Liste auf Inhalt, Größe und Struktur prüfen
+-> leere Liste 
+
+7. delHBQ
+-> Prüfen ob dlqPid nach Aufruf noch erreichbar ist 
+-> auch für dlqPID
+
+//TODO was passiert mit Duplikaten
+
+{[2,"Msg",1111,{1642,358348,453194}], 2,
+       {[3,"Msg",1111,{1642,358403,754891}],1,{},{}},
+       {[4,"Msg",1111,{1642,358462,375755}],1,{},{}}}
